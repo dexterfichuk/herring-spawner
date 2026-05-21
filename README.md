@@ -27,3 +27,40 @@ earthengine authenticate
 3. Export thumbnails/chip metadata for review.
 4. Compute spectral features and Clay embeddings.
 5. Review nearest-neighbor candidate results before making detection claims.
+
+## Smoke Workflow
+
+Build local event and scene-search request artifacts:
+
+```bash
+python scripts/build_event_catalog.py \
+  --output data/interim/events.geojson \
+  --track-root /Users/dexterfichuk/Downloads/2025\ Tracks
+
+python scripts/search_known_events.py \
+  --events data/interim/events.geojson \
+  --output data/interim/scene_search_requests.json
+```
+
+The generated files are ignored by git. Review them locally before running GEE-backed exports.
+
+## Running Tests
+
+```bash
+source .venv/bin/activate
+pytest -v
+ruff check .
+```
+
+## Earth Engine Connectivity Check
+
+```bash
+source .venv/bin/activate
+python - <<'PY'
+import ee
+ee.Initialize(project="redd-fish")
+print(ee.ImageCollection("COPERNICUS/S2_SR_HARMONIZED").limit(1).size().getInfo())
+PY
+```
+
+Expected output is `1`. If authentication fails, run `earthengine authenticate` and retry.

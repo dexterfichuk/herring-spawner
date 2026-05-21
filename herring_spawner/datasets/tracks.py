@@ -5,7 +5,7 @@ from zipfile import ZipFile
 import gpxpy
 from shapely.geometry import LineString
 
-from herring_spawner.models import Event, LabelConfidence, SourceType
+from herring_spawner.models import Event, LabelConfidence, SourceType, slugify
 
 KML_NS = {"kml": "http://www.opengis.net/kml/2.2"}
 
@@ -14,8 +14,8 @@ def load_track_aois(paths: list[Path], month_label: str | None = None) -> list[E
     events: list[Event] = []
     for path in paths:
         geometries = _load_geometries(path)
-        slug = _slug(path.stem)
-        month_slug = _slug(month_label or "unknown-date")
+        slug = slugify(path.stem)
+        month_slug = slugify(month_label or "unknown-date")
         for index, geometry in enumerate(geometries, start=1):
             events.append(
                 Event(
@@ -70,5 +70,3 @@ def _load_gpx(text: str) -> list[LineString]:
     return geometries
 
 
-def _slug(value: str) -> str:
-    return "-".join(value.lower().replace("_", "-").split())

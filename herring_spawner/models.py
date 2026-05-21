@@ -57,6 +57,11 @@ class Scene:
     properties: dict[str, Any] = field(default_factory=dict)
 
 
+def slugify(value: str) -> str:
+    cleaned = "".join(character.lower() if character.isalnum() else " " for character in value)
+    return "-".join(cleaned.split())
+
+
 @dataclass(frozen=True)
 class Chip:
     chip_id: str

@@ -4,7 +4,7 @@ from pathlib import Path
 import pandas as pd
 from shapely.geometry import Point
 
-from herring_spawner.models import Event, LabelConfidence, SourceType
+from herring_spawner.models import Event, LabelConfidence, SourceType, slugify
 
 
 def load_dfo_csv(path: Path) -> list[Event]:
@@ -23,7 +23,7 @@ def events_from_dataframe(frame: pd.DataFrame, source: str) -> list[Event]:
             continue
         events.append(
             Event(
-                event_id=f"dfo-{start.isoformat()}-{_slug(location)}",
+                event_id=f"dfo-{start.isoformat()}-{slugify(location)}",
                 source_type=SourceType.DFO,
                 label="known_spawn",
                 label_confidence=LabelConfidence.HIGH,
@@ -54,6 +54,4 @@ def _parse_date(value) -> date | None:
     return pd.to_datetime(value).date()
 
 
-def _slug(value: str) -> str:
-    cleaned = "".join(character.lower() if character.isalnum() else " " for character in value)
-    return "-".join(cleaned.split())
+

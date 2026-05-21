@@ -34,11 +34,15 @@ class GeeSentinel2Provider:
         except ImportError as error:
             raise RuntimeError("earthengine-api is required for GEE searches") from error
 
+        from shapely.geometry import box
+
         ee.Initialize(project=self.project)
-        geometry = ee.Geometry.Rectangle(request.bounds)
+        minx, miny, maxx, maxy = request.bounds
+        scene_geometry = box(minx, miny, maxx, maxy)
+        ee_geometry = ee.Geometry.Rectangle(request.bounds)
         collection = (
             ee.ImageCollection(self.collection)
-            .filterBounds(geometry)
+            .filterBounds(ee_geometry)
             .filterDate(request.start_date, request.end_date)
             .filter(ee.Filter.lte("CLOUDY_PIXEL_PERCENTAGE", request.max_cloud))
         )
@@ -50,7 +54,7 @@ class GeeSentinel2Provider:
                 collection=self.collection,
                 acquired=_scene_date(scene_id),
                 cloud_score=None,
-                geometry=geometry,
+                geometry=scene_geometry,
                 properties={"gee_system_index": scene_id},
             )
             for scene_id in scene_ids

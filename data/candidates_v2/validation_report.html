@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Herring Spawn Candidate Validation Report</title>
+<style>
+* { box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 0; padding: 20px; background: #f5f5f5; color: #333; }
+h1 { margin-top: 0; color: #1a1a2e; }
+h2 { color: #16213e; margin-top: 30px; }
+.summary { background: white; padding: 24px; border-radius: 8px; margin-bottom: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+.stat { background: #f8f9fa; padding: 14px; border-radius: 6px; text-align: center; }
+.stat-label { font-size: 0.75em; color: #666; text-transform: uppercase; letter-spacing: 0.5px; }
+.stat-value { font-size: 1.6em; font-weight: bold; color: #333; }
+.stat-value.danger { color: #dc3545; }
+.stat-value.success { color: #28a745; }
+.stat-value.warning { color: #ffc107; }
+.interpretation { background: #fff8e1; border-left: 4px solid #ffc107; padding: 14px 18px; margin-top: 16px; border-radius: 4px; font-size: 0.95em; line-height: 1.5; }
+.interpretation.danger { background: #fbe9e7; border-left-color: #dc3545; }
+.interpretation.success { background: #e8f5e9; border-left-color: #28a745; }
+table { border-collapse: collapse; width: 100%; background: white; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; }
+th { background: #1a1a2e; color: white; padding: 10px 8px; text-align: left; position: sticky; top: 0; font-size: 0.85em; }
+td { padding: 6px 8px; border-bottom: 1px solid #eee; vertical-align: middle; font-size: 0.9em; }
+tr:hover { background: #f0f7ff; }
+.fp-row { background: #fff5f5; }
+.fp-row:hover { background: #ffe0e0; }
+.failed-row { color: #999; }
+.failed-row td { font-style: italic; }
+.score-high { color: #28a745; font-weight: bold; }
+.score-low { color: #6c757d; }
+.score-fp { color: #dc3545; font-weight: bold; }
+.score-tn { color: #28a745; }
+img { border-radius: 4px; border: 1px solid #ddd; display: block; }
+.meta { color: #666; font-size: 0.85em; margin-top: 16px; padding: 12px; background: #f8f9fa; border-radius: 6px; }
+.method { background: #e3f2fd; padding: 14px 18px; border-radius: 6px; margin-bottom: 20px; font-size: 0.9em; line-height: 1.5; }
+.method code { background: #e0e0e0; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+.collapsible { cursor: pointer; user-select: none; }
+.collapsible::before { content: '▶ '; }
+.collapsible.active::before { content: '▼ '; }
+.failed-content { display: none; }
+.failed-content.show { display: block; }
+</style>
+</head>
+<body>
+
+<h1>🐟 Herring Spawn Candidate Validation Report</h1>
+
+<div class="method">
+    <strong>Method:</strong> For the top <code>200</code> candidates by SVM score, we search for the best (least cloudy) Sentinel-2 scene during the off-season window
+    (<code>2024-06-01</code> to <code>2024-07-31</code>) at the same coordinates. If a scene is found, we download the RGB thumbnail and score it with
+    the same SVM classifier. A <strong>false positive</strong> is when the off-season image scores above 0 (the spawn threshold).
+    This tells us whether the model has learned shoreline appearance rather than actual spawn events.
+</div>
+
+<div class="summary">
+    <div class="summary-grid">
+        <div class="stat">
+            <div class="stat-label">Candidates Requested</div>
+            <div class="stat-value">200</div>
+        </div>
+        <div class="stat">
+            <div class="stat-label">Validated (had off-season scene)</div>
+            <div class="stat-value">200</div>
+        </div>
+        <div class="stat">
+            <div class="stat-label">False Positives</div>
+            <div class="stat-value danger">154</div>
+        </div>
+        <div class="stat">
+            <div class="stat-label">False Positive Rate</div>
+            <div class="stat-value danger">77.0%</div>
+        </div>
+        <div class="stat">
+            <div class="stat-label">No Off-Season Scene</div>
+            <div class="stat-value">0</div>
+        </div>
+        <div class="stat">
+            <div class="stat-label">Download / Score Errors</div>
+            <div class="stat-value">0</div>
+        </div>
+    </div>
+    <div class="interpretation danger">
+        <span style='color:#dc3545;font-weight:bold;'>HIGH FALSE POSITIVE RATE</span> — The model is likely learning shoreline/water appearance, not spawn events. Consider collecting more diverse negative training samples including off-season imagery.
+    </div>
+</div>
+
+<h2>📊 Top Validated Candidates — Side by Side</h2>
+<p style="color:#666; font-size:0.9em;">Showing first 20 validated candidates, sorted by false-positive status (FP first) then spawn score. False positive rows highlighted in red.</p>
+
+<table>
+<thead>
+<tr>
+    <th>#</th>
+    <th>Region</th>
+    <th>Spawn Score</th>
+    <th>Off-Season Score</th>
+    <th>Verdict</th>
+    <th>Spawn Season (Mar-Apr)</th>
+    <th>Off-Season (Jun-Jul)</th>
+    <th>Off Date</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fp-row'>
+    <td>1</td>
+    <td>comox</td>
+    <td class="score-low">0.4689</td>
+    <td class="score-fp">0.8060</td>
+    <td>🚫 FALSE POSITIVE</td>
+    <td><img src="comox_2024-03-18_score0.47_49.624865_-124.868846_20240318.png" width="256" loading="lazy"></td>
+    <td><img src="candidates_v2/offseason/comox_49_624865__124_868846_off_2024_07_16_20240716.png" width="256" loading="lazy"></td>
+    <td style="font-size:0.8em">2024-07-16</td>
+</tr>
+<tr class='fp-row'>
+    <td>2</td>
+    <td>tofino</td>
+    <td class="score-high">0.8981</td>
+    <td class="score-fp">0.7797</td>
+    <td>🚫 FALSE POSITIVE</td>
+    <td><img src="tofino_2024-03-16_score0.90_49.114865_-125.926603_20240316.png" width="256" loading="lazy"></td>
+    <td><img src="candidates_v2/offseason/tofino_49_114865__125_926603_off_2024_07_09_20240709.png" width="256" loading="lazy"></td>
+    <td style="font-size:0.8em">2024-07-09</td>
+</tr>
+<tr class='fp-row'>
+    <td>3</td>
+    <td>nootka-sound</td>
+    <td class="score-low">0.3388</td>
+    <td class="score-fp">0.7508</td>
+    <td>🚫 FALSE POSITIVE</td>
+    <td><img src="nootka-sound_2024-03-16_score0.34_49.524865_-126.588503_20240316.png" width="256" loading="lazy"></td>
+    <td><img src="candidates_v2/offseason/nootka_sound_49_524865__126_588503_off_2024_07_06_20240706.png" width="256" loading="lazy"></td>
+    <td style="font-size:0.8em">2024-07-06</td>
+</tr>
+<tr class='fp-row'>
+    <td>4</td>
+    <td>denman-island</td>
+    <td class="score-low">0.3566</td>
+    <td class="score-fp">0.7378</td>
+    <td>🚫 FALSE POSITIVE</td>
+    <td><img src="denman-island_2024-03-18_score0.36_49.55991_-124.67886_20240318.png" width="256" loading="lazy"></td>
+    <td><img src="candidates_v2/offseason/denman_island_49_55991__124_67886_off_2024_07_16_20240716.png" width="256" loading="lazy"></td>
+    <td style="font-size:0.8em">2024-07-16</td>
+</tr>
+<tr class='fp-row'>
+    <td>5</td>
+    <td>nanaimo</td>
+    <td class="score-low">0.4517</td>
+    <td class="score-fp">0.7000</td>
+    <td>🚫 FALSE POSITIVE</td>
+    <td><img src="nanaimo_2024-03-18_score0.45_49.114865_-123.756603_20240318.png" width="256" loading="lazy"></td>
+    <td><img src="candidates_v2/offseason/nanaimo_49_114865__123_756603_off_2024_07_18_20240718.png" width="256" loading="lazy"></td>
+    <td style="font-size:0.8em">2024-07-18</td>
+</tr>
+<tr class='fp-row'>
+    <td>6</td>
+    <td>quatsino-sound</td>
+    <td class="score-high">0.9133</td>
+    <td class="score-fp">0.6908</td>
+    <td>🚫 FALSE POSITIVE</td>
+    <td><img src="quatsino-sound_2024-03-16_score0.91_50.404865_-127.97245_20240316.png" width="256" loading="lazy"></td>
+    <td><img src="candidates_v2/offseason/quatsino_sound_50_404865__127_97245_off_2024_07_07_20240707.png" width="256" loading="lazy"></td>
+    <td style="font-size:0.8em">2024-07-07</td>
+</tr>
+<tr class='fp-row'>
+    <td>7</td>
+    <td>prince-rupert</td>
+    <td class="score-high">0.5412</td>
+    <td class="score-fp">0.6801</td>
+    <td>🚫 FALSE POSITIVE</td>
+    <td><img src="prince-rupert_2024-03-22_score0.54_54.29982_-130.62877_20240322.png" width="256" loading="lazy"></td>
+    <td><img src="candidates_v2/offseason/prince_rupert_54_29982__130_62877_off_2024_07_05_20240705.png" width="256" loading="lazy"></td>
+    <td style="font-size:0.8em">2024-07-05</td>
+</tr>
+<tr class='fp-row'>
+    <td>8</td>
+    <td>comox</td>
+    <td class="score-high">0.6476</td>
+    <td class="score-fp">0.6732</td>
+    <td>🚫 FALSE POSITIVE</td>
+    <td><img src="comox_2024-03-18_score0.65_49.624865_-124.828846_20240318.png" width="256" loading="lazy"></td>
+    <td><img src="candidates_v2/offseason/comox_49_624865__124_828846_off_2024_07_16_20240716.png" width="256" loading="lazy"></td>
+    <td style="font-size:0.8em">2024-07-16</td>
+</tr>
+<tr class='fp-row'>
+    <td>9</td>
+    <td>nanaimo</td>
+    <td class="score-high">1.0335</td>
+    <td class="score-fp">0.6703</td>
+    <td>🚫 FALSE POSITIVE</td>
+    <td><img src="nanaimo_2024-03-18_score1.03_49.134865_-123.676603_20240318.png" width="256" loading="lazy"></td>
+    <td><img src="candidates_v2/offseason/nanaimo_49_134865__123_676603_off_2024_07_18_20240718.png" width="256" loading="lazy"></td>
+    <td style="font-size:0.8em">2024-07-18</td>
+</tr>
+<tr class='fp-row'>
+    <td>10</td>
+    <td>quatsino-sound</td>
+    <td class="score-high">0.7308</td>
+    <td class="score-fp">0.6331</td>
+    <td>🚫 FALSE POSITIVE</td>
+    <td><img src="quatsino-sound_2024-03-16_score0.73_50.464865_-128.09245_20240316.png" width="256" loading="lazy"></td>
+    <td><img src="candidates_v2/offseason/quatsino_sound_50_464865__128_09245_off_2024_07_07_20240707.png" width="256" loading="lazy"></td>
+    <td style="font-size:0.8em">2024-07-07</td>
+</tr>
+<tr class='fp-row'>
+    <td>11</td>
+    <td>ucluelet</td>
+    <td class="score-high">0.9545</td>
+    <td class="score-fp">0.6176</td>
+    <td>🚫 FALSE POSITIVE</td>
+    <td><img src="ucluelet_2024-03-18_score0.95_48.90991_-125.507155_20240318.png" width="256" loading="lazy"></td>
+    <td><img src="candidates_v2/offseason/ucluelet_48_90991__125_507155_off_2024_07_16_20240716.png" width="256" loading="lazy"></td>
+    <td style="font-size:0.8em">2024-07-16</td>
+</tr>
+<tr class='fp-row'>
+    <td>12</td>
+    <td>prince-rupert</td>
+    <td class="score-low">0.3782</td>
+    <td class="score-fp">0.6131</td>
+    <td>🚫 FALSE POSITIVE</td>
+    <td><img src="prince-rupert_2024-03-22_score0.38_54.17982_-130.32877_20240322.png" width="256" loading="lazy"></td>
+    <td><img src="candidates_v2/offseason/prince_rupert_54_17982__130_32877_off_2024_07_05_20240705.png" width="256" loading="lazy"></td>
+    <td style="font-size:0.8em">2024-07-05</td>
+</tr>
+<tr class='fp-row'>
+    <td>13</td>
+    <td>nanaimo</td>
+    <td class="score-low">0.3262</td>
+    <td class="score-fp">0.6070</td>
+    <td>🚫 FALSE POSITIVE</td>
+    <td><img src="nanaimo_2024-03-18_score0.33_49.194865_-123.876603_20240318.png" width="256" loading="lazy"></td>
+    <td><img src="candidates_v2/offseason/nanaimo_49_194865__123_876603_off_2024_07_18_20240718.png" width="256" loading="lazy"></td>
+    <td style="font-size:0.8em">2024-07-18</td>
+</tr>
+<tr class='fp-row'>
+    <td>14</td>
+    <td>tofino</td>
+    <td class="score-high">0.9615</td>
+    <td class="score-fp">0.6061</td>
+    <td>🚫 FALSE POSITIVE</td>
+    <td><img src="tofino_2024-03-16_score0.96_49.174865_-126.046603_20240316.png" width="256" loading="lazy"></td>
+    <td><img src="candidates_v2/offseason/tofino_49_174865__126_046603_off_2024_07_09_20240709.png" width="256" loading="lazy"></td>
+    <td style="font-size:0.8em">2024-07-09</td>
+</tr>
+<tr class='fp-row'>
+    <td>15</td>
+    <td>prince-rupert</td>
+    <td class="score-high">0.7685</td>
+    <td class="score-fp">0.6030</td>
+    <td>🚫 FALSE POSITIVE</td>
+    <td><img src="prince-rupert_2024-03-22_score0.77_54.19982_-130.54877_20240322.png" width="256" loading="lazy"></td>
+    <td><img src="candidates_v2/offseason/prince_rupert_54_19982__130_54877_off_2024_07_05_20240705.png" width="256" loading="lazy"></td>
+    <td style="font-size:0.8em">2024-07-05</td>
+</tr>
+<tr class='fp-row'>
+    <td>16</td>
+    <td>tofino</td>
+    <td class="score-high">0.7802</td>
+    <td class="score-fp">0.5933</td>
+    <td>🚫 FALSE POSITIVE</td>
+    <td><img src="tofino_2024-03-16_score0.78_49.114865_-125.946603_20240316.png" width="256" loading="lazy"></td>
+    <td><img src="candidates_v2/offseason/tofino_49_114865__125_946603_off_2024_07_09_20240709.png" width="256" loading="lazy"></td>
+    <td style="font-size:0.8em">2024-07-09</td>
+</tr>
+<tr class='fp-row'>
+    <td>17</td>
+    <td>milbanke-sound</td>
+    <td class="score-low">0.4903</td>
+    <td class="score-fp">0.5920</td>
+    <td>🚫 FALSE POSITIVE</td>
+    <td><img src="milbanke-sound_2024-03-24_score0.49_52.484865_-128.801984_20240324.png" width="256" loading="lazy"></td>
+    <td><img src="candidates_v2/offseason/milbanke_sound_52_484865__128_801984_off_2024_07_07_20240707.png" width="256" loading="lazy"></td>
+    <td style="font-size:0.8em">2024-07-07</td>
+</tr>
+<tr class='fp-row'>
+    <td>18</td>
+    <td>tofino</td>
+    <td class="score-high">0.5505</td>
+    <td class="score-fp">0.5906</td>
+    <td>🚫 FALSE POSITIVE</td>
+    <td><img src="tofino_2024-03-16_score0.55_49.054865_-125.826603_20240316.png" width="256" loading="lazy"></td>
+    <td><img src="candidates_v2/offseason/tofino_49_054865__125_826603_off_2024_07_09_20240709.png" width="256" loading="lazy"></td>
+    <td style="font-size:0.8em">2024-07-09</td>
+</tr>
+<tr class='fp-row'>
+    <td>19</td>
+    <td>prince-rupert</td>
+    <td class="score-high">0.7845</td>
+    <td class="score-fp">0.5806</td>
+    <td>🚫 FALSE POSITIVE</td>
+    <td><img src="prince-rupert_2024-03-22_score0.78_54.19982_-130.56877_20240322.png" width="256" loading="lazy"></td>
+    <td><img src="candidates_v2/offseason/prince_rupert_54_19982__130_56877_off_2024_07_05_20240705.png" width="256" loading="lazy"></td>
+    <td style="font-size:0.8em">2024-07-05</td>
+</tr>
+<tr class='fp-row'>
+    <td>20</td>
+    <td>spiller-channel</td>
+    <td class="score-high">0.5421</td>
+    <td class="score-fp">0.5759</td>
+    <td>🚫 FALSE POSITIVE</td>
+    <td><img src="spiller-channel_2024-03-29_score0.54_52.264865_-128.40098_20240329.png" width="256" loading="lazy"></td>
+    <td><img src="candidates_v2/offseason/spiller_channel_52_264865__128_40098_off_2024_07_04_20240704.png" width="256" loading="lazy"></td>
+    <td style="font-size:0.8em">2024-07-04</td>
+</tr>
+
+</tbody>
+</table>
+
+
+
+<div class="meta">
+    <strong>Report generated:</strong> 2026-05-22 05:36:41 |
+    <strong>Validation completed in:</strong> 19.7s |
+    <strong>SVM model:</strong> RBF kernel, trained on 70 samples (20 pos, 50 neg) |
+    <strong>Full accuracy:</strong> 98.6% |
+    <strong>CV accuracy:</strong> 84.3% ± 8.3%
+</div>
+
+</body>
+</html>

@@ -11,6 +11,7 @@ data/processed/
 data/exports/
 data/embeddings/
 data/review/
+data/candidates/
 
 .env
 *.jsonl

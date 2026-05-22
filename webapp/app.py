@@ -281,6 +281,34 @@ def spawn_events_api():
     return jsonify({"type": "FeatureCollection", "features": features})
 
 
+@app.route("/api/delta-candidates")
+def delta_candidates_api():
+    """Return unlabeled candidates sorted by delta descending."""
+    db = get_db()
+    cur = db.execute(
+        """
+        SELECT
+            id,
+            lat,
+            lon,
+            region,
+            spawn_score,
+            off_score,
+            COALESCE(delta, COALESCE(spawn_score, 0) - COALESCE(off_score, 0)) AS delta,
+            thumbnail_path,
+            off_thumbnail_path
+        FROM candidates
+        WHERE user_label='unlabeled'
+        ORDER BY COALESCE(delta, COALESCE(spawn_score, 0) - COALESCE(off_score, 0)) DESC,
+                 id ASC
+        """
+    )
+    candidates = [dict(row) for row in cur.fetchall()]
+    db.close()
+
+    return jsonify({"candidates": candidates})
+
+
 # ── App initialization ────────────────────────────────────────────────────
 
 def initialize():

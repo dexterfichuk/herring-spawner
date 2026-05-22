@@ -10,7 +10,7 @@ from datetime import datetime
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB_PATH = os.path.join(PROJECT_ROOT, "data", "webapp", "herring.db")
 CANDIDATES_DIR = os.path.join(PROJECT_ROOT, "data", "candidates_v2")
-OFFSEASON_DIR = os.path.join(CANDIDATES_DIR, "offseason")
+OFFSEASON_DIR = os.path.join(CANDIDATES_DIR, "off_season")
 MANIFEST_PATH = os.path.join(CANDIDATES_DIR, "manifest.json")
 
 SEED_SPAWNS = [
@@ -89,17 +89,11 @@ def init_db():
     conn.close()
 
 
-def _normalize_lat_lon(lat, lon):
-    """Create lat/lon strings for matching off-season filenames."""
-    lat_str = f"{lat:.6f}".replace(".", "_")
-    lon_str = f"{abs(lon):.6f}".replace(".", "_")
-    return lat_str, lon_str
-
-
 def _find_offseason_image(region, lat, lon):
     """Find matching off-season image for a given candidate location."""
-    lat_str, lon_str = _normalize_lat_lon(lat, lon)
-    pattern = os.path.join(OFFSEASON_DIR, f"{region}_{lat_str}__{lon_str}_off_*.png")
+    lat_str = f"{lat:.4f}"
+    lon_str = f"{lon:.4f}"
+    pattern = os.path.join(OFFSEASON_DIR, f"*_{lat_str}_{lon_str}_off.png")
     matches = glob.glob(pattern)
     if matches:
         return os.path.relpath(matches[0], CANDIDATES_DIR)

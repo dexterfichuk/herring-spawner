@@ -1,132 +1,142 @@
 [
   {
-    "filename": "dfo-verified-anderson-point_2024-03-16_cloud0.png",
-    "label": "no_spawn",
-    "confirmed_by": "user"
-  },
-  {
-    "filename": "dfo-verified-anderson-point_2024-03-18_cloud24.png",
+    "filename": "big-bay-prince-rupert_2023-03-28_cld11.png",
     "label": "spawn_visible",
     "confirmed_by": "user"
   },
   {
-    "filename": "dfo-verified-anderson-point_2024-03-26_cloud44.png",
-    "label": "no_spawn",
-    "confirmed_by": "user"
-  },
-  {
-    "filename": "dfo-verified-breakwater-island_2024-03-18_cloud0.png",
+    "filename": "big-bay-prince-rupert_2023-03-28_cld12.png",
     "label": "spawn_visible",
     "confirmed_by": "user"
   },
   {
-    "filename": "dfo-verified-fan-island_2024-03-22_cloud11.png",
+    "filename": "bradys-beach-bamfield_2025-02-11_cld1.png",
     "label": "spawn_visible",
     "confirmed_by": "user"
   },
   {
-    "filename": "dfo-verified-fan-island_2024-03-22_cloud12.png",
+    "filename": "bradys-beach-bamfield_2025-02-11_cld3.png",
     "label": "spawn_visible",
     "confirmed_by": "user"
   },
   {
-    "filename": "dfo-verified-qualicum-beach_2024-03-15_cloud16.png",
+    "filename": "false-creek-vancouver_2024-02-09_cld39.png",
+    "label": "no_spawn",
+    "confirmed_by": "user"
+  },
+  {
+    "filename": "false-creek-vancouver_2024-03-18_cld0.png",
+    "label": "no_spawn",
+    "confirmed_by": "user"
+  },
+  {
+    "filename": "fisgard-light-victoria_2024-03-05_cld40.png",
+    "label": "no_spawn",
+    "confirmed_by": "user"
+  },
+  {
+    "filename": "french-creek-bc_2025-03-05_cld36.png",
     "label": "spawn_visible",
     "confirmed_by": "user"
   },
   {
-    "filename": "dfo-verified-qualicum-beach_2024-03-18_cloud2.png",
+    "filename": "holmes-harbor-wa_2023-03-18_cld1.png",
     "label": "no_spawn",
     "confirmed_by": "user"
   },
   {
-    "filename": "dfo-verified-tree-bluff_2024-03-22_cloud0.png",
+    "filename": "kitasu-bay_2025-04-03_cld1.png",
     "label": "no_spawn",
     "confirmed_by": "user"
   },
   {
-    "filename": "dfo-verified-tree-bluff_2024-03-22_cloud5.png",
+    "filename": "lambert-channel-(denman)_2025-03-18_cld52.png",
     "label": "no_spawn",
     "confirmed_by": "user"
   },
   {
-    "filename": "dfo-verified-ucluelet_2024-03-18_cloud2.png",
-    "label": "spawn_visible",
-    "confirmed_by": "user"
-  },
-  {
-    "filename": "manual-2026-04-04-event-1-point-1_2026-03-28_cloud30.png",
+    "filename": "louscoone-inlet_2024-03-22_cld14.png",
     "label": "no_spawn",
     "confirmed_by": "user"
   },
   {
-    "filename": "manual-2026-04-04-event-1-point-1_2026-04-07_cloud18.png",
+    "filename": "louscoone-inlet_2024-03-22_cld16.png",
     "label": "no_spawn",
     "confirmed_by": "user"
   },
   {
-    "filename": "manual-2026-04-04-event-1-point-1_2026-04-10_cloud0.png",
+    "filename": "parksville-beach-bc_2025-03-05_cld36.png",
     "label": "no_spawn",
     "confirmed_by": "user"
   },
   {
-    "filename": "manual-2026-04-04-event-1-point-2_2026-03-28_cloud30.png",
+    "filename": "point-julia-port-gamble_2023-02-24_cld9.png",
     "label": "no_spawn",
     "confirmed_by": "user"
   },
   {
-    "filename": "manual-2026-04-04-event-1-point-2_2026-04-07_cloud18.png",
+    "filename": "point-julia-port-gamble_2023-03-18_cld1.png",
     "label": "no_spawn",
     "confirmed_by": "user"
   },
   {
-    "filename": "manual-2026-04-04-event-1-point-2_2026-04-10_cloud0.png",
+    "filename": "port-mcneill_2024-03-06_cld33.png",
     "label": "no_spawn",
     "confirmed_by": "user"
   },
   {
-    "filename": "manual-2026-04-04-event-2-point-1_2026-03-28_cloud30.png",
+    "filename": "port-mcneill_2024-03-16_cld1.png",
     "label": "no_spawn",
     "confirmed_by": "user"
   },
   {
-    "filename": "manual-2026-04-04-event-2-point-1_2026-04-07_cloud18.png",
+    "filename": "port-orchard-wa_2024-03-15_cld13.png",
     "label": "no_spawn",
     "confirmed_by": "user"
   },
   {
-    "filename": "manual-2026-04-04-event-2-point-1_2026-04-10_cloud0.png",
+    "filename": "port-orchard-wa_2024-03-17_cld1.png",
     "label": "no_spawn",
     "confirmed_by": "user"
   },
   {
-    "filename": "manual-2026-04-04-event-2-point-2_2026-03-28_cloud30.png",
+    "filename": "quilcene-bay-wa_2024-03-15_cld13.png",
     "label": "no_spawn",
     "confirmed_by": "user"
   },
   {
-    "filename": "manual-2026-04-04-event-2-point-2_2026-04-07_cloud18.png",
+    "filename": "quilcene-bay-wa_2024-03-15_cld24.png",
     "label": "no_spawn",
     "confirmed_by": "user"
   },
   {
-    "filename": "manual-2026-04-04-event-2-point-2_2026-04-10_cloud0.png",
+    "filename": "salmon-beach-barkley-sound_2024-03-18_cld2.png",
     "label": "no_spawn",
     "confirmed_by": "user"
   },
   {
-    "filename": "news-salmon-beach-2025_2025-02-06_cloud3.png",
-    "label": "spawn_visible",
+    "filename": "spiller-channel_2024-03-24_cld1.png",
+    "label": "no_spawn",
     "confirmed_by": "user"
   },
   {
-    "filename": "news-salmon-beach-2025_2025-02-11_cloud1.png",
-    "label": "spawn_visible",
+    "filename": "spiller-channel_2024-03-29_cld0.png",
+    "label": "no_spawn",
     "confirmed_by": "user"
   },
   {
-    "filename": "news-salmon-beach-2025_2025-02-11_cloud3.png",
-    "label": "spawn_visible",
+    "filename": "squamish-estuary-bc_2025-04-16_cld0.png",
+    "label": "no_spawn",
+    "confirmed_by": "user"
+  },
+  {
+    "filename": "thompson-bay_2023-03-25_cld39.png",
+    "label": "no_spawn",
+    "confirmed_by": "user"
+  },
+  {
+    "filename": "thompson-bay_2023-03-27_cld0.png",
+    "label": "no_spawn",
     "confirmed_by": "user"
   }
 ]

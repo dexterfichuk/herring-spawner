@@ -22,7 +22,8 @@ https://github.com/dexterfichuk/herring-spawner
 - `data/embeddings/` — All embedding vectors saved as npz
 
 ### Model Performance
-- **DINOv2**: 88.9% accuracy (48/54), 0.0607 separation, 14 spawn + 40 no spawn
+- **DINOv2 similarity**: 88.9% accuracy (48/54), 0.0607 separation, 14 spawn + 40 no spawn
+- **DINOv2 + SVM**: 84.3% ± 8.3% 5-fold CV, 1.4811 separation, 98.6% full-dataset accuracy (20 pos + 50 neg)
 - **Clay v1.5**: 0.0951 separation, needs more labeled multi-spectral data
 
 ### Review Pages
@@ -78,12 +79,19 @@ Scan the entire BC coastline during herring spawn season (Feb-April) to find new
 
 ### Running
 ```bash
+# Scan with SVM classifier (better precision)
 python scripts/scan_bc_coast.py \
-  --output data/candidates \
-  --threshold 0.0 \
-  --start 2024-02-01 \
-  --end 2024-04-30 \
-  --max-cloud 50
+  --output data/candidates_v2 \
+  --classifier svm \
+  --start 2024-03-01 \
+  --end 2024-04-15 \
+  --max-cloud 50 \
+  --grid-spacing 0.02 \
+  --workers 8
+
+# Review candidates
+python -m http.server 8766 --directory data/candidates_v2
+# Then open http://localhost:8766/review.html
 ```
 
 ## Future Work

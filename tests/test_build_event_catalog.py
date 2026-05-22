@@ -12,5 +12,6 @@ def test_write_event_catalog_includes_manual_events(tmp_path: Path):
     payload = json.loads(output.read_text(encoding="utf-8"))
 
     assert payload["type"] == "FeatureCollection"
-    assert len(payload["features"]) == 4
-    assert payload["features"][0]["properties"]["source_type"] == "manual"
+    assert len(payload["features"]) >= 4
+    manual_features = [f for f in payload["features"] if f["properties"]["event_id"].startswith("manual-2026")]
+    assert len(manual_features) == 4

@@ -1,0 +1,1634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delta Validation — Top 60 Candidates</title>
+<style>
+* { box-sizing: border-box; }
+body { font-family: -apple-system, system-ui, sans-serif; margin: 0; background: #111; color: #eee; }
+.bar { background: #1a1a2e; padding: 12px 20px; position: sticky; top: 0; z-index: 99; border-bottom: 1px solid #2a2a4e; }
+.bar h1 { margin: 0; font-size: 18px; }
+.bar .sub { font-size: 13px; color: #888; margin-top: 4px; }
+.g { display: grid; grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); gap: 14px; padding: 14px; }
+.card { background: #1e1e2e; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.4); transition: transform 0.15s, box-shadow 0.15s; }
+.card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.5); }
+.good { border-left: 4px solid #4CAF50; }
+.mid { border-left: 4px solid #FFC107; }
+.bad { border-left: 4px solid #f44336; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: #111; }
+.pair img { width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block; }
+.lbl { font-size: 10px; color: #999; text-align: center; padding: 3px 4px; background: #0a0a14; text-transform: uppercase; letter-spacing: 0.5px; }
+.body { padding: 10px 12px; }
+.delta { font-size: 16px; font-weight: 700; }
+.info { font-size: 12px; color: #999; margin-bottom: 4px; }
+.info strong { color: #ddd; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+.spawn-badge { background: #1b3a2b; color: #4CAF50; }
+.off-badge { background: #2a1b3a; color: #ce93d8; }
+.placeholder { width: 100%; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; background: #1a1a2e; color: #555; font-size: 13px; text-align: center; padding: 8px; }
+.summary { background: #1a1a2e; margin: 14px; padding: 14px 18px; border-radius: 8px; font-size: 13px; color: #aaa; line-height: 1.5; }
+.summary strong { color: #fff; }
+.summary-grid { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 8px; }
+.summary-stat { text-align: center; padding: 8px 14px; background: #0a0a14; border-radius: 6px; }
+.summary-stat .num { font-size: 22px; font-weight: 700; color: #fff; }
+.summary-stat .lbl { font-size: 10px; color: #888; text-transform: uppercase; padding: 0; margin-top: 2px; background: transparent; }
+</style>
+</head>
+<body>
+
+<div class="bar">
+    <h1>&#x1f41f; Delta Validation — Top 60 by SVM Score</h1>
+    <div class="sub">
+        Green = large delta (>0.5, likely real spawn) &middot;
+        Yellow = small change (0 to 0.5) &middot;
+        Red = negative delta (model confusion)
+    </div>
+</div>
+
+<div class="summary">
+    <strong>Summary:</strong> Comparing spawn-season (Mar-Apr) vs off-season (Jun-Jul) imagery.
+    Delta = Spawn Score &minus; Off-Season Score.
+    Large positive delta means the model sees a much stronger spawn signal during spawn season,
+    suggesting real spawn detection rather than shoreline memorization.
+    <div class="summary-grid">
+        <div class="summary-stat">
+            <div class="num">60</div>
+            <div class="lbl">Candidates Shown</div>
+        </div>
+        <div class="summary-stat">
+            <div class="num">60</div>
+            <div class="lbl">Score &gt; 0.5</div>
+        </div>
+        <div class="summary-stat">
+            <div class="num">60</div>
+            <div class="lbl">Have Off-Season Image</div>
+        </div>
+    </div>
+</div>
+
+<div class="g">
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="nanaimo_2024-03-18_score1.03_49.134865_-123.676603_20240318.png" alt="Spawn 0" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/nanaimo_49_134865__123_676603_off_2024_07_18_20240718.png" alt="Off-season 0" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>nanaimo</strong> &middot;
+                49.1349, -123.6766
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 1.0335</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +1.0335
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="nootka-sound_2024-03-16_score1.00_49.584865_-126.608503_20240316.png" alt="Spawn 1" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/nootka_sound_49_584865__126_608503_off_2024_07_09_20240709.png" alt="Off-season 1" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>nootka-sound</strong> &middot;
+                49.5849, -126.6085
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.9965</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.9965
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="tofino_2024-03-16_score0.96_49.174865_-126.046603_20240316.png" alt="Spawn 2" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/tofino_49_174865__126_046603_off_2024_07_09_20240709.png" alt="Off-season 2" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>tofino</strong> &middot;
+                49.1749, -126.0466
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.9615</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.9615
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="ucluelet_2024-03-18_score0.95_48.90991_-125.507155_20240318.png" alt="Spawn 3" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/ucluelet_48_90991__125_507155_off_2024_07_16_20240716.png" alt="Off-season 3" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>ucluelet</strong> &middot;
+                48.9099, -125.5072
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.9545</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.9545
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="tofino_2024-03-16_score0.95_49.214865_-126.046603_20240316.png" alt="Spawn 4" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/tofino_49_214865__126_046603_off_2024_07_09_20240709.png" alt="Off-season 4" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>tofino</strong> &middot;
+                49.2149, -126.0466
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.9504</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.9504
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="quatsino-sound_2024-03-16_score0.91_50.404865_-127.97245_20240316.png" alt="Spawn 5" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/quatsino_sound_50_404865__127_97245_off_2024_07_07_20240707.png" alt="Off-season 5" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>quatsino-sound</strong> &middot;
+                50.4049, -127.9724
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.9133</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.9133
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="tofino_2024-03-16_score0.90_49.114865_-125.926603_20240316.png" alt="Spawn 6" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/tofino_49_114865__125_926603_off_2024_07_09_20240709.png" alt="Off-season 6" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>tofino</strong> &middot;
+                49.1149, -125.9266
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.8981</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.8981
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="tofino_2024-03-16_score0.90_49.174865_-126.086603_20240316.png" alt="Spawn 7" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/tofino_49_174865__126_086603_off_2024_07_09_20240709.png" alt="Off-season 7" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>tofino</strong> &middot;
+                49.1749, -126.0866
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.8968</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.8968
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="ucluelet_2024-03-18_score0.90_48.90991_-125.487155_20240318.png" alt="Spawn 8" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/ucluelet_48_90991__125_487155_off_2024_07_16_20240716.png" alt="Off-season 8" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>ucluelet</strong> &middot;
+                48.9099, -125.4872
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.8967</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.8967
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="masset-inlet_2024-03-22_score0.89_53.644865_-132.968264_20240322.png" alt="Spawn 9" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/masset_inlet_53_644865__132_968264_off_2024_07_05_20240705.png" alt="Off-season 9" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>masset-inlet</strong> &middot;
+                53.6449, -132.9683
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.8861</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.8861
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="tofino_2024-03-16_score0.88_49.234865_-126.026603_20240316.png" alt="Spawn 10" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/tofino_49_234865__126_026603_off_2024_07_09_20240709.png" alt="Off-season 10" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>tofino</strong> &middot;
+                49.2349, -126.0266
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.8818</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.8818
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="tofino_2024-03-16_score0.86_49.134865_-125.966603_20240316.png" alt="Spawn 11" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/tofino_49_134865__125_966603_off_2024_07_09_20240709.png" alt="Off-season 11" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>tofino</strong> &middot;
+                49.1349, -125.9666
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.8588</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.8588
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="ucluelet_2024-03-18_score0.86_48.92991_-125.587155_20240318.png" alt="Spawn 12" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/ucluelet_48_92991__125_587155_off_2024_07_16_20240716.png" alt="Off-season 12" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>ucluelet</strong> &middot;
+                48.9299, -125.5872
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.8584</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.8584
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="denman-island_2024-03-18_score0.86_49.57991_-124.85886_20240318.png" alt="Spawn 13" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/denman_island_49_57991__124_85886_off_2024_07_16_20240716.png" alt="Off-season 13" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>denman-island</strong> &middot;
+                49.5799, -124.8589
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.8555</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.8555
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="milbanke-sound_2024-03-24_score0.85_52.464865_-128.781984_20240324.png" alt="Spawn 14" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/milbanke_sound_52_464865__128_781984_off_2024_07_07_20240707.png" alt="Off-season 14" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>milbanke-sound</strong> &middot;
+                52.4649, -128.7820
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.8527</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.8527
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="quatsino-sound_2024-03-16_score0.85_50.444865_-128.03245_20240316.png" alt="Spawn 15" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/quatsino_sound_50_444865__128_03245_off_2024_07_07_20240707.png" alt="Off-season 15" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>quatsino-sound</strong> &middot;
+                50.4449, -128.0325
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.8521</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.8521
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="nootka-sound_2024-03-16_score0.83_49.584865_-126.588503_20240316.png" alt="Spawn 16" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/nootka_sound_49_584865__126_588503_off_2024_07_09_20240709.png" alt="Off-season 16" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>nootka-sound</strong> &middot;
+                49.5849, -126.5885
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.8258</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.8258
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="tofino_2024-03-16_score0.82_49.214865_-126.026603_20240316.png" alt="Spawn 17" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/tofino_49_214865__126_026603_off_2024_07_09_20240709.png" alt="Off-season 17" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>tofino</strong> &middot;
+                49.2149, -126.0266
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.8153</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.8153
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="tofino_2024-03-16_score0.80_49.234865_-126.046603_20240316.png" alt="Spawn 18" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/tofino_49_234865__126_046603_off_2024_07_09_20240709.png" alt="Off-season 18" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>tofino</strong> &middot;
+                49.2349, -126.0466
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.7981</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.7981
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="nanaimo_2024-03-18_score0.80_49.114865_-123.676603_20240318.png" alt="Spawn 19" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/nanaimo_49_114865__123_676603_off_2024_07_18_20240718.png" alt="Off-season 19" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>nanaimo</strong> &middot;
+                49.1149, -123.6766
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.7973</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.7973
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="masset-inlet_2024-03-20_score0.79_53.744865_-133.088264_20240320.png" alt="Spawn 20" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/masset_inlet_53_744865__133_088264_off_2024_07_08_20240708.png" alt="Off-season 20" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>masset-inlet</strong> &middot;
+                53.7449, -133.0883
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.7941</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.7941
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="prince-rupert_2024-03-22_score0.78_54.19982_-130.56877_20240322.png" alt="Spawn 21" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/prince_rupert_54_19982__130_56877_off_2024_07_05_20240705.png" alt="Off-season 21" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>prince-rupert</strong> &middot;
+                54.1998, -130.5688
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.7845</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.7845
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="tofino_2024-03-16_score0.78_49.114865_-125.946603_20240316.png" alt="Spawn 22" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/tofino_49_114865__125_946603_off_2024_07_09_20240709.png" alt="Off-season 22" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>tofino</strong> &middot;
+                49.1149, -125.9466
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.7802</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.7802
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="ucluelet_2024-03-18_score0.78_48.90991_-125.567155_20240318.png" alt="Spawn 23" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/ucluelet_48_90991__125_567155_off_2024_07_16_20240716.png" alt="Off-season 23" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>ucluelet</strong> &middot;
+                48.9099, -125.5672
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.7802</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.7802
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="prince-rupert_2024-03-22_score0.77_54.19982_-130.54877_20240322.png" alt="Spawn 24" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/prince_rupert_54_19982__130_54877_off_2024_07_05_20240705.png" alt="Off-season 24" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>prince-rupert</strong> &middot;
+                54.1998, -130.5488
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.7685</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.7685
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="nanaimo_2024-03-18_score0.76_49.154865_-123.676603_20240318.png" alt="Spawn 25" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/nanaimo_49_154865__123_676603_off_2024_07_18_20240718.png" alt="Off-season 25" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>nanaimo</strong> &middot;
+                49.1549, -123.6766
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.7584</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.7584
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="quatsino-sound_2024-03-16_score0.73_50.464865_-128.09245_20240316.png" alt="Spawn 26" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/quatsino_sound_50_464865__128_09245_off_2024_07_07_20240707.png" alt="Off-season 26" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>quatsino-sound</strong> &middot;
+                50.4649, -128.0925
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.7308</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.7308
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="masset-inlet_2024-03-20_score0.73_53.744865_-133.068264_20240320.png" alt="Spawn 27" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/masset_inlet_53_744865__133_068264_off_2024_07_08_20240708.png" alt="Off-season 27" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>masset-inlet</strong> &middot;
+                53.7449, -133.0683
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.7294</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.7294
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="prince-rupert_2024-03-22_score0.72_54.29982_-130.60877_20240322.png" alt="Spawn 28" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/prince_rupert_54_29982__130_60877_off_2024_07_05_20240705.png" alt="Off-season 28" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>prince-rupert</strong> &middot;
+                54.2998, -130.6088
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.7238</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.7238
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="quatsino-sound_2024-03-16_score0.72_50.424865_-127.95245_20240316.png" alt="Spawn 29" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/quatsino_sound_50_424865__127_95245_off_2024_07_07_20240707.png" alt="Off-season 29" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>quatsino-sound</strong> &middot;
+                50.4249, -127.9524
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.7170</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.7170
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="ucluelet_2024-03-18_score0.71_48.90991_-125.467155_20240318.png" alt="Spawn 30" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/ucluelet_48_90991__125_467155_off_2024_07_16_20240716.png" alt="Off-season 30" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>ucluelet</strong> &middot;
+                48.9099, -125.4672
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.7095</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.7095
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="tofino_2024-03-16_score0.71_49.134865_-125.946603_20240316.png" alt="Spawn 31" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/tofino_49_134865__125_946603_off_2024_07_09_20240709.png" alt="Off-season 31" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>tofino</strong> &middot;
+                49.1349, -125.9466
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.7090</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.7090
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="comox_2024-03-18_score0.71_49.624865_-124.848846_20240318.png" alt="Spawn 32" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/comox_49_624865__124_848846_off_2024_07_16_20240716.png" alt="Off-season 32" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>comox</strong> &middot;
+                49.6249, -124.8488
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.7052</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.7052
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="tofino_2024-03-16_score0.70_49.174865_-125.906603_20240316.png" alt="Spawn 33" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/tofino_49_174865__125_906603_off_2024_07_09_20240709.png" alt="Off-season 33" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>tofino</strong> &middot;
+                49.1749, -125.9066
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.7044</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.7044
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="ucluelet_2024-03-18_score0.69_48.90991_-125.527155_20240318.png" alt="Spawn 34" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/ucluelet_48_90991__125_527155_off_2024_07_16_20240716.png" alt="Off-season 34" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>ucluelet</strong> &middot;
+                48.9099, -125.5272
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.6912</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.6912
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="milbanke-sound_2024-03-29_score0.69_52.444865_-128.961984_20240329.png" alt="Spawn 35" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/milbanke_sound_52_444865__128_961984_off_2024_07_07_20240707.png" alt="Off-season 35" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>milbanke-sound</strong> &middot;
+                52.4449, -128.9620
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.6877</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.6877
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="tofino_2024-03-16_score0.68_49.174865_-126.066603_20240316.png" alt="Spawn 36" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/tofino_49_174865__126_066603_off_2024_07_09_20240709.png" alt="Off-season 36" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>tofino</strong> &middot;
+                49.1749, -126.0666
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.6842</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.6842
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="nootka-sound_2024-03-16_score0.67_49.544865_-126.588503_20240316.png" alt="Spawn 37" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/nootka_sound_49_544865__126_588503_off_2024_07_09_20240709.png" alt="Off-season 37" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>nootka-sound</strong> &middot;
+                49.5449, -126.5885
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.6741</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.6741
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="tofino_2024-03-16_score0.66_49.154865_-126.006603_20240316.png" alt="Spawn 38" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/tofino_49_154865__126_006603_off_2024_07_09_20240709.png" alt="Off-season 38" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>tofino</strong> &middot;
+                49.1549, -126.0066
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.6636</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.6636
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="prince-rupert_2024-03-22_score0.66_54.21982_-130.42877_20240322.png" alt="Spawn 39" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/prince_rupert_54_21982__130_42877_off_2024_07_05_20240705.png" alt="Off-season 39" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>prince-rupert</strong> &middot;
+                54.2198, -130.4288
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.6630</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.6630
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="ucluelet_2024-03-18_score0.66_48.90991_-125.547155_20240318.png" alt="Spawn 40" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/ucluelet_48_90991__125_547155_off_2024_07_16_20240716.png" alt="Off-season 40" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>ucluelet</strong> &middot;
+                48.9099, -125.5472
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.6575</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.6575
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="milbanke-sound_2024-03-24_score0.65_52.624865_-128.821984_20240324.png" alt="Spawn 41" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/milbanke_sound_52_624865__128_821984_off_2024_07_07_20240707.png" alt="Off-season 41" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>milbanke-sound</strong> &middot;
+                52.6249, -128.8220
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.6516</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.6516
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="comox_2024-03-18_score0.65_49.624865_-124.828846_20240318.png" alt="Spawn 42" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/comox_49_624865__124_828846_off_2024_07_16_20240716.png" alt="Off-season 42" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>comox</strong> &middot;
+                49.6249, -124.8288
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.6476</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.6476
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="tofino_2024-03-16_score0.65_49.194865_-126.066603_20240316.png" alt="Spawn 43" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/tofino_49_194865__126_066603_off_2024_07_09_20240709.png" alt="Off-season 43" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>tofino</strong> &middot;
+                49.1949, -126.0666
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.6458</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.6458
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="spiller-channel_2024-03-29_score0.65_52.304865_-128.42098_20240329.png" alt="Spawn 44" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/spiller_channel_52_304865__128_42098_off_2024_07_04_20240704.png" alt="Off-season 44" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>spiller-channel</strong> &middot;
+                52.3049, -128.4210
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.6455</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.6455
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="ucluelet_2024-03-18_score0.64_48.86991_-125.487155_20240318.png" alt="Spawn 45" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/ucluelet_48_86991__125_487155_off_2024_07_16_20240716.png" alt="Off-season 45" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>ucluelet</strong> &middot;
+                48.8699, -125.4872
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.6410</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.6410
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="milbanke-sound_2024-03-24_score0.64_52.624865_-128.801984_20240324.png" alt="Spawn 46" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/milbanke_sound_52_624865__128_801984_off_2024_07_07_20240707.png" alt="Off-season 46" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>milbanke-sound</strong> &middot;
+                52.6249, -128.8020
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.6372</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.6372
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="prince-rupert_2024-03-22_score0.64_54.27982_-130.48877_20240322.png" alt="Spawn 47" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/prince_rupert_54_27982__130_48877_off_2024_07_05_20240705.png" alt="Off-season 47" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>prince-rupert</strong> &middot;
+                54.2798, -130.4888
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.6370</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.6370
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="nootka-sound_2024-03-16_score0.63_49.584865_-126.708503_20240316.png" alt="Spawn 48" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/nootka_sound_49_584865__126_708503_off_2024_07_09_20240709.png" alt="Off-season 48" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>nootka-sound</strong> &middot;
+                49.5849, -126.7085
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.6251</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.6251
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="tofino_2024-03-16_score0.62_49.154865_-125.946603_20240316.png" alt="Spawn 49" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/tofino_49_154865__125_946603_off_2024_07_09_20240709.png" alt="Off-season 49" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>tofino</strong> &middot;
+                49.1549, -125.9466
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.6191</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.6191
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="tofino_2024-03-16_score0.62_49.114865_-125.966603_20240316.png" alt="Spawn 50" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/tofino_49_114865__125_966603_off_2024_07_09_20240709.png" alt="Off-season 50" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>tofino</strong> &middot;
+                49.1149, -125.9666
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.6161</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.6161
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="nootka-sound_2024-03-16_score0.61_49.584865_-126.628503_20240316.png" alt="Spawn 51" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/nootka_sound_49_584865__126_628503_off_2024_07_09_20240709.png" alt="Off-season 51" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>nootka-sound</strong> &middot;
+                49.5849, -126.6285
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.6093</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.6093
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="haida-gwaii-south_2024-03-22_score0.60_52.384865_-131.60148_20240322.png" alt="Spawn 52" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/haida_gwaii_south_52_384865__131_60148_off_2024_07_05_20240705.png" alt="Off-season 52" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>haida-gwaii-south</strong> &middot;
+                52.3849, -131.6015
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.5988</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.5988
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="prince-rupert_2024-03-20_score0.60_54.45982_-130.46877_20240320.png" alt="Spawn 53" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/prince_rupert_54_45982__130_46877_off_2024_07_08_20240708.png" alt="Off-season 53" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>prince-rupert</strong> &middot;
+                54.4598, -130.4688
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.5983</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.5983
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="tofino_2024-03-16_score0.59_49.214865_-125.966603_20240316.png" alt="Spawn 54" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/tofino_49_214865__125_966603_off_2024_07_09_20240709.png" alt="Off-season 54" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>tofino</strong> &middot;
+                49.2149, -125.9666
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.5923</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.5923
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="milbanke-sound_2024-03-24_score0.59_52.504865_-128.821984_20240324.png" alt="Spawn 55" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/milbanke_sound_52_504865__128_821984_off_2024_07_07_20240707.png" alt="Off-season 55" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>milbanke-sound</strong> &middot;
+                52.5049, -128.8220
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.5922</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.5922
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="tofino_2024-03-16_score0.58_49.154865_-125.926603_20240316.png" alt="Spawn 56" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/tofino_49_154865__125_926603_off_2024_07_09_20240709.png" alt="Off-season 56" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>tofino</strong> &middot;
+                49.1549, -125.9266
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.5831</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.5831
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="haida-gwaii-south_2024-03-22_score0.58_52.404865_-131.60148_20240322.png" alt="Spawn 57" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/haida_gwaii_south_52_404865__131_60148_off_2024_07_05_20240705.png" alt="Off-season 57" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>haida-gwaii-south</strong> &middot;
+                52.4049, -131.6015
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.5826</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.5826
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="prince-rupert_2024-03-22_score0.58_54.21982_-130.56877_20240322.png" alt="Spawn 58" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/prince_rupert_54_21982__130_56877_off_2024_07_05_20240705.png" alt="Off-season 58" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>prince-rupert</strong> &middot;
+                54.2198, -130.5688
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.5819</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.5819
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card good">
+        <div class="pair">
+            <div>
+                <img src="quatsino-sound_2024-03-16_score0.58_50.444865_-128.05245_20240316.png" alt="Spawn 59" loading="lazy">
+                <div class="lbl">Spawn Season (Mar-Apr 2024)</div>
+            </div>
+            <div>
+                <img src="offseason/quatsino_sound_50_444865__128_05245_off_2024_07_07_20240707.png" alt="Off-season 59" loading="lazy">
+                <div class="lbl">Off-Season (Jun-Jul 2024)</div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="info">
+                <strong>quatsino-sound</strong> &middot;
+                50.4449, -128.0524
+            </div>
+            <div style="display:flex;gap:8px;align-items:center;margin-top:4px;">
+                <span class="badge spawn-badge">Spawn: 0.5781</span>
+                <span class="badge off-badge">Off: 0.0000</span>
+                <span class="delta" style="color:#4CAF50">
+                    &Delta; +0.5781
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

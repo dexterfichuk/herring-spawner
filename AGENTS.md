@@ -95,7 +95,7 @@ python -m http.server 8766 --directory data/candidates_v2
 ```
 
 ## Future Work
-- More labels → train SVM on embeddings → higher accuracy
+- **Fix: delta-based approach** — Instead of scoring single images, compare pre-spawn baseline vs spawn-season imagery at each location. A spawn event = large embedding change; barren shoreline = minimal change.
 - Full Clay pipeline with proper GeoTIFF exports
 - Multi-year scanning (2023, 2024, 2025)
 - Web dashboard for candidate review

@@ -1,0 +1,122 @@
+[
+  {
+    "filename": "tofino_2023-04-28_score1.07_49.135_-125.947_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Bright features are localized to rocky shoreline and match off-season coastal reflections; consistent with surf."
+  },
+  {
+    "filename": "prince-rupert_2024-04-16_score1.00_54.300_-130.629_20240416.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Water is dark with only isolated bright pixels likely representing vessels or instrumentation; no diffuse turquoise plumes."
+  },
+  {
+    "filename": "prince-rupert_2024-04-16_score0.97_54.300_-130.609_20240416.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Dark water with negligible signal; no evidence of spawning plumes."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.96_49.175_-126.047_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "White coastal features are characteristic of waves breaking on rocks; lacking the signature turquoise tint of herring spawn."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.96_49.175_-126.067_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Coastal brightness follows bathymetry and rock lines; identical signature in off-season imagery indicates surf/sediment."
+  },
+  {
+    "filename": "ucluelet_2024-03-18_score0.95_48.910_-125.507_20240318.png",
+    "spawn": true,
+    "confidence": "high",
+    "notes": "Clear, extensive bright turquoise swirling plumes around islands, highly consistent with ground truth Nanaimo examples."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.95_49.215_-126.047_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Isolated white coastal features without diffuse turquoise signature; consistent with breaking waves."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.95_49.115_-125.947_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Large bright white patches lack the turquoise hue of spawn and appear to be atmospheric (clouds or fog)."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.92_49.215_-126.047_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Coastal reflections match off-season patterns; consistent with surf."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.92_49.135_-125.967_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Linear white features along the shore are characteristic of surf breaking on rocks."
+  },
+  {
+    "filename": "quatsino-sound_2024-03-16_score0.91_50.405_-127.972_20240316.png",
+    "spawn": false,
+    "confidence": "medium",
+    "notes": "Bright clusters appear to be low-level clouds or heavy sea foam; lacking the distinct turquoise plume structure."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.91_49.195_-126.067_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "White coastal features are inconsistent with spawn color and pattern; likely surf."
+  },
+  {
+    "filename": "quatsino-sound_2024-02-15_score0.91_50.405_-127.972_20240215.png",
+    "spawn": false,
+    "confidence": "medium",
+    "notes": "Features appear to be cloud fragments; no turquoise aquatic signature detected."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.91_49.135_-125.987_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Intense white pixels at the shoreline match off-season surf patterns."
+  },
+  {
+    "filename": "quatsino-sound_2023-05-14_score0.90_50.465_-128.112_20230514.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Coastal brightness is very white and sharp, consistent with surf breaking on rocks."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.90_49.115_-125.927_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Shoreline features are white and lack diffuse turquoise plumes; likely surf."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.90_49.175_-126.087_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Small white spots near land consistent with surf breaking on reefs/rocks."
+  },
+  {
+    "filename": "ucluelet_2024-03-18_score0.90_48.910_-125.487_20240318.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Large bright white area is textural cloud cover; water beneath is dark."
+  },
+  {
+    "filename": "masset-inlet_2024-03-22_score0.89_53.645_-132.968_20240322.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Distinct white coastal patches are characteristic of waves on a rugged shore; no spawn-like turquoise detected."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.88_49.095_-125.907_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Coastal brightness matches off-season patterns; likely surf/sediment."
+  }
+]

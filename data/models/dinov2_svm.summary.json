@@ -1,0 +1,13 @@
+{
+  "embed_dim": 384,
+  "model_name": "dinov2_vits14",
+  "kernel": "rbf",
+  "class_weight": "balanced",
+  "n_train": 70,
+  "n_pos": 20,
+  "n_neg": 50,
+  "full_accuracy": 0.9857142857142858,
+  "cv_accuracy_mean": 0.8428571428571427,
+  "cv_accuracy_std": 0.08329931278350429,
+  "separation": 1.4810912648640024
+}

@@ -20,6 +20,7 @@ stored to disk. A manifest.json tracks all saved candidates.
 import argparse
 import hashlib
 import json
+import pickle
 import math
 import sys
 import threading
@@ -389,13 +390,17 @@ def score_thumbnail(
     png_bytes: bytes,
     model: torch.nn.Module,
     device: torch.device,
-    mean_pos: np.ndarray,
-    mean_neg: np.ndarray,
+    mean_pos: np.ndarray | None = None,
+    mean_neg: np.ndarray | None = None,
+    svm_classifier: Any | None = None,
 ) -> float | None:
     """Compute spawn score for a PNG thumbnail.
-    
-    Score = cosine_similarity(embedding, mean_pos) - cosine_similarity(embedding, mean_neg)
-    
+
+    Two scoring modes:
+      1. Similarity: score = cos_sim(emb, mean_pos) - cos_sim(emb, mean_neg)
+      2. SVM: score = svm.decision_function(emb)  (signed distance to hyperplane)
+
+    Pass (mean_pos, mean_neg) for similarity scoring, or svm_classifier for SVM.
     Returns score or None if image processing fails.
     """
     try:
@@ -406,9 +411,15 @@ def score_thumbnail(
             emb = model(tensor)
         emb = F.normalize(emb, dim=1).cpu().numpy().flatten()
 
-        pos_sim = float(np.dot(mean_pos, emb))
-        neg_sim = float(np.dot(mean_neg, emb))
-        return pos_sim - neg_sim
+        if svm_classifier is not None:
+            score = float(svm_classifier.decision_function(emb.reshape(1, -1))[0])
+        elif mean_pos is not None and mean_neg is not None:
+            pos_sim = float(np.dot(mean_pos, emb))
+            neg_sim = float(np.dot(mean_neg, emb))
+            score = pos_sim - neg_sim
+        else:
+            raise ValueError("Must provide either svm_classifier or (mean_pos, mean_neg)")
+        return score
     except Exception as exc:
         print(f"    Scoring error: {exc}")
         return None
@@ -432,14 +443,17 @@ def save_candidate(
 ) -> str:
     """Save a candidate thumbnail and return its relative path.
     
-    Filename format: {region}_{date}_score{score:.2f}_{scene_id_short}.png
+    Filename format: {region}_{date}_score{score:.2f}_{lat}_{lon}_{scene_id_short}.png
+    The lat/lon ensures uniqueness even when multiple points share the same scene/date.
     """
     region = info["region"]
     date = info["date"]
+    lat = info["lat"]
+    lon = info["lon"]
     scene_id = info["scene_id"]
     scene_short = scene_id[:8] if len(scene_id) >= 8 else scene_id
 
-    fname = f"{region}_{date}_score{score:.2f}_{scene_short}.png"
+    fname = f"{region}_{date}_score{score:.2f}_{lat}_{lon}_{scene_short}.png"
     # Sanitize filename — replace any problematic characters
     fname = "".join(c if c.isalnum() or c in "._-" else "_" for c in fname)
 
@@ -480,11 +494,12 @@ def process_point(
     output_dir: Path,
     model: torch.nn.Module,
     device: torch.device,
-    mean_pos: np.ndarray,
-    mean_neg: np.ndarray,
+    mean_pos: np.ndarray | None,
+    mean_neg: np.ndarray | None,
     ee_module: Any,
     idx: int,
     total: int,
+    svm_classifier: Any | None = None,
 ) -> dict[str, int]:
     """Process a single grid point: search, download, score, save/discard."""
     result = {"processed": 1, "candidates": 0, "no_scene": 0, "download_errors": 0, "low_score": 0}
@@ -507,7 +522,7 @@ def process_point(
         result["download_errors"] = 1
         return result
 
-    score = score_thumbnail(thumb_bytes, model, device, mean_pos, mean_neg)
+    score = score_thumbnail(thumb_bytes, model, device, mean_pos, mean_neg, svm_classifier)
     if score is None:
         with _stats_lock:
             print_progress(idx, total, point["region"], point["lat"], point["lon"],
@@ -555,7 +570,7 @@ def print_progress(
 ) -> None:
     """Print a single progress line."""
     pct = 100.0 * (idx + 1) / total
-    if idx > 0:
+    if idx > 0 and elapsed > 0:
         rate = idx / elapsed
         remaining_s = (total - idx) / rate if rate > 0 else 0
         eta = time.strftime("%H:%M:%S", time.gmtime(remaining_s))
@@ -624,6 +639,17 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         action="store_true",
         help="Generate grid points and report counts, but don't call GEE or DINOv2",
     )
+    parser.add_argument(
+        "--classifier",
+        default="svm",
+        choices=["svm", "similarity"],
+        help="Scoring method: 'svm' (trained SVM decision function) or 'similarity' (cosine sim to mean vectors) (default: svm)",
+    )
+    parser.add_argument(
+        "--svm-model",
+        default="data/models/dinov2_svm.pkl",
+        help="Path to trained SVM model pickle file (default: data/models/dinov2_svm.pkl)",
+    )
     return parser.parse_args(argv)
 
 
@@ -669,29 +695,66 @@ def main(argv: list[str] | None = None) -> int:
         return 1
 
     # ------------------------------------------------------------------
-    # 3. Compute/loda reference vectors
+    # 3. Load SVM classifier (if --classifier svm)
     # ------------------------------------------------------------------
-    print("\n=== Computing reference vectors ===")
-    if not pos_dir.exists():
-        print(f"ERROR: Positive samples directory not found: {pos_dir}")
-        return 1
-    if not neg_dir.exists():
-        print(f"ERROR: Negative samples directory not found: {neg_dir}")
-        return 1
+    svm_classifier: Any | None = None
+    use_svm = args.classifier == "svm"
+    svm_loaded = False
 
-    try:
-        if args.no_cache:
-            mean_pos, mean_neg, _ = compute_reference_vectors(pos_dir, neg_dir, model, device)
-        else:
-            mean_pos, mean_neg = load_or_compute_reference_vectors(
-                pos_dir, neg_dir, model, device, cache_path
-            )
-    except RuntimeError as exc:
-        print(f"ERROR: {exc}")
-        return 1
+    if use_svm:
+        svm_model_path = repo_root / args.svm_model
+        print(f"\n=== Loading SVM classifier from {svm_model_path} ===")
+        if not svm_model_path.exists():
+            print(f"  ERROR: SVM model not found at {svm_model_path}")
+            print(f"  Train one first: python scripts/train_classifier.py")
+            return 1
+        try:
+            with open(svm_model_path, "rb") as f:
+                svm_data = pickle.load(f)
+            svm_classifier = svm_data["svm"]
+            svm_loaded = True
+            test_acc = svm_data.get('test_accuracy') or svm_data.get('full_accuracy')
+            sep = svm_data.get('separation')
+            acc_str = f"{test_acc:.4f}" if isinstance(test_acc, (int, float)) else str(test_acc or '?')
+            sep_str = f"{sep:.4f}" if isinstance(sep, (int, float)) else str(sep or '?')
+            print(f"  SVM loaded: kernel={svm_data.get('kernel', '?')}, "
+                  f"accuracy={acc_str}, "
+                  f"separation={sep_str}")
+        except Exception as exc:
+            print(f"  ERROR: Failed to load SVM model: {exc}")
+            return 1
+    else:
+        print(f"\n=== Using similarity scoring (--classifier similarity) ===")
 
     # ------------------------------------------------------------------
-    # 4. Initialize GEE
+    # 4. Compute/loda reference vectors (needed for similarity scoring only)
+    # ------------------------------------------------------------------
+    mean_pos: np.ndarray | None = None
+    mean_neg: np.ndarray | None = None
+    
+    if not use_svm:
+        print("\n=== Computing reference vectors ===")
+        if not pos_dir.exists():
+            print(f"ERROR: Positive samples directory not found: {pos_dir}")
+            return 1
+        if not neg_dir.exists():
+            print(f"ERROR: Negative samples directory not found: {neg_dir}")
+            return 1
+        try:
+            if args.no_cache:
+                mean_pos, mean_neg, _ = compute_reference_vectors(pos_dir, neg_dir, model, device)
+            else:
+                mean_pos, mean_neg = load_or_compute_reference_vectors(
+                    pos_dir, neg_dir, model, device, cache_path
+                )
+        except RuntimeError as exc:
+            print(f"ERROR: {exc}")
+            return 1
+    else:
+        print("  (SVM mode: reference vectors not needed)")
+
+    # ------------------------------------------------------------------
+    # 5. Initialize GEE
     # ------------------------------------------------------------------
     print("\n=== Initializing Google Earth Engine ===")
     try:
@@ -704,7 +767,7 @@ def main(argv: list[str] | None = None) -> int:
         return 1
 
     # ------------------------------------------------------------------
-    # Dry run: report and exit
+    # 6. Dry run: report and exit
     # ------------------------------------------------------------------
     if args.dry_run:
         print("\n=== Dry run complete ===")
@@ -714,17 +777,19 @@ def main(argv: list[str] | None = None) -> int:
         print(f"  Date range: {args.start} to {args.end}")
         print(f"  Max cloud: {args.max_cloud}%")
         print(f"  Score threshold: {args.threshold}")
+        print(f"  Classifier: {args.classifier}")
         print(f"  Output: {output_dir}")
         print("\nTo run for real, omit --dry-run")
         return 0
 
     # ------------------------------------------------------------------
-    # 5. Process points concurrently
+    # 7. Process points concurrently
     # ------------------------------------------------------------------
     print(f"\n=== Scanning {len(points)} grid points with {args.workers} workers ===")
     print(f"  Date range: {args.start} to {args.end}")
     print(f"  Max cloud: {args.max_cloud}%")
     print(f"  Score threshold: {args.threshold}")
+    print(f"  Classifier: {args.classifier}")
     print(f"  Output: {output_dir.resolve()}")
     print()
 
@@ -741,7 +806,7 @@ def main(argv: list[str] | None = None) -> int:
             futures = {
                 executor.submit(
                     process_point, point, args, output_dir, model, device,
-                    mean_pos, mean_neg, ee, idx, len(points),
+                    mean_pos, mean_neg, ee, idx, len(points), svm_classifier,
                 ): idx
                 for idx, point in enumerate(points)
             }
@@ -762,7 +827,7 @@ def main(argv: list[str] | None = None) -> int:
         traceback.print_exc()
 
     # ------------------------------------------------------------------
-    # 6. Summary
+    # 8. Summary
     # ------------------------------------------------------------------
     elapsed = time.time() - start_time
     rate = processed / elapsed if elapsed > 0 else 0

@@ -1,0 +1,92 @@
+[
+  {
+    "filename": "nanaimo_2024-03-18_score1.03_49.134865_-123.676603_20240318.png",
+    "spawn": true,
+    "confidence": "high",
+    "notes": "Large, unmistakable turquoise spawning plume filling the nearshore area; absent in off-season imagery."
+  },
+  {
+    "filename": "nootka-sound_2024-03-16_score1.00_49.584865_-126.608503_20240316.png",
+    "spawn": true,
+    "confidence": "high",
+    "notes": "Vivid turquoise plume in protected water; off-season image is dark."
+  },
+  {
+    "filename": "ucluelet_2024-03-18_score0.95_48.90991_-125.507155_20240318.png",
+    "spawn": true,
+    "confidence": "high",
+    "notes": "Extensive bright turquoise swirling plumes around islands; highly distinct from dark off-season imagery."
+  },
+  {
+    "filename": "ucluelet_2024-03-18_score0.90_48.90991_-125.487155_20240318.png",
+    "spawn": true,
+    "confidence": "high",
+    "notes": "Clear turquoise signature consistent with other verified Ucluelet plumes."
+  },
+  {
+    "filename": "nanaimo_2024-03-18_score0.80_49.114865_-123.676603_20240318.png",
+    "spawn": true,
+    "confidence": "high",
+    "notes": "Diffuse bright blue patches along the coast; absent in off-season."
+  },
+  {
+    "filename": "nootka-sound_2024-03-16_score0.61_49.584865_-126.628503_20240316.png",
+    "spawn": true,
+    "confidence": "high",
+    "notes": "Subtle but clear turquoise plume in nearshore area; distinct from dark off-season water."
+  },
+  {
+    "filename": "ucluelet_off_48.87_-125.49",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Water is dark with no visible turquoise plumes; consistent with off-season state."
+  },
+  {
+    "filename": "tofino_off_49.05_-125.77",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Coastline shows some white reflection (surf), but water is dark without turquoise signature."
+  },
+  {
+    "filename": "tofino_off_49.13_-125.95",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Off-season comparison confirms bright coastal features are surf/rock reflections, not spawn."
+  },
+  {
+    "filename": "tofino_off_49.17_-126.05",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Sharp white coastal features are consistent with surf; lacks the turquoise hue and diffuse pattern of spawn."
+  },
+  {
+    "filename": "nootka-sound_off_49.54_-126.59",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Water is very dark; isolated bright pixels likely represent instrumentation or small vessels."
+  },
+  {
+    "filename": "comox_off_49.62_-124.83",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Nearshore water shows some greenish tint (bathymetry/sediment), but lacks the bright turquoise plume characteristic of spawn."
+  },
+  {
+    "filename": "spiller-channel_off_52.30_-128.42",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Water is extremely dark; no evidence of spawning plumes."
+  },
+  {
+    "filename": "milbanke-sound_off_52.48_-128.78",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Rugged coastline with white surf; no diffuse turquoise signature detected."
+  },
+  {
+    "filename": "prince-rupert_off_54.46_-130.47",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Very dark water with negligible signal; no turquoise plumes visible."
+  }
+]

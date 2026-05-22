@@ -1,0 +1,62 @@
+[
+  {
+    "filename": "dfo-verified-fan-island_2024-03-22_20240322.png",
+    "label": "spawn_visible",
+    "confirmed_by": "user"
+  },
+  {
+    "filename": "dfo-verified-anderson-point_2024-03-18_20240318.png",
+    "label": "spawn_visible",
+    "confirmed_by": "user"
+  },
+  {
+    "filename": "dfo-verified-qualicum-beach_2024-03-18_20240318.png",
+    "label": "no_spawn",
+    "confirmed_by": "user"
+  },
+  {
+    "filename": "dfo-verified-tree-bluff_2024-03-05_20240305.png",
+    "label": "no_spawn",
+    "confirmed_by": "user"
+  },
+  {
+    "filename": "dfo-verified-tree-bluff_2024-03-20_20240320.png",
+    "label": "no_spawn",
+    "confirmed_by": "user"
+  },
+  {
+    "filename": "dfo-verified-tree-bluff_2024-03-22_20240322.png",
+    "label": "no_spawn",
+    "confirmed_by": "user"
+  },
+  {
+    "filename": "manual-2026-04-04-event-2-point-1_2026-03-28_20260328.png",
+    "label": "no_spawn",
+    "confirmed_by": "user"
+  },
+  {
+    "filename": "manual-2026-04-04-event-2-point-1_2026-04-07_20260407.png",
+    "label": "no_spawn",
+    "confirmed_by": "user"
+  },
+  {
+    "filename": "manual-2026-04-04-event-2-point-1_2026-04-10_20260410.png",
+    "label": "no_spawn",
+    "confirmed_by": "user"
+  },
+  {
+    "filename": "manual-2026-04-04-event-2-point-1_20260328T193841_20260328T194003_T09UXS_2026-03-28.png",
+    "label": "no_spawn",
+    "confirmed_by": "user"
+  },
+  {
+    "filename": "manual-2026-04-04-event-2-point-1_20260407T191909_20260407T192519_T09UXS_2026-04-07.png",
+    "label": "no_spawn",
+    "confirmed_by": "user"
+  },
+  {
+    "filename": "manual-2026-04-04-event-2-point-1_20260410T192909_20260410T194001_T09UXS_2026-04-10.png",
+    "label": "no_spawn",
+    "confirmed_by": "user"
+  }
+]

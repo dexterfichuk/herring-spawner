@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scans — Herring Spawn</title>
+<style>
+* { box-sizing: border-box; }
+body { font-family: -apple-system, system-ui, sans-serif; margin: 0; background: #111; color: #eee; }
+.nav { background: #1a1a2e; padding: 12px 24px; display: flex; align-items: center; gap: 24px; border-bottom: 1px solid #2a2a4e; }
+.nav h1 { margin: 0; font-size: 18px; }
+.nav a { color: #888; text-decoration: none; font-size: 14px; }
+.nav a:hover { color: #fff; }
+.nav a.active { color: #4CAF50; font-weight: 600; }
+.container { max-width: 1000px; margin: 0 auto; padding: 14px; }
+.stats { background: #1a1a2e; padding: 14px 18px; border-radius: 8px; margin-bottom: 14px; font-size: 13px; color: #aaa; }
+.stats strong { color: #fff; }
+table { width: 100%; border-collapse: collapse; background: #1e1e2e; border-radius: 8px; overflow: hidden; }
+th { background: #0a0a14; padding: 10px 12px; text-align: left; color: #888; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+td { padding: 10px 12px; border-top: 1px solid #2a2a4e; font-size: 14px; }
+tr:hover { background: #2a2a4e; }
+a { color: #4CAF50; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.status-badge { padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+.status-done { background: #1b3a2b; color: #4CAF50; }
+.status-running { background: #3a351b; color: #FFC107; }
+.status-failed { background: #3a1b1b; color: #f44336; }
+.empty { text-align: center; padding: 60px; color: #555; }
+</style>
+</head>
+<body>
+
+<div class="nav">
+    <h1>&#x1f41f; Herring Spawn</h1>
+    <a href="/">Dashboard</a>
+    <a href="/candidates">Review</a>
+    <a href="/positives">Positives</a>
+    <a href="/scans" class="active">Scans</a>
+</div>
+
+<div class="container">
+    <div class="stats">
+        <strong>{{ scans|length }}</strong> scan{% if scans|length != 1 %}s{% endif %}
+        &middot; Click a scan to view its candidates
+    </div>
+
+    {% if scans|length == 0 %}
+    <div class="empty">
+        <p>No scans yet.</p>
+    </div>
+    {% endif %}
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Started</th>
+                <th>Ended</th>
+                <th>Grid Points</th>
+                <th>Candidates</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for s in scans %}
+            <tr>
+                <td><a href="/scans/{{ s.id }}">#{{ s.id }}</a></td>
+                <td>{{ s.started_at or '-' }}</td>
+                <td>{{ s.ended_at or '-' }}</td>
+                <td>{{ s.grid_points }}</td>
+                <td>{{ s.candidates_found }}</td>
+                <td><span class="status-badge status-{{ s.status }}">{{ s.status }}</span></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

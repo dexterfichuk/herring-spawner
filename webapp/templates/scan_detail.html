@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scan #{{ scan.id }} — Herring Spawn</title>
+<style>
+* { box-sizing: border-box; }
+body { font-family: -apple-system, system-ui, sans-serif; margin: 0; background: #111; color: #eee; }
+.nav { background: #1a1a2e; padding: 12px 24px; display: flex; align-items: center; gap: 24px; border-bottom: 1px solid #2a2a4e; }
+.nav h1 { margin: 0; font-size: 18px; }
+.nav a { color: #888; text-decoration: none; font-size: 14px; }
+.nav a:hover { color: #fff; }
+.nav a.active { color: #4CAF50; font-weight: 600; }
+.container { max-width: 1200px; margin: 0 auto; padding: 14px; }
+.meta { background: #1e1e2e; padding: 14px 18px; border-radius: 8px; margin-bottom: 14px; }
+.meta .row { display: flex; gap: 20px; flex-wrap: wrap; font-size: 13px; color: #aaa; }
+.meta .row span { }
+.meta strong { color: #ddd; }
+.g { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+.card { background: #1e1e2e; border-radius: 8px; overflow: hidden; }
+.card img { width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block; }
+.card .info { padding: 8px 10px; font-size: 12px; color: #999; }
+.card .info strong { color: #ddd; }
+.badge { display: inline-block; padding: 2px 6px; border-radius: 3px; font-size: 10px; font-weight: 600; }
+.label-spawn { background: #1b3a2b; color: #4CAF50; }
+.label-nospawn { background: #3a1b1b; color: #f44336; }
+.label-cloudy { background: #3a351b; color: #FFC107; }
+.label-unlabeled { background: #2a2a2e; color: #888; }
+a { color: #4CAF50; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.empty { text-align: center; padding: 60px; color: #555; }
+</style>
+</head>
+<body>
+
+<div class="nav">
+    <h1>&#x1f41f; Herring Spawn</h1>
+    <a href="/">Dashboard</a>
+    <a href="/candidates">Review</a>
+    <a href="/positives">Positives</a>
+    <a href="/scans">Scans</a>
+</div>
+
+<div class="container">
+    <div class="meta">
+        <div style="font-size:16px;font-weight:600;margin-bottom:8px;">Scan #{{ scan.id }}</div>
+        <div class="row">
+            <span><strong>Started:</strong> {{ scan.started_at or '-' }}</span>
+            <span><strong>Ended:</strong> {{ scan.ended_at or '-' }}</span>
+            <span><strong>Grid Points:</strong> {{ scan.grid_points }}</span>
+            <span><strong>Candidates:</strong> {{ candidates|length }}</span>
+            <span><strong>Status:</strong> {{ scan.status }}</span>
+        </div>
+    </div>
+
+    {% if candidates|length == 0 %}
+    <div class="empty">
+        <p>No candidates from this scan.</p>
+    </div>
+    {% endif %}
+
+    <div class="g">
+    {% for c in candidates %}
+        <div class="card">
+            {% if c.thumbnail_path %}
+            <img src="{{ candidates_static }}{{ c.thumbnail_path }}" alt="Candidate" loading="lazy">
+            {% endif %}
+            <div class="info">
+                <strong>{{ c.region }}</strong> &middot;
+                {{ "%.4f"|format(c.lat) }}, {{ "%.4f"|format(c.lon) }}<br>
+                Score: {{ "%.4f"|format(c.spawn_score or 0) }} &middot;
+                <span class="badge label-{{ c.user_label }}">{{ c.user_label }}</span>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+</body>
+</html>

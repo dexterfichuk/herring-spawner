@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Review Candidates — Herring Spawn</title>
+<style>
+* { box-sizing: border-box; }
+body { font-family: -apple-system, system-ui, sans-serif; margin: 0; background: #111; color: #eee; }
+.nav { background: #1a1a2e; padding: 12px 24px; display: flex; align-items: center; gap: 24px; border-bottom: 1px solid #2a2a4e; }
+.nav h1 { margin: 0; font-size: 18px; }
+.nav a { color: #888; text-decoration: none; font-size: 14px; }
+.nav a:hover { color: #fff; }
+.nav a.active { color: #4CAF50; font-weight: 600; }
+.container { max-width: 1400px; margin: 0 auto; padding: 14px; }
+.filters { background: #1e1e2e; padding: 12px 16px; border-radius: 8px; margin-bottom: 14px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.filters label { font-size: 13px; color: #888; }
+.filters select, .filters input { background: #0a0a14; border: 1px solid #2a2a4e; color: #eee; padding: 6px 10px; border-radius: 4px; font-size: 13px; }
+.filters .btn { padding: 6px 14px; border: none; border-radius: 4px; font-size: 13px; cursor: pointer; }
+.btn-reset { background: #2a2a4e; color: #eee; }
+.g { display: grid; grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); gap: 14px; }
+.card { background: #1e1e2e; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.4); transition: transform 0.15s; }
+.card:hover { transform: translateY(-2px); }
+.good { border-left: 4px solid #4CAF50; }
+.mid { border-left: 4px solid #FFC107; }
+.bad { border-left: 4px solid #f44336; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: #111; }
+.pair img { width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block; }
+.lbl { font-size: 10px; color: #999; text-align: center; padding: 3px 4px; background: #0a0a14; text-transform: uppercase; letter-spacing: 0.5px; }
+.body { padding: 10px 12px; }
+.body .info { font-size: 12px; color: #999; margin-bottom: 4px; }
+.body .info strong { color: #ddd; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+.spawn-badge { background: #1b3a2b; color: #4CAF50; }
+.off-badge { background: #2a1b3a; color: #ce93d8; }
+.delta { font-size: 16px; font-weight: 700; }
+.label-buttons { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+.label-btn { padding: 5px 12px; border: 1px solid #2a2a4e; border-radius: 4px; font-size: 12px; cursor: pointer; background: #0a0a14; color: #888; }
+.label-btn:hover { filter: brightness(1.5); }
+.label-btn.active { font-weight: 600; }
+.label-btn.spawn { border-color: #4CAF50; color: #4CAF50; }
+.label-btn.spawn.active { background: #1b3a2b; }
+.label-btn.nospawn { border-color: #f44336; color: #f44336; }
+.label-btn.nospawn.active { background: #3a1b1b; }
+.label-btn.cloudy { border-color: #FFC107; color: #FFC107; }
+.label-btn.cloudy.active { background: #3a351b; }
+.label-btn.unknown { border-color: #888; color: #888; }
+.label-btn.unknown.active { background: #2a2a2a; }
+.placeholder { width: 100%; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; background: #1a1a2e; color: #555; font-size: 13px; text-align: center; padding: 8px; }
+.pagination { text-align: center; padding: 20px; }
+.pagination a { color: #4CAF50; margin: 0 8px; text-decoration: none; }
+.summary { background: #1a1a2e; padding: 14px 18px; border-radius: 8px; margin-bottom: 14px; font-size: 13px; color: #aaa; }
+.summary strong { color: #fff; }
+</style>
+</head>
+<body>
+
+<div class="nav">
+    <h1>&#x1f41f; Herring Spawn</h1>
+    <a href="/">Dashboard</a>
+    <a href="/candidates" class="active">Review</a>
+    <a href="/positives">Positives</a>
+    <a href="/scans">Scans</a>
+</div>
+
+<div class="container">
+    <div class="summary">
+        <strong>{{ candidates|length }} candidates</strong> &middot;
+        Spawn-season (left) vs off-season (right) side-by-side.
+        Delta = spawn score &minus; off score (when available).
+    </div>
+
+    <div class="filters">
+        <label>Region:
+            <select id="regionFilter" onchange="applyFilters()">
+                <option value="">All</option>
+                {% for r in regions %}
+                <option value="{{ r }}" {% if request.args.get('region') == r %}selected{% endif %}>{{ r }}</option>
+                {% endfor %}
+            </select>
+        </label>
+        <label>Label:
+            <select id="labelFilter" onchange="applyFilters()">
+                <option value="">All</option>
+                <option value="unlabeled" {% if request.args.get('label') == 'unlabeled' %}selected{% endif %}>Unlabeled</option>
+                <option value="spawn" {% if request.args.get('label') == 'spawn' %}selected{% endif %}>Spawn</option>
+                <option value="nospawn" {% if request.args.get('label') == 'nospawn' %}selected{% endif %}>No Spawn</option>
+                <option value="cloudy" {% if request.args.get('label') == 'cloudy' %}selected{% endif %}>Cloudy</option>
+            </select>
+        </label>
+        <label>Min Delta:
+            <input type="number" id="minDelta" step="0.1" value="{{ request.args.get('min_delta', '') }}" style="width:70px" onchange="applyFilters()">
+        </label>
+        <label>Sort:
+            <select id="sortBy" onchange="applyFilters()">
+                <option value="delta_desc" {% if request.args.get('sort') == 'delta_desc' or not request.args.get('sort') %}selected{% endif %}>Delta desc</option>
+                <option value="delta_asc" {% if request.args.get('sort') == 'delta_asc' %}selected{% endif %}>Delta asc</option>
+                <option value="score_desc" {% if request.args.get('sort') == 'score_desc' %}selected{% endif %}>Score desc</option>
+                <option value="score_asc" {% if request.args.get('sort') == 'score_asc' %}selected{% endif %}>Score asc</option>
+            </select>
+        </label>
+        <button class="btn btn-reset" onclick="resetFilters()">Reset</button>
+    </div>
+
+    <div class="g">
+    {% for c in candidates %}
+        {% set delta = c.delta if c.delta is not none else c.spawn_score %}
+        {% if delta is not none and delta > 0.5 %}
+            {% set cls = 'good' %}
+        {% elif delta is not none and delta >= 0 %}
+            {% set cls = 'mid' %}
+        {% else %}
+            {% set cls = 'bad' %}
+        {% endif %}
+        <div class="card {{ cls }}" id="card-{{ c.id }}">
+            <div class="pair">
+                <div>
+                    {% if c.thumbnail_path %}
+                    <img src="{{ candidates_static }}{{ c.thumbnail_path }}" alt="Spawn season" loading="lazy">
+                    {% else %}
+                    <div class="placeholder">No image</div>
+                    {% endif %}
+                    <div class="lbl">Spawn Season</div>
+                </div>
+                <div>
+                    {% if c.off_thumbnail_path %}
+                    <img src="{{ candidates_static }}{{ c.off_thumbnail_path }}" alt="Off-season" loading="lazy">
+                    {% else %}
+                    <div class="placeholder">No off-season image</div>
+                    {% endif %}
+                    <div class="lbl">Off-Season</div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="info">
+                    <strong>{{ c.region }}</strong> &middot;
+                    {{ "%.4f"|format(c.lat) }}, {{ "%.4f"|format(c.lon) }} &middot;
+                    {{ c.date or '' }}
+                </div>
+                <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+                    <span class="badge spawn-badge">Spawn: {{ "%.4f"|format(c.spawn_score or 0) }}</span>
+                    {% if c.off_score is not none %}
+                    <span class="badge off-badge">Off: {{ "%.4f"|format(c.off_score) }}</span>
+                    {% endif %}
+                    {% if c.delta is not none %}
+                    <span class="delta" style="color:{% if c.delta > 0.5 %}#4CAF50{% elif c.delta >= 0 %}#FFC107{% else %}#f44336{% endif %}">
+                        &Delta; {{ "%+.4f"|format(c.delta) }}
+                    </span>
+                    {% endif %}
+                </div>
+                <div class="label-buttons" data-candidate-id="{{ c.id }}">
+                    <button class="label-btn spawn{% if c.user_label == 'spawn' %} active{% endif %}" onclick="labelCandidate({{ c.id }}, 'spawn')">Spawn</button>
+                    <button class="label-btn nospawn{% if c.user_label == 'nospawn' %} active{% endif %}" onclick="labelCandidate({{ c.id }}, 'nospawn')">No Spawn</button>
+                    <button class="label-btn cloudy{% if c.user_label == 'cloudy' %} active{% endif %}" onclick="labelCandidate({{ c.id }}, 'cloudy')">Cloudy</button>
+                    <button class="label-btn unknown{% if c.user_label == 'unknown' or c.user_label == 'unlabeled' %} active{% endif %}" onclick="labelCandidate({{ c.id }}, 'unknown')">Unknown</button>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+
+    {% if candidates|length == 0 %}
+    <div style="text-align:center;padding:60px;color:#555;">
+        <p style="font-size:18px;">No candidates match your filters.</p>
+        <a href="/candidates" class="btn btn-reset" style="display:inline-block;padding:8px 20px;">Reset Filters</a>
+    </div>
+    {% endif %}
+
+    <div class="pagination" style="display:none;" id="pagination"></div>
+</div>
+
+<script>
+function labelCandidate(id, label) {
+    const btnGroup = document.querySelector(`.label-buttons[data-candidate-id="${id}"]`);
+    if (!btnGroup) return;
+
+    fetch(`/api/candidates/${id}/label`, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({label: label}),
+    })
+    .then(r => r.json())
+    .then(data => {
+        if (data.status === 'ok') {
+            // Update button states
+            btnGroup.querySelectorAll('.label-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            btnGroup.querySelector(`.label-btn.${label}`)?.classList.add('active');
+        }
+    })
+    .catch(err => console.error('Label error:', err));
+}
+
+function applyFilters() {
+    const params = new URLSearchParams();
+    const region = document.getElementById('regionFilter').value;
+    const label = document.getElementById('labelFilter').value;
+    const minDelta = document.getElementById('minDelta').value;
+    const sortBy = document.getElementById('sortBy').value;
+
+    if (region) params.set('region', region);
+    if (label) params.set('label', label);
+    if (minDelta) params.set('min_delta', minDelta);
+    if (sortBy && sortBy !== 'delta_desc') params.set('sort', sortBy);
+
+    window.location.search = params.toString();
+}
+
+function resetFilters() {
+    window.location.search = '';
+}
+</script>
+</body>
+</html>

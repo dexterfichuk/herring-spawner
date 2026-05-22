@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confirmed Spawns — Herring Spawn</title>
+<style>
+* { box-sizing: border-box; }
+body { font-family: -apple-system, system-ui, sans-serif; margin: 0; background: #111; color: #eee; }
+.nav { background: #1a1a2e; padding: 12px 24px; display: flex; align-items: center; gap: 24px; border-bottom: 1px solid #2a2a4e; }
+.nav h1 { margin: 0; font-size: 18px; }
+.nav a { color: #888; text-decoration: none; font-size: 14px; }
+.nav a:hover { color: #fff; }
+.nav a.active { color: #4CAF50; font-weight: 600; }
+.container { max-width: 1200px; margin: 0 auto; padding: 14px; }
+.stats { background: #1a1a2e; padding: 14px 18px; border-radius: 8px; margin-bottom: 14px; font-size: 13px; color: #aaa; }
+.stats strong { color: #fff; }
+.g { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+.card { background: #1e1e2e; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.4); border-left: 4px solid #4CAF50; transition: transform 0.15s; cursor: pointer; }
+.card:hover { transform: translateY(-2px); }
+.card img { width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block; }
+.body { padding: 10px 12px; }
+.body .info { font-size: 12px; color: #999; }
+.body .info strong { color: #ddd; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+.spawn-badge { background: #1b3a2b; color: #4CAF50; }
+.unlabel-btn { margin-top: 6px; padding: 3px 10px; border: 1px solid #f44336; border-radius: 4px; font-size: 11px; cursor: pointer; background: transparent; color: #f44336; }
+.unlabel-btn:hover { background: #3a1b1b; }
+.empty { text-align: center; padding: 60px; color: #555; }
+.empty p { font-size: 18px; }
+
+/* Modal */
+.modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 999; align-items: center; justify-content: center; }
+.modal.show { display: flex; }
+.modal-content { max-width: 90vw; max-height: 90vh; }
+.modal-content img { max-width: 100%; max-height: 85vh; border-radius: 8px; }
+.modal-close { position: absolute; top: 20px; right: 30px; color: #fff; font-size: 30px; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<div class="nav">
+    <h1>&#x1f41f; Herring Spawn</h1>
+    <a href="/">Dashboard</a>
+    <a href="/candidates">Review</a>
+    <a href="/positives" class="active">Positives</a>
+    <a href="/scans">Scans</a>
+</div>
+
+<div class="container">
+    <div class="stats">
+        <strong>{{ positives|length }}</strong> confirmed spawn image{% if positives|length != 1 %}s{% endif %}
+        &middot; Click to enlarge &middot; Un-label to remove
+    </div>
+
+    {% if positives|length == 0 %}
+    <div class="empty">
+        <p>No confirmed spawns yet.</p>
+        <a href="/candidates" style="color:#4CAF50;">Review candidates</a> to label spawn events.
+    </div>
+    {% endif %}
+
+    <div class="g">
+    {% for c in positives %}
+        <div class="card" id="pos-{{ c.id }}">
+            {% if c.thumbnail_path %}
+            <img src="{{ candidates_static }}{{ c.thumbnail_path }}" alt="Spawn {{ c.id }}" loading="lazy" onclick="openModal(this.src)">
+            {% endif %}
+            <div class="body">
+                <div class="info">
+                    <strong>{{ c.region }}</strong> &middot;
+                    {{ "%.4f"|format(c.lat) }}, {{ "%.4f"|format(c.lon) }}<br>
+                    {{ c.date or '' }} &middot;
+                    Score: {{ "%.4f"|format(c.spawn_score or 0) }}
+                </div>
+                <button class="unlabel-btn" onclick="unlabel({{ c.id }})">Remove label</button>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+
+<!-- Modal for enlarged image -->
+<div class="modal" id="imageModal" onclick="closeModal()">
+    <span class="modal-close">&times;</span>
+    <div class="modal-content">
+        <img id="modalImage" src="" alt="Enlarged">
+    </div>
+</div>
+
+<script>
+function openModal(src) {
+    document.getElementById('modalImage').src = src;
+    document.getElementById('imageModal').classList.add('show');
+}
+
+function closeModal() {
+    document.getElementById('imageModal').classList.remove('show');
+}
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeModal();
+});
+
+function unlabel(id) {
+    fetch(`/api/candidates/${id}/label`, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({label: 'unlabeled'}),
+    })
+    .then(r => r.json())
+    .then(data => {
+        if (data.status === 'ok') {
+            const card = document.getElementById('pos-' + id);
+            if (card) card.style.display = 'none';
+        }
+    })
+    .catch(err => console.error('Error:', err));
+}
+</script>
+</body>
+</html>

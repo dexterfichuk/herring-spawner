@@ -22,7 +22,9 @@ import hashlib
 import json
 import math
 import sys
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
 
@@ -467,6 +469,78 @@ def update_manifest(
 
 
 # ===================================================================
+# Concurrent point processing
+# ===================================================================
+_stats_lock = threading.Lock()
+
+
+def process_point(
+    point: dict[str, Any],
+    args: argparse.Namespace,
+    output_dir: Path,
+    model: torch.nn.Module,
+    device: torch.device,
+    mean_pos: np.ndarray,
+    mean_neg: np.ndarray,
+    ee_module: Any,
+    idx: int,
+    total: int,
+) -> dict[str, int]:
+    """Process a single grid point: search, download, score, save/discard."""
+    result = {"processed": 1, "candidates": 0, "no_scene": 0, "download_errors": 0, "low_score": 0}
+
+    scene_info = find_best_scene(
+        ee_module, point["lat"], point["lon"], args.start, args.end, args.max_cloud,
+    )
+    if scene_info is None:
+        with _stats_lock:
+            print_progress(idx, total, point["region"], point["lat"], point["lon"],
+                          "no scene", 0)
+        result["no_scene"] = 1
+        return result
+
+    thumb_bytes = download_thumbnail(ee_module, point["lat"], point["lon"], scene_info["scene_id"])
+    if thumb_bytes is None:
+        with _stats_lock:
+            print_progress(idx, total, point["region"], point["lat"], point["lon"],
+                          "download error", 0)
+        result["download_errors"] = 1
+        return result
+
+    score = score_thumbnail(thumb_bytes, model, device, mean_pos, mean_neg)
+    if score is None:
+        with _stats_lock:
+            print_progress(idx, total, point["region"], point["lat"], point["lon"],
+                          "scoring error", 0)
+        result["download_errors"] = 1
+        return result
+
+    if score > args.threshold:
+        info = {
+            "region": point["region"],
+            "lat": point["lat"],
+            "lon": point["lon"],
+            "date": scene_info["date"],
+            "scene_id": scene_info["scene_id"],
+            "cloud": scene_info["cloud"],
+            "score": round(score, 4),
+        }
+        fname = save_candidate(output_dir, thumb_bytes, info, score)
+        with _stats_lock:
+            update_manifest(output_dir, {**info, "thumbnail_path": fname})
+            print_progress(idx, total, point["region"], point["lat"], point["lon"],
+                          f"CANDIDATE score={score:.4f} {fname}", 0)
+        result["candidates"] = 1
+    else:
+        with _stats_lock:
+            print_progress(idx, total, point["region"], point["lat"], point["lon"],
+                          f"below threshold ({score:.4f})", 0)
+        result["low_score"] = 1
+
+    return result
+
+
+# ===================================================================
 # Progress display
 # ===================================================================
 
@@ -532,7 +606,13 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--grid-spacing",
         type=float,
         default=0.01,
-        help="Grid point spacing in degrees (~0.01 ≈ 1.1 km) (default: 0.01)",
+        help="Spacing between grid points in degrees (default: 0.01 ~1.1 km)",
+    )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=8,
+        help="Number of concurrent threads for scene search and download (default: 8)",
     )
     parser.add_argument(
         "--no-cache",
@@ -639,9 +719,9 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     # ------------------------------------------------------------------
-    # 5. Process each point
+    # 5. Process points concurrently
     # ------------------------------------------------------------------
-    print(f"\n=== Scanning {len(points)} grid points ===")
+    print(f"\n=== Scanning {len(points)} grid points with {args.workers} workers ===")
     print(f"  Date range: {args.start} to {args.end}")
     print(f"  Max cloud: {args.max_cloud}%")
     print(f"  Score threshold: {args.threshold}")
@@ -657,81 +737,29 @@ def main(argv: list[str] | None = None) -> int:
     start_time = time.time()
 
     try:
-        for idx, point in enumerate(points):
-            # --- Find best scene ---
-            scene_info = find_best_scene(
-                ee,
-                point["lat"],
-                point["lon"],
-                args.start,
-                args.end,
-                args.max_cloud,
-            )
+        with ThreadPoolExecutor(max_workers=args.workers) as executor:
+            futures = {
+                executor.submit(
+                    process_point, point, args, output_dir, model, device,
+                    mean_pos, mean_neg, ee, idx, len(points),
+                ): idx
+                for idx, point in enumerate(points)
+            }
 
-            if scene_info is None:
-                print_progress(idx, len(points), point["region"], point["lat"], point["lon"],
-                              "no scene", time.time() - start_time)
-                no_scene += 1
-                processed += 1
-                continue
-
-            # --- Download thumbnail ---
-            thumb_bytes = download_thumbnail(
-                ee,
-                point["lat"],
-                point["lon"],
-                scene_info["scene_id"],
-            )
-
-            if thumb_bytes is None:
-                print_progress(idx, len(points), point["region"], point["lat"], point["lon"],
-                              "download error", time.time() - start_time)
-                download_errors += 1
-                processed += 1
-                continue
-
-            # --- Score ---
-            score = score_thumbnail(
-                thumb_bytes, model, device, mean_pos, mean_neg,
-            )
-
-            if score is None:
-                print_progress(idx, len(points), point["region"], point["lat"], point["lon"],
-                              "scoring error", time.time() - start_time)
-                download_errors += 1
-                processed += 1
-                continue
-
-            # --- Save or discard ---
-            if score > args.threshold:
-                info = {
-                    "region": point["region"],
-                    "lat": point["lat"],
-                    "lon": point["lon"],
-                    "date": scene_info["date"],
-                    "scene_id": scene_info["scene_id"],
-                    "cloud": scene_info["cloud"],
-                    "score": round(score, 4),
-                }
-                fname = save_candidate(output_dir, thumb_bytes, info, score)
-                update_manifest(output_dir, {
-                    **info,
-                    "thumbnail_path": fname,
-                })
-                candidates += 1
-                print_progress(idx, len(points), point["region"], point["lat"], point["lon"],
-                              f"CANDIDATE score={score:.4f} → {fname}",
-                              time.time() - start_time)
-            else:
-                print_progress(idx, len(points), point["region"], point["lat"], point["lon"],
-                              f"below threshold ({score:.4f})",
-                              time.time() - start_time)
-                low_score += 1
-
-            processed += 1
+            for future in as_completed(futures):
+                result = future.result()
+                processed += result["processed"]
+                candidates += result["candidates"]
+                no_scene += result["no_scene"]
+                download_errors += result["download_errors"]
+                low_score += result["low_score"]
 
     except KeyboardInterrupt:
-        print("\n\nInterrupted! Saving partial results...")
+        print("\n\nInterrupted! Partial results saved.")
+    except Exception as exc:
+        print(f"\n\nError during scan: {exc}")
+        import traceback
+        traceback.print_exc()
 
     # ------------------------------------------------------------------
     # 6. Summary

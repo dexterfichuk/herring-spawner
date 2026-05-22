@@ -2,7 +2,7 @@
 """Focused temporal scan of the Salmon Coast Research Station area.
 
 Scans the requested Salmon Coast regions with a 0.01° grid, searches Sentinel-2
-imagery in the 2024 Feb-May spawn window, scores the best scene with the trained
+imagery in the requested Feb-May spawn window, scores the best scene with the trained
 `data/models/improved_model.pkl` detector, and temporally validates any point
 with score > 0.3 using ±7 day scenes.
 
@@ -68,6 +68,28 @@ LOG_LINE_RE = re.compile(
 )
 
 _print_lock = threading.Lock()
+
+
+def resolve_scan_config(
+    *,
+    year: int | None,
+    output: Path | None,
+    start: str | None,
+    end: str | None,
+) -> tuple[Path, str, str]:
+    if year is not None:
+        default_start = f"{year}-02-01"
+        default_end = f"{year}-05-31"
+        default_output = Path(f"{DEFAULT_OUTPUT}_{year}")
+    else:
+        default_start = DEFAULT_START
+        default_end = DEFAULT_END
+        default_output = DEFAULT_OUTPUT
+
+    resolved_output = output if output is not None else default_output
+    resolved_start = start if start is not None else default_start
+    resolved_end = end if end is not None else default_end
+    return resolved_output, resolved_start, resolved_end
 
 
 class Tee:
@@ -424,7 +446,13 @@ def build_geojson(candidates: list[dict[str, Any]]) -> dict[str, Any]:
     return {"type": "FeatureCollection", "features": features}
 
 
-def render_review_page(candidates: list[dict[str, Any]], output_dir: Path, stats: dict[str, Any]) -> str:
+def render_review_page(
+    candidates: list[dict[str, Any]],
+    output_dir: Path,
+    stats: dict[str, Any],
+    start_date: str,
+    end_date: str,
+) -> str:
     sections = ["super_positive", "positive", "not_spawn"]
     cards: list[str] = []
     for cls in sections:
@@ -502,7 +530,7 @@ def render_review_page(candidates: list[dict[str, Any]], output_dir: Path, stats
 <body>
   <div class="bar">
     <h1>Salmon Coast — focused herring spawn scan</h1>
-    <div class="sub">super_positives first · {DEFAULT_START} to {DEFAULT_END} · grid {DEFAULT_GRID_SPACING}° · threshold {DEFAULT_THRESHOLD}</div>
+    <div class="sub">super_positives first · {start_date} to {end_date} · grid {DEFAULT_GRID_SPACING}° · threshold {DEFAULT_THRESHOLD}</div>
   </div>
   <div class="summary">
     <div class="counts">
@@ -523,7 +551,12 @@ def render_review_page(candidates: list[dict[str, Any]], output_dir: Path, stats
 </html>"""
 
 
-def write_outputs(output_dir: Path, candidates: list[dict[str, Any]]) -> dict[str, Any]:
+def write_outputs(
+    output_dir: Path,
+    candidates: list[dict[str, Any]],
+    start_date: str,
+    end_date: str,
+) -> dict[str, Any]:
     output_dir.mkdir(parents=True, exist_ok=True)
     manifest_path = output_dir / "manifest.json"
     geojson_path = output_dir / "candidates.geojson"
@@ -542,24 +575,30 @@ def write_outputs(output_dir: Path, candidates: list[dict[str, Any]]) -> dict[st
     for c in compact:
         counts[c.get("classification", "not_spawn")] = counts.get(c.get("classification", "not_spawn"), 0) + 1
 
-    html_path.write_text(render_review_page(compact, output_dir, counts), encoding="utf-8")
+    html_path.write_text(render_review_page(compact, output_dir, counts, start_date, end_date), encoding="utf-8")
     return {"manifest": manifest_path, "geojson": geojson_path, "html": html_path, "counts": counts}
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Focused Salmon Coast herring spawn scan")
-    parser.add_argument("--output", default=str(DEFAULT_OUTPUT))
+    parser.add_argument("--output", type=Path, default=None)
     parser.add_argument("--workers", type=int, default=8)
     parser.add_argument("--grid-spacing", type=float, default=DEFAULT_GRID_SPACING)
     parser.add_argument("--threshold", type=float, default=DEFAULT_THRESHOLD)
     parser.add_argument("--search-days", type=int, default=DEFAULT_SEARCH_DAYS)
-    parser.add_argument("--start", default=DEFAULT_START)
-    parser.add_argument("--end", default=DEFAULT_END)
+    parser.add_argument("--start", default=None)
+    parser.add_argument("--end", default=None)
+    parser.add_argument("--year", type=int, default=None)
     parser.add_argument("--max-cloud", type=float, default=DEFAULT_MAX_CLOUD)
     parser.add_argument("--no-resume", action="store_true")
     args = parser.parse_args()
 
-    output_dir = Path(args.output)
+    output_dir, args.start, args.end = resolve_scan_config(
+        year=args.year,
+        output=args.output,
+        start=args.start,
+        end=args.end,
+    )
     setup_logging(output_dir)
 
     print("=" * 72)
@@ -580,7 +619,7 @@ def main() -> int:
     existing_candidates = load_json(output_dir / "manifest.json", [])
     if not points and existing_candidates:
         merged = merge_candidates(existing_candidates, [])
-        outputs = write_outputs(output_dir, merged)
+        outputs = write_outputs(output_dir, merged, args.start, args.end)
         print(f"  Nothing left to scan; rebuilt outputs from existing manifest")
         print(f"  Super positives: {outputs['counts']['super_positive']}")
         print(f"  Positives:       {outputs['counts']['positive']}")
@@ -661,7 +700,7 @@ def main() -> int:
                 new_candidates.append(result)
 
     merged = merge_candidates(existing_candidates, new_candidates)
-    outputs = write_outputs(output_dir, merged)
+    outputs = write_outputs(output_dir, merged, args.start, args.end)
 
     near_station = [c for c in merged if haversine_km(c["lat"], c["lon"], STATION_LAT, STATION_LON) <= 5.0]
 

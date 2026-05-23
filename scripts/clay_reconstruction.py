@@ -35,8 +35,8 @@ DEFAULT_CACHE_DIR = REPO_ROOT / "data" / "review" / "clay_reconstruction_cache"
 CHECKPOINT_PATH = REPO_ROOT / "checkpoints" / "v1.5" / "clay-v1.5.ckpt"
 METADATA_PATH = REPO_ROOT / "configs" / "metadata.yaml"
 
-BANDS = ["B2", "B3", "B4", "B8"]
-BAND_NAMES = ["blue", "green", "red", "nir"]
+BANDS = ["B2", "B3", "B4", "B5", "B6", "B7", "B8", "B8A", "B11", "B12"]
+BAND_NAMES = ["blue", "green", "red", "rededge1", "rededge2", "rededge3", "nir", "nir08", "swir16", "swir22"]
 PLATFORM = "sentinel-2-l2a"
 SIZE = 256
 GSD = 10
@@ -158,15 +158,17 @@ def load_label_records(
 
 
 def summarize_results(spawn_errors: Iterable[float], nospawn_errors: Iterable[float]) -> dict[str, float]:
-    spawn = [float(x) for x in spawn_errors]
-    nospawn = [float(x) for x in nospawn_errors]
-    if not spawn or not nospawn:
+    import numpy as np
+
+    spawn = np.asarray([float(x) for x in spawn_errors], dtype=np.float64)
+    nospawn = np.asarray([float(x) for x in nospawn_errors], dtype=np.float64)
+    if len(spawn) == 0 or len(nospawn) == 0:
         raise ValueError("Need both spawn and nospawn errors to summarize")
 
-    spawn_mean = statistics.mean(spawn)
-    nospawn_mean = statistics.mean(nospawn)
-    spawn_std = statistics.pstdev(spawn) if len(spawn) > 1 else 0.0
-    nospawn_std = statistics.pstdev(nospawn) if len(nospawn) > 1 else 0.0
+    spawn_mean = float(spawn.mean())
+    nospawn_mean = float(nospawn.mean())
+    spawn_std = float(spawn.std(ddof=0)) if len(spawn) > 1 else 0.0
+    nospawn_std = float(nospawn.std(ddof=0)) if len(nospawn) > 1 else 0.0
     pooled_std = math.sqrt((spawn_std**2 + nospawn_std**2) / 2) if (spawn_std or nospawn_std) else 0.0
     separation = spawn_mean - nospawn_mean
     midpoint_threshold = (spawn_mean + nospawn_mean) / 2
@@ -238,9 +240,19 @@ def load_chip_from_gee(record: LabelRecord, cache_dir: Path) -> np.ndarray:
     cache_key = f"{record.scene_id or 'scene'}_{record.lat:.6f}_{record.lon:.6f}.tif".replace("/", "_")
     cache_path = cache_dir / cache_key
 
+    expected_shape = (len(BANDS), SIZE, SIZE)
+
     if cache_path.exists():
         chip = tiff.imread(str(cache_path)).astype(np.float32)
+        if chip.ndim == 3:
+            chip = np.transpose(chip, (2, 0, 1))
+        if chip.shape != expected_shape:
+            cache_path.unlink(missing_ok=True)
+            chip = None
     else:
+        chip = None
+
+    if chip is None:
         scene_id = record.scene_id
         if not scene_id:
             start = (date.fromisoformat(record.date) - timedelta(days=7)).isoformat()
@@ -267,9 +279,9 @@ def load_chip_from_gee(record: LabelRecord, cache_dir: Path) -> np.ndarray:
         cache_path.write_bytes(resp.content)
         chip = tiff.imread(str(cache_path)).astype(np.float32)
 
-    if chip.ndim == 3:
-        chip = np.transpose(chip, (2, 0, 1))
-    if chip.shape != (4, SIZE, SIZE):
+        if chip.ndim == 3:
+            chip = np.transpose(chip, (2, 0, 1))
+    if chip.shape != expected_shape:
         from skimage.transform import resize
 
         chip = np.stack([resize(chip[i], (SIZE, SIZE), preserve_range=True) for i in range(chip.shape[0])])
@@ -288,7 +300,7 @@ def build_datacube(record: LabelRecord, chip: np.ndarray, device):
     wn, hn = normalize_ts(scenedate)
     ln, lo = normalize_ll(record.lat, record.lon)
     return {
-        "platform": PLATFORM,
+        "platform": [PLATFORM],
         "time": torch.tensor(np.hstack([wn, hn]), dtype=torch.float32, device=device).unsqueeze(0),
         "latlon": torch.tensor(np.hstack([ln, lo]), dtype=torch.float32, device=device).unsqueeze(0),
         "pixels": pixel_tensor,
@@ -386,6 +398,9 @@ def reconstruct_error(model, datacube) -> float:
 
     with torch.no_grad():
         output = _call_model(model, datacube)
+    if isinstance(output, (tuple, list)) and len(output) >= 2:
+        reconstruction_loss = output[1]
+        return float(reconstruction_loss.detach().item() if isinstance(reconstruction_loss, torch.Tensor) else reconstruction_loss)
     reconstructed = _find_reconstruction(output, datacube["pixels"])
     if reconstructed is None:
         raise RuntimeError(f"Could not find reconstruction tensor in model output: {type(output)!r}")

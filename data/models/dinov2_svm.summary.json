@@ -3,11 +3,11 @@
   "model_name": "dinov2_vits14",
   "kernel": "rbf",
   "class_weight": "balanced",
-  "n_train": 70,
-  "n_pos": 20,
+  "n_train": 55,
+  "n_pos": 5,
   "n_neg": 50,
-  "full_accuracy": 0.9857142857142858,
-  "cv_accuracy_mean": 0.8428571428571427,
-  "cv_accuracy_std": 0.08329931278350429,
-  "separation": 1.4810912648640024
+  "full_accuracy": 1.0,
+  "cv_accuracy_mean": 0.9454545454545455,
+  "cv_accuracy_std": 0.04453617714151235,
+  "separation": 1.8658380603715705
 }

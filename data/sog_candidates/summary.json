@@ -1,0 +1,23 @@
+{
+  "record_count": 333,
+  "thumbnail_count": 452,
+  "records_with_scenes": 241,
+  "top_regions": {
+    "SoG": 420,
+    "PRD": 32
+  },
+  "processed": 333,
+  "no_scene": 92,
+  "download_errors": 0,
+  "scored": 452,
+  "elapsed_seconds": 151.84076309204102,
+  "ingest_summary": {
+    "raw_features": 5606,
+    "kept_records": 333
+  },
+  "knn_summary": {
+    "matched_spawn": 5,
+    "matched_nospawn": 50,
+    "training_size": 55
+  }
+}

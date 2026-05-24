@@ -1,0 +1,1609 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>High Confidence Candidates</title>
+<style>
+*{box-sizing:border-box}
+body{font-family:-apple-system,system-ui,sans-serif;margin:0;background:#111;color:#eee}
+.bar{background:#1a1a2e;padding:12px 20px;position:sticky;top:0;z-index:99}
+.bar h1{margin:0;font-size:18px}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px;padding:12px}
+.card{background:#1e1e2e;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.3)}
+.high{border-left:4px solid #4CAF50}
+.mid{border-left:4px solid #FFC107}
+.card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.body{padding:10px}
+.score{font-size:20px;font-weight:700}
+.info{font-size:12px;color:#888}
+</style></head><body>
+<div class="bar"><h1>High Confidence — 199 candidates (score > 0.5)</h1></div>
+<div class="g">
+<div class="card high">
+  <img src="denman-island_2024-05-22_score1.05_49.47991_-124.85886_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">1.047</div>
+    <div class="info">denman-island | 2024-05-22</div>
+    <div class="info">49.480, -124.859</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="masset-inlet_2024-04-19_score1.04_53.684865_-132.768264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">1.038</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.685, -132.768</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="qualicum_2024-04-19_score1.01_49.294865_-124.557442_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">1.009</div>
+    <div class="info">qualicum | 2024-04-19</div>
+    <div class="info">49.295, -124.557</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="tofino_2024-03-16_score1.00_49.114865_-125.806603_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">1.000</div>
+    <div class="info">tofino | 2024-03-16</div>
+    <div class="info">49.115, -125.807</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="tofino_2024-03-16_score1.00_49.194865_-126.026603_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">1.000</div>
+    <div class="info">tofino | 2024-03-16</div>
+    <div class="info">49.195, -126.027</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="tofino_2024-03-16_score0.97_49.194865_-126.046603_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.965</div>
+    <div class="info">tofino | 2024-03-16</div>
+    <div class="info">49.195, -126.047</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="masset-inlet_2024-04-19_score0.96_53.784865_-132.788264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.961</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.785, -132.788</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="qualicum_2024-04-19_score0.96_49.274865_-124.557442_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.957</div>
+    <div class="info">qualicum | 2024-04-19</div>
+    <div class="info">49.275, -124.557</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="masset-inlet_2024-04-19_score0.95_53.804865_-132.808264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.955</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.805, -132.808</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="masset-inlet_2024-04-19_score0.94_53.784865_-132.748264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.941</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.785, -132.748</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="masset-inlet_2024-04-19_score0.93_53.824865_-132.908264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.926</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.825, -132.908</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="masset-inlet_2024-04-19_score0.92_53.764865_-132.808264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.920</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.765, -132.808</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="masset-inlet_2024-04-19_score0.91_53.704865_-132.748264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.911</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.705, -132.748</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="quatsino-sound_2024-03-16_score0.91_50.524865_-127.87245_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.910</div>
+    <div class="info">quatsino-sound | 2024-03-16</div>
+    <div class="info">50.525, -127.872</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="nootka-sound_2024-05-22_score0.90_49.564865_-126.508503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.901</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.565, -126.509</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="masset-inlet_2024-04-19_score0.89_53.684865_-132.788264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.891</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.685, -132.788</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="quatsino-sound_2024-03-16_score0.89_50.524865_-127.83245_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.891</div>
+    <div class="info">quatsino-sound | 2024-03-16</div>
+    <div class="info">50.525, -127.832</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="masset-inlet_2024-04-19_score0.89_53.764865_-132.768264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.891</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.765, -132.768</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="masset-inlet_2024-04-19_score0.89_53.644865_-132.788264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.889</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.645, -132.788</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="nootka-sound_2024-05-22_score0.89_49.684865_-126.708503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.887</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.685, -126.709</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="quatsino-sound_2024-03-16_score0.88_50.524865_-127.85245_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.883</div>
+    <div class="info">quatsino-sound | 2024-03-16</div>
+    <div class="info">50.525, -127.852</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="masset-inlet_2024-04-19_score0.88_53.744865_-132.888264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.883</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.745, -132.888</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="masset-inlet_2024-04-19_score0.88_53.644865_-132.708264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.881</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.645, -132.708</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="masset-inlet_2024-04-19_score0.86_53.824865_-132.888264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.861</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.825, -132.888</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="masset-inlet_2024-04-19_score0.85_53.624865_-132.808264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.848</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.625, -132.808</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="nootka-sound_2024-05-22_score0.84_49.684865_-126.688503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.841</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.685, -126.689</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="masset-inlet_2024-04-19_score0.84_53.704865_-132.768264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.838</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.705, -132.768</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="tofino_2024-03-16_score0.84_49.094865_-125.846603_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.835</div>
+    <div class="info">tofino | 2024-03-16</div>
+    <div class="info">49.095, -125.847</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="masset-inlet_2024-04-19_score0.83_53.744865_-132.728264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.831</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.745, -132.728</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="masset-inlet_2024-04-19_score0.83_53.784865_-132.728264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.828</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.785, -132.728</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="ucluelet_2024-05-22_score0.83_48.94991_-125.487155_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.827</div>
+    <div class="info">ucluelet | 2024-05-22</div>
+    <div class="info">48.950, -125.487</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="masset-inlet_2024-04-19_score0.83_53.784865_-132.808264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.826</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.785, -132.808</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="nootka-sound_2024-05-22_score0.81_49.604865_-126.408503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.809</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.605, -126.409</div>
+  </div>
+</div>
+<div class="card high">
+  <img src="masset-inlet_2024-04-19_score0.80_53.764865_-132.728264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.800</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.765, -132.728</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-02-15_score0.80_50.584865_-128.07245_20240215.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.796</div>
+    <div class="info">quatsino-sound | 2024-02-15</div>
+    <div class="info">50.585, -128.072</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="qualicum_2024-04-19_score0.79_49.254865_-124.517442_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.792</div>
+    <div class="info">qualicum | 2024-04-19</div>
+    <div class="info">49.255, -124.517</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.79_53.764865_-132.748264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.788</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.765, -132.748</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.79_53.804865_-132.948264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.787</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.805, -132.948</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="qualicum_2024-04-19_score0.79_49.254865_-124.497442_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.786</div>
+    <div class="info">qualicum | 2024-04-19</div>
+    <div class="info">49.255, -124.497</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.78_53.764865_-132.788264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.782</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.765, -132.788</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-03-16_score0.78_50.524865_-127.81245_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.775</div>
+    <div class="info">quatsino-sound | 2024-03-16</div>
+    <div class="info">50.525, -127.812</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-02-15_score0.77_50.604865_-127.97245_20240215.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.773</div>
+    <div class="info">quatsino-sound | 2024-02-15</div>
+    <div class="info">50.605, -127.972</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.77_49.644865_-126.668503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.771</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.645, -126.669</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-02-15_score0.77_50.604865_-127.95245_20240215.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.770</div>
+    <div class="info">quatsino-sound | 2024-02-15</div>
+    <div class="info">50.605, -127.952</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.77_53.664865_-132.748264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.766</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.665, -132.748</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.77_53.824865_-132.868264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.766</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.825, -132.868</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.76_49.544865_-126.488503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.764</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.545, -126.489</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.76_49.624865_-126.408503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.760</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.625, -126.409</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.76_53.744865_-132.788264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.756</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.745, -132.788</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.75_53.664865_-132.808264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.754</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.665, -132.808</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.75_53.684865_-132.908264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.750</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.685, -132.908</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="qualicum_2024-04-19_score0.75_49.334865_-124.597442_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.750</div>
+    <div class="info">qualicum | 2024-04-19</div>
+    <div class="info">49.335, -124.597</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.74_49.664865_-126.728503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.738</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.665, -126.729</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.74_53.764865_-132.708264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.738</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.765, -132.708</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.74_49.544865_-126.508503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.738</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.545, -126.509</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.74_53.624865_-132.828264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.736</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.625, -132.828</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.74_49.664865_-126.668503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.736</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.665, -126.669</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nanaimo_2024-03-18_score0.73_49.114865_-123.996603_20240318.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.733</div>
+    <div class="info">nanaimo | 2024-03-18</div>
+    <div class="info">49.115, -123.997</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.73_49.684865_-126.448503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.729</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.685, -126.449</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="qualicum_2024-04-19_score0.73_49.254865_-124.477442_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.728</div>
+    <div class="info">qualicum | 2024-04-19</div>
+    <div class="info">49.255, -124.477</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="denman-island_2024-05-22_score0.73_49.51991_-124.89886_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.726</div>
+    <div class="info">denman-island | 2024-05-22</div>
+    <div class="info">49.520, -124.899</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.73_49.644865_-126.688503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.726</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.645, -126.689</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="tofino_2024-03-16_score0.72_49.154865_-125.846603_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.721</div>
+    <div class="info">tofino | 2024-03-16</div>
+    <div class="info">49.155, -125.847</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="comox_2024-05-22_score0.72_49.604865_-125.028846_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.721</div>
+    <div class="info">comox | 2024-05-22</div>
+    <div class="info">49.605, -125.029</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.72_53.804865_-132.888264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.720</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.805, -132.888</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.72_53.684865_-132.808264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.718</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.685, -132.808</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="prince-rupert_2024-03-24_score0.72_54.15982_-130.20877_20240324.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.718</div>
+    <div class="info">prince-rupert | 2024-03-24</div>
+    <div class="info">54.160, -130.209</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.72_49.684865_-126.648503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.716</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.685, -126.649</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="tofino_2024-03-16_score0.71_49.114865_-125.846603_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.709</div>
+    <div class="info">tofino | 2024-03-16</div>
+    <div class="info">49.115, -125.847</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="qualicum_2024-04-19_score0.71_49.254865_-124.417442_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.708</div>
+    <div class="info">qualicum | 2024-04-19</div>
+    <div class="info">49.255, -124.417</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.70_53.744865_-132.868264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.701</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.745, -132.868</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.70_53.724865_-132.808264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.700</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.725, -132.808</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="qualicum_2024-04-19_score0.70_49.274865_-124.617442_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.700</div>
+    <div class="info">qualicum | 2024-04-19</div>
+    <div class="info">49.275, -124.617</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.70_53.604865_-132.788264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.699</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.605, -132.788</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="tofino_2024-03-16_score0.70_49.254865_-125.966603_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.699</div>
+    <div class="info">tofino | 2024-03-16</div>
+    <div class="info">49.255, -125.967</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nanaimo_2024-03-18_score0.69_49.094865_-123.956603_20240318.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.692</div>
+    <div class="info">nanaimo | 2024-03-18</div>
+    <div class="info">49.095, -123.957</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.69_53.604865_-132.808264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.687</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.605, -132.808</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nanaimo_2024-03-18_score0.69_49.074865_-123.956603_20240318.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.686</div>
+    <div class="info">nanaimo | 2024-03-18</div>
+    <div class="info">49.075, -123.957</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.68_49.544865_-126.468503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.678</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.545, -126.469</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.68_49.724865_-126.668503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.677</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.725, -126.669</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.68_53.744865_-132.748264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.676</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.745, -132.748</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.68_53.744865_-132.908264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.676</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.745, -132.908</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="tofino_2024-03-16_score0.68_49.134865_-125.846603_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.675</div>
+    <div class="info">tofino | 2024-03-16</div>
+    <div class="info">49.135, -125.847</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="tofino_2024-03-16_score0.67_49.254865_-125.986603_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.675</div>
+    <div class="info">tofino | 2024-03-16</div>
+    <div class="info">49.255, -125.987</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-03-16_score0.67_50.524865_-128.11245_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.672</div>
+    <div class="info">quatsino-sound | 2024-03-16</div>
+    <div class="info">50.525, -128.112</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="haida-gwaii-south_2024-04-16_score0.67_52.424865_-131.28148_20240416.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.672</div>
+    <div class="info">haida-gwaii-south | 2024-04-16</div>
+    <div class="info">52.425, -131.281</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.67_53.724865_-132.708264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.666</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.725, -132.708</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.66_53.804865_-132.828264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.663</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.805, -132.828</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-03-16_score0.66_50.524865_-128.13245_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.660</div>
+    <div class="info">quatsino-sound | 2024-03-16</div>
+    <div class="info">50.525, -128.132</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.65_49.664865_-126.708503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.654</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.665, -126.709</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.65_49.664865_-126.648503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.654</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.665, -126.649</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.65_53.724865_-132.988264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.654</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.725, -132.988</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-02-15_score0.65_50.584865_-128.05245_20240215.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.654</div>
+    <div class="info">quatsino-sound | 2024-02-15</div>
+    <div class="info">50.585, -128.052</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.65_53.684865_-132.748264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.653</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.685, -132.748</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.65_49.704865_-126.688503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.650</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.705, -126.689</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nanaimo_2024-03-18_score0.65_49.134865_-124.016603_20240318.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.649</div>
+    <div class="info">nanaimo | 2024-03-18</div>
+    <div class="info">49.135, -124.017</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-02-15_score0.65_50.564865_-127.97245_20240215.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.648</div>
+    <div class="info">quatsino-sound | 2024-02-15</div>
+    <div class="info">50.565, -127.972</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="comox_2024-05-22_score0.64_49.584865_-125.008846_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.645</div>
+    <div class="info">comox | 2024-05-22</div>
+    <div class="info">49.585, -125.009</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.64_53.744865_-132.768264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.642</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.745, -132.768</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-03-16_score0.64_50.524865_-127.91245_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.641</div>
+    <div class="info">quatsino-sound | 2024-03-16</div>
+    <div class="info">50.525, -127.912</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.64_49.524865_-126.428503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.637</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.525, -126.429</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.63_53.664865_-132.828264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.633</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.665, -132.828</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nanaimo_2024-03-18_score0.63_49.034865_-123.936603_20240318.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.627</div>
+    <div class="info">nanaimo | 2024-03-18</div>
+    <div class="info">49.035, -123.937</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.63_53.704865_-132.708264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.626</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.705, -132.708</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="qualicum_2024-03-18_score0.62_49.274865_-124.317442_20240318.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.625</div>
+    <div class="info">qualicum | 2024-03-18</div>
+    <div class="info">49.275, -124.317</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.62_49.564865_-126.448503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.623</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.565, -126.449</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="qualicum_2024-04-19_score0.62_49.234865_-124.377442_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.622</div>
+    <div class="info">qualicum | 2024-04-19</div>
+    <div class="info">49.235, -124.377</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-03-16_score0.62_50.524865_-128.15245_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.621</div>
+    <div class="info">quatsino-sound | 2024-03-16</div>
+    <div class="info">50.525, -128.152</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="prince-rupert_2024-03-24_score0.62_54.23982_-130.18877_20240324.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.620</div>
+    <div class="info">prince-rupert | 2024-03-24</div>
+    <div class="info">54.240, -130.189</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.62_53.644865_-132.728264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.618</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.645, -132.728</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-02-15_score0.62_50.584865_-127.99245_20240215.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.617</div>
+    <div class="info">quatsino-sound | 2024-02-15</div>
+    <div class="info">50.585, -127.992</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.62_53.744865_-132.688264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.616</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.745, -132.688</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="tofino_2024-03-16_score0.62_49.114865_-125.826603_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.616</div>
+    <div class="info">tofino | 2024-03-16</div>
+    <div class="info">49.115, -125.827</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.61_53.704865_-132.688264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.615</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.705, -132.688</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="qualicum_2024-04-19_score0.61_49.274865_-124.517442_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.613</div>
+    <div class="info">qualicum | 2024-04-19</div>
+    <div class="info">49.275, -124.517</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.61_53.804865_-132.848264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.611</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.805, -132.848</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="qualicum_2024-04-19_score0.61_49.234865_-124.457442_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.606</div>
+    <div class="info">qualicum | 2024-04-19</div>
+    <div class="info">49.235, -124.457</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="prince-rupert_2024-03-22_score0.61_54.45982_-130.26877_20240322.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.606</div>
+    <div class="info">prince-rupert | 2024-03-22</div>
+    <div class="info">54.460, -130.269</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-02-15_score0.61_50.584865_-128.03245_20240215.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.606</div>
+    <div class="info">quatsino-sound | 2024-02-15</div>
+    <div class="info">50.585, -128.032</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.60_53.644865_-132.768264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.603</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.645, -132.768</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="comox_2024-05-22_score0.60_49.584865_-124.988846_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.601</div>
+    <div class="info">comox | 2024-05-22</div>
+    <div class="info">49.585, -124.989</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-03-16_score0.60_50.524865_-128.05245_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.597</div>
+    <div class="info">quatsino-sound | 2024-03-16</div>
+    <div class="info">50.525, -128.052</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="ucluelet_2024-05-22_score0.60_48.96991_-125.467155_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.595</div>
+    <div class="info">ucluelet | 2024-05-22</div>
+    <div class="info">48.970, -125.467</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.59_49.564865_-126.408503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.594</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.565, -126.409</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="ucluelet_2024-05-22_score0.59_49.00991_-125.547155_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.588</div>
+    <div class="info">ucluelet | 2024-05-22</div>
+    <div class="info">49.010, -125.547</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nanaimo_2024-03-18_score0.59_49.094865_-123.976603_20240318.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.588</div>
+    <div class="info">nanaimo | 2024-03-18</div>
+    <div class="info">49.095, -123.977</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.59_49.664865_-126.688503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.587</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.665, -126.689</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.58_53.824865_-132.948264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.585</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.825, -132.948</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nanaimo_2024-03-18_score0.58_49.034865_-123.916603_20240318.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.584</div>
+    <div class="info">nanaimo | 2024-03-18</div>
+    <div class="info">49.035, -123.917</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-02-15_score0.58_50.564865_-128.15245_20240215.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.584</div>
+    <div class="info">quatsino-sound | 2024-02-15</div>
+    <div class="info">50.565, -128.152</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nanaimo_2024-03-18_score0.58_49.114865_-124.016603_20240318.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.582</div>
+    <div class="info">nanaimo | 2024-03-18</div>
+    <div class="info">49.115, -124.017</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="denman-island_2024-05-22_score0.58_49.47991_-124.87886_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.582</div>
+    <div class="info">denman-island | 2024-05-22</div>
+    <div class="info">49.480, -124.879</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.58_49.584865_-126.448503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.581</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.585, -126.449</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.58_49.584865_-126.528503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.579</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.585, -126.529</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.58_53.684865_-132.708264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.578</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.685, -132.708</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.58_53.744865_-132.808264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.576</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.745, -132.808</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.57_53.664865_-132.788264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.575</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.665, -132.788</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-02-15_score0.57_50.624865_-127.99245_20240215.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.573</div>
+    <div class="info">quatsino-sound | 2024-02-15</div>
+    <div class="info">50.625, -127.992</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.57_49.684865_-126.728503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.569</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.685, -126.729</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="tofino_2024-03-16_score0.57_49.094865_-125.826603_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.567</div>
+    <div class="info">tofino | 2024-03-16</div>
+    <div class="info">49.095, -125.827</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-02-15_score0.57_50.564865_-127.99245_20240215.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.565</div>
+    <div class="info">quatsino-sound | 2024-02-15</div>
+    <div class="info">50.565, -127.992</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-02-15_score0.56_50.564865_-128.01245_20240215.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.565</div>
+    <div class="info">quatsino-sound | 2024-02-15</div>
+    <div class="info">50.565, -128.012</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="denman-island_2024-05-22_score0.56_49.51991_-124.91886_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.564</div>
+    <div class="info">denman-island | 2024-05-22</div>
+    <div class="info">49.520, -124.919</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.56_53.724865_-132.728264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.563</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.725, -132.728</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.56_49.524865_-126.448503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.560</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.525, -126.449</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.56_53.684865_-132.928264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.560</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.685, -132.928</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nanaimo_2024-03-18_score0.56_49.074865_-123.816603_20240318.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.560</div>
+    <div class="info">nanaimo | 2024-03-18</div>
+    <div class="info">49.075, -123.817</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="prince-rupert_2024-04-16_score0.56_54.25982_-130.38877_20240416.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.559</div>
+    <div class="info">prince-rupert | 2024-04-16</div>
+    <div class="info">54.260, -130.389</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="qualicum_2024-03-18_score0.56_49.254865_-124.317442_20240318.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.557</div>
+    <div class="info">qualicum | 2024-03-18</div>
+    <div class="info">49.255, -124.317</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.56_53.704865_-132.968264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.555</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.705, -132.968</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.55_49.604865_-126.668503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.552</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.605, -126.669</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.55_53.724865_-132.788264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.552</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.725, -132.788</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-03-16_score0.55_50.524865_-128.09245_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.551</div>
+    <div class="info">quatsino-sound | 2024-03-16</div>
+    <div class="info">50.525, -128.092</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nanaimo_2024-03-18_score0.55_49.034865_-123.956603_20240318.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.551</div>
+    <div class="info">nanaimo | 2024-03-18</div>
+    <div class="info">49.035, -123.957</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-03-16_score0.55_50.484865_-127.99245_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.549</div>
+    <div class="info">quatsino-sound | 2024-03-16</div>
+    <div class="info">50.485, -127.992</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.55_49.664865_-126.768503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.549</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.665, -126.769</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="qualicum_2024-04-19_score0.55_49.274865_-124.537442_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.548</div>
+    <div class="info">qualicum | 2024-04-19</div>
+    <div class="info">49.275, -124.537</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="ucluelet_2024-05-22_score0.55_48.96991_-125.527155_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.548</div>
+    <div class="info">ucluelet | 2024-05-22</div>
+    <div class="info">48.970, -125.527</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.55_53.644865_-132.928264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.546</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.645, -132.928</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.54_53.784865_-132.828264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.543</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.785, -132.828</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.54_49.704865_-126.668503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.542</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.705, -126.669</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.54_53.824865_-132.848264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.541</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.825, -132.848</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.54_49.624865_-126.428503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.541</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.625, -126.429</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="qualicum_2024-04-19_score0.54_49.234865_-124.397442_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.539</div>
+    <div class="info">qualicum | 2024-04-19</div>
+    <div class="info">49.235, -124.397</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-02-15_score0.54_50.584865_-127.87245_20240215.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.537</div>
+    <div class="info">quatsino-sound | 2024-02-15</div>
+    <div class="info">50.585, -127.872</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-02-15_score0.54_50.584865_-128.09245_20240215.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.535</div>
+    <div class="info">quatsino-sound | 2024-02-15</div>
+    <div class="info">50.585, -128.092</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="qualicum_2024-04-19_score0.54_49.234865_-124.437442_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.535</div>
+    <div class="info">qualicum | 2024-04-19</div>
+    <div class="info">49.235, -124.437</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="qualicum_2024-04-19_score0.53_49.254865_-124.537442_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.533</div>
+    <div class="info">qualicum | 2024-04-19</div>
+    <div class="info">49.255, -124.537</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.53_49.524865_-126.468503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.532</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.525, -126.469</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="prince-rupert_2024-03-24_score0.53_54.23982_-130.12877_20240324.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.529</div>
+    <div class="info">prince-rupert | 2024-03-24</div>
+    <div class="info">54.240, -130.129</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="qualicum_2024-04-19_score0.53_49.234865_-124.417442_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.526</div>
+    <div class="info">qualicum | 2024-04-19</div>
+    <div class="info">49.235, -124.417</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-02-15_score0.53_50.624865_-128.05245_20240215.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.526</div>
+    <div class="info">quatsino-sound | 2024-02-15</div>
+    <div class="info">50.625, -128.052</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-03-16_score0.52_50.484865_-127.95245_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.523</div>
+    <div class="info">quatsino-sound | 2024-03-16</div>
+    <div class="info">50.485, -127.952</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.52_49.584865_-126.488503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.523</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.585, -126.489</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="haida-gwaii-south_2024-04-16_score0.52_52.424865_-131.26148_20240416.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.521</div>
+    <div class="info">haida-gwaii-south | 2024-04-16</div>
+    <div class="info">52.425, -131.261</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nanaimo_2024-03-18_score0.52_49.134865_-123.996603_20240318.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.520</div>
+    <div class="info">nanaimo | 2024-03-18</div>
+    <div class="info">49.135, -123.997</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.52_49.704865_-126.708503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.519</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.705, -126.709</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-03-16_score0.52_50.424865_-127.83245_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.519</div>
+    <div class="info">quatsino-sound | 2024-03-16</div>
+    <div class="info">50.425, -127.832</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.52_53.824865_-132.828264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.516</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.825, -132.828</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="comox_2024-05-22_score0.52_49.564865_-124.988846_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.516</div>
+    <div class="info">comox | 2024-05-22</div>
+    <div class="info">49.565, -124.989</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.51_49.604865_-126.428503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.514</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.605, -126.429</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="prince-rupert_2024-03-22_score0.51_54.45982_-130.34877_20240322.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.514</div>
+    <div class="info">prince-rupert | 2024-03-22</div>
+    <div class="info">54.460, -130.349</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="comox_2024-05-22_score0.51_49.604865_-125.048846_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.513</div>
+    <div class="info">comox | 2024-05-22</div>
+    <div class="info">49.605, -125.049</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.51_53.804865_-133.008264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.513</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.805, -133.008</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-03-16_score0.51_50.544865_-127.85245_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.511</div>
+    <div class="info">quatsino-sound | 2024-03-16</div>
+    <div class="info">50.545, -127.852</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.51_53.804865_-132.988264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.511</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.805, -132.988</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-02-15_score0.51_50.624865_-128.07245_20240215.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.511</div>
+    <div class="info">quatsino-sound | 2024-02-15</div>
+    <div class="info">50.625, -128.072</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.51_53.604865_-132.828264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.510</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.605, -132.828</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.51_53.624865_-132.788264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.509</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.625, -132.788</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.51_53.824865_-132.928264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.508</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.825, -132.928</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="quatsino-sound_2024-03-16_score0.51_50.504865_-127.91245_20240316.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.508</div>
+    <div class="info">quatsino-sound | 2024-03-16</div>
+    <div class="info">50.505, -127.912</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.51_53.804865_-132.908264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.508</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.805, -132.908</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="denman-island_2024-05-22_score0.51_49.47991_-124.83886_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.507</div>
+    <div class="info">denman-island | 2024-05-22</div>
+    <div class="info">49.480, -124.839</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="nootka-sound_2024-05-22_score0.51_49.524865_-126.508503_20240522.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.505</div>
+    <div class="info">nootka-sound | 2024-05-22</div>
+    <div class="info">49.525, -126.509</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="qualicum_2024-04-19_score0.50_49.254865_-124.397442_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.504</div>
+    <div class="info">qualicum | 2024-04-19</div>
+    <div class="info">49.255, -124.397</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.50_53.784865_-132.988264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.503</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.785, -132.988</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="qualicum_2024-03-18_score0.50_49.234865_-124.357442_20240318.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.503</div>
+    <div class="info">qualicum | 2024-03-18</div>
+    <div class="info">49.235, -124.357</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.50_53.684865_-132.728264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.503</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.685, -132.728</div>
+  </div>
+</div>
+<div class="card mid">
+  <img src="masset-inlet_2024-04-19_score0.50_53.724865_-132.948264_20240419.png" loading="lazy">
+  <div class="body">
+    <div class="score">0.502</div>
+    <div class="info">masset-inlet | 2024-04-19</div>
+    <div class="info">53.725, -132.948</div>
+  </div>
+</div></div></body></html>

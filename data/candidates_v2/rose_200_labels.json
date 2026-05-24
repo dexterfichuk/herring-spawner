@@ -1,0 +1,1202 @@
+[
+  {
+    "filename": "tofino_2023-04-28_score1.07_49.134865_-125.946603_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nanaimo_2024-03-18_score1.03_49.134865_-123.676603_20240318.png",
+    "spawn": true,
+    "confidence": "high",
+    "notes": "Confirmed turquoise spawning plume, distinct from off-season imagery."
+  },
+  {
+    "filename": "prince-rupert_2024-04-16_score1.00_54.29982_-130.62877_20240416.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nootka-sound_2024-03-16_score1.00_49.584865_-126.608503_20240316.png",
+    "spawn": true,
+    "confidence": "high",
+    "notes": "Confirmed turquoise spawning plume, distinct from off-season imagery."
+  },
+  {
+    "filename": "prince-rupert_2024-04-16_score0.97_54.29982_-130.60877_20240416.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.96_49.174865_-126.046603_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.96_49.174865_-126.066603_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "ucluelet_2024-03-18_score0.95_48.90991_-125.507155_20240318.png",
+    "spawn": true,
+    "confidence": "high",
+    "notes": "Confirmed turquoise spawning plume, distinct from off-season imagery."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.95_49.214865_-126.046603_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.95_49.114865_-125.946603_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.92_49.214865_-126.046603_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.92_49.134865_-125.966603_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "quatsino-sound_2024-03-16_score0.91_50.404865_-127.97245_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.91_49.194865_-126.066603_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "quatsino-sound_2024-02-15_score0.91_50.404865_-127.97245_20240215.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.91_49.134865_-125.986603_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "quatsino-sound_2023-05-14_score0.90_50.464865_-128.11245_20230514.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.90_49.114865_-125.926603_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.90_49.174865_-126.086603_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "ucluelet_2024-03-18_score0.90_48.90991_-125.487155_20240318.png",
+    "spawn": true,
+    "confidence": "high",
+    "notes": "Confirmed turquoise spawning plume, distinct from off-season imagery."
+  },
+  {
+    "filename": "masset-inlet_2024-03-22_score0.89_53.644865_-132.968264_20240322.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.88_49.234865_-126.026603_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.88_49.094865_-125.906603_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "spiller-channel_2023-05-14_score0.88_52.324865_-128.48098_20230514.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "milbanke-sound_2024-04-18_score0.86_52.624865_-128.821984_20240418.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.86_49.134865_-125.966603_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "prince-rupert_2024-04-16_score0.86_54.19982_-130.56877_20240416.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "ucluelet_2024-03-18_score0.86_48.92991_-125.587155_20240318.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "denman-island_2024-03-18_score0.86_49.57991_-124.85886_20240318.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "milbanke-sound_2024-03-24_score0.85_52.464865_-128.781984_20240324.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "quatsino-sound_2024-03-16_score0.85_50.444865_-128.03245_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "quatsino-sound_2024-02-15_score0.85_50.444865_-127.95245_20240215.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-05-10_score0.84_49.114865_-125.926603_20240510.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "quatsino-sound_2024-04-18_score0.83_50.404865_-127.97245_20240418.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nootka-sound_2024-03-16_score0.83_49.584865_-126.588503_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "comox_2023-04-28_score0.82_49.624865_-124.848846_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.82_49.214865_-126.026603_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "comox_2023-04-28_score0.81_49.624865_-124.868846_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "masset-inlet_2023-05-17_score0.81_53.644865_-132.968264_20230517.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "ucluelet_2023-04-28_score0.81_48.90991_-125.527155_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.80_49.134865_-125.926603_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.80_49.234865_-126.046603_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.80_49.154865_-126.026603_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nanaimo_2024-03-18_score0.80_49.114865_-123.676603_20240318.png",
+    "spawn": true,
+    "confidence": "high",
+    "notes": "Confirmed turquoise spawning plume, distinct from off-season imagery."
+  },
+  {
+    "filename": "masset-inlet_2024-03-20_score0.79_53.744865_-133.088264_20240320.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "spiller-channel_2024-04-18_score0.79_52.364865_-128.48098_20240418.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.79_49.054865_-125.826603_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "ucluelet_2023-04-28_score0.79_48.96991_-125.647155_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.79_49.134865_-125.926603_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "ucluelet_2023-04-28_score0.79_48.90991_-125.487155_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "prince-rupert_2024-03-22_score0.78_54.19982_-130.56877_20240322.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.78_49.234865_-126.046603_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.78_49.114865_-125.946603_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "ucluelet_2024-03-18_score0.78_48.90991_-125.567155_20240318.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.77_49.134865_-125.946603_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.77_49.174865_-126.046603_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "prince-rupert_2024-03-22_score0.77_54.19982_-130.54877_20240322.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "ucluelet_2023-04-28_score0.76_48.90991_-125.507155_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.76_49.214865_-126.046603_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "haida-gwaii-south_2023-05-17_score0.76_52.364865_-131.20148_20230517.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nanaimo_2024-03-18_score0.76_49.154865_-123.676603_20240318.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.76_49.154865_-125.966603_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "milbanke-sound_2023-05-14_score0.76_52.624865_-128.821984_20230514.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.75_49.134865_-125.966603_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "prince-rupert_2023-05-17_score0.75_54.23982_-130.36877_20230517.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "milbanke-sound_2023-05-14_score0.75_52.624865_-128.801984_20230514.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "masset-inlet_2024-04-19_score0.74_53.644865_-132.968264_20240419.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "quatsino-sound_2024-03-16_score0.73_50.464865_-128.09245_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "masset-inlet_2024-03-20_score0.73_53.744865_-133.068264_20240320.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-05-10_score0.73_49.174865_-126.066603_20240510.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.73_49.214865_-126.026603_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "quatsino-sound_2024-04-18_score0.73_50.444865_-128.03245_20240418.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "spiller-channel_2023-05-14_score0.72_52.364865_-128.48098_20230514.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "prince-rupert_2024-03-22_score0.72_54.29982_-130.60877_20240322.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "haida-gwaii-south_2024-02-26_score0.72_52.324865_-131.26148_20240226.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.72_49.114865_-125.926603_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "quatsino-sound_2024-03-16_score0.72_50.424865_-127.95245_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "prince-rupert_2024-04-16_score0.71_54.29982_-130.48877_20240416.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "ucluelet_2024-03-18_score0.71_48.90991_-125.467155_20240318.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.71_49.134865_-125.946603_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "milbanke-sound_2023-05-14_score0.71_52.484865_-128.781984_20230514.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "comox_2024-03-18_score0.71_49.624865_-124.848846_20240318.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.70_49.174865_-125.906603_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "prince-rupert_2023-05-17_score0.70_54.29982_-130.48877_20230517.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.70_49.154865_-125.946603_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "milbanke-sound_2024-02-03_score0.70_52.504865_-128.841984_20240203.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.69_49.154865_-125.986603_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "denman-island_2023-04-28_score0.69_49.61991_-124.85886_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "ucluelet_2024-03-18_score0.69_48.90991_-125.527155_20240318.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nootka-sound_2024-02-12_score0.69_49.544865_-126.568503_20240212.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "comox_2024-02-12_score0.69_49.624865_-124.868846_20240212.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.69_49.054865_-125.766603_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "comox_2024-05-22_score0.69_49.624865_-124.828846_20240522.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "comox_2024-05-22_score0.69_49.624865_-124.828846_20240522.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "milbanke-sound_2024-03-29_score0.69_52.444865_-128.961984_20240329.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "ucluelet_2024-05-22_score0.69_48.90991_-125.467155_20240522.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.68_49.214865_-126.066603_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.68_49.174865_-126.066603_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "comox_2024-02-12_score0.68_49.624865_-124.848846_20240212.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "ucluelet_2023-04-28_score0.68_48.96991_-125.627155_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "prince-rupert_2024-04-16_score0.68_54.19982_-130.54877_20240416.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "masset-inlet_2024-02-14_score0.68_53.744865_-133.068264_20240214.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nanaimo_2024-04-19_score0.68_49.134865_-123.676603_20240419.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nanaimo_2024-04-19_score0.68_49.134865_-123.676603_20240419.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.68_49.174865_-126.066603_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nootka-sound_2024-03-16_score0.67_49.544865_-126.588503_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nootka-sound_2024-05-22_score0.67_49.544865_-126.588503_20240522.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.66_49.154865_-126.006603_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "prince-rupert_2024-03-22_score0.66_54.21982_-130.42877_20240322.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.66_49.174865_-126.046603_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-05-10_score0.66_49.114865_-125.946603_20240510.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "quatsino-sound_2023-05-14_score0.66_50.404865_-127.97245_20230514.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nanaimo_2024-04-19_score0.66_49.114865_-123.756603_20240419.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nanaimo_2024-04-19_score0.66_49.114865_-123.756603_20240419.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "ucluelet_2024-03-18_score0.66_48.90991_-125.547155_20240318.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "milbanke-sound_2024-04-18_score0.66_52.464865_-128.781984_20240418.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "prince-rupert_2023-05-15_score0.65_54.29982_-130.62877_20230515.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "milbanke-sound_2024-04-18_score0.65_52.564865_-128.801984_20240418.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "milbanke-sound_2024-03-24_score0.65_52.624865_-128.821984_20240324.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "ucluelet_2023-04-28_score0.65_48.90991_-125.467155_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "comox_2024-03-18_score0.65_49.624865_-124.828846_20240318.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-05-10_score0.65_49.174865_-126.046603_20240510.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.65_49.194865_-126.066603_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "spiller-channel_2024-03-29_score0.65_52.304865_-128.42098_20240329.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.64_49.234865_-126.026603_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "spiller-channel_2023-05-14_score0.64_52.284865_-128.50098_20230514.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "ucluelet_2024-03-18_score0.64_48.86991_-125.487155_20240318.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "milbanke-sound_2024-04-18_score0.64_52.624865_-128.801984_20240418.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "quatsino-sound_2023-05-14_score0.64_50.444865_-128.07245_20230514.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "milbanke-sound_2024-03-24_score0.64_52.624865_-128.801984_20240324.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "prince-rupert_2024-03-22_score0.64_54.27982_-130.48877_20240322.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.64_49.214865_-126.026603_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "denman-island_2023-04-28_score0.63_49.57991_-124.85886_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.63_49.054865_-125.786603_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "prince-rupert_2024-02-04_score0.63_54.43982_-130.50877_20240204.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nootka-sound_2024-03-16_score0.63_49.584865_-126.708503_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "spiller-channel_2023-05-14_score0.62_52.344865_-128.48098_20230514.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-05-10_score0.62_49.094865_-125.906603_20240510.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nootka-sound_2023-04-28_score0.62_49.524865_-126.588503_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.62_49.154865_-125.946603_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "prince-rupert_2024-02-16_score0.62_54.29982_-130.64877_20240216.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "quatsino-sound_2023-05-14_score0.62_50.464865_-128.09245_20230514.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.62_49.134865_-125.986603_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.62_49.114865_-125.966603_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.61_49.154865_-126.006603_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-05-10_score0.61_49.214865_-126.046603_20240510.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "masset-inlet_2023-05-17_score0.61_53.604865_-133.008264_20230517.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "haida-gwaii-south_2023-05-17_score0.61_52.324865_-131.24148_20230517.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nootka-sound_2024-03-16_score0.61_49.584865_-126.628503_20240316.png",
+    "spawn": true,
+    "confidence": "high",
+    "notes": "Confirmed turquoise spawning plume, distinct from off-season imagery."
+  },
+  {
+    "filename": "prince-rupert_2023-05-15_score0.61_54.29982_-130.60877_20230515.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "comox_2023-04-28_score0.61_49.624865_-124.828846_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "masset-inlet_2024-04-19_score0.61_53.744865_-133.068264_20240419.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "prince-rupert_2024-04-16_score0.60_54.33982_-130.46877_20240416.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "comox_2024-05-22_score0.60_49.744865_-124.888846_20240522.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "haida-gwaii-south_2024-03-22_score0.60_52.384865_-131.60148_20240322.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.60_49.154865_-125.966603_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "prince-rupert_2024-03-20_score0.60_54.45982_-130.46877_20240320.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "prince-rupert_2024-02-16_score0.60_54.21982_-130.56877_20240216.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "denman-island_2024-02-12_score0.60_49.61991_-124.83886_20240212.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "milbanke-sound_2024-04-18_score0.60_52.604865_-128.801984_20240418.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nanaimo_2024-04-19_score0.59_49.114865_-123.676603_20240419.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nanaimo_2024-04-19_score0.59_49.114865_-123.676603_20240419.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.59_49.154865_-125.946603_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "quatsino-sound_2024-04-18_score0.59_50.464865_-128.11245_20240418.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.59_49.214865_-125.966603_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "milbanke-sound_2024-03-24_score0.59_52.504865_-128.821984_20240324.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.59_49.074865_-125.866603_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nanaimo_2024-04-19_score0.59_49.154865_-123.676603_20240419.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nanaimo_2024-04-19_score0.59_49.154865_-123.676603_20240419.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nanaimo_2023-05-13_score0.59_49.094865_-123.736603_20230513.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.59_49.174865_-125.926603_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "quatsino-sound_2023-05-14_score0.59_50.444865_-128.03245_20230514.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2023-04-28_score0.59_49.194865_-126.066603_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "quatsino-sound_2024-02-15_score0.59_50.424865_-127.95245_20240215.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "haida-gwaii-south_2024-04-16_score0.59_52.324865_-131.22148_20240416.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nootka-sound_2024-02-12_score0.58_49.584865_-126.568503_20240212.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-05-10_score0.58_49.234865_-126.046603_20240510.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.58_49.154865_-125.926603_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nootka-sound_2024-05-22_score0.58_49.604865_-126.588503_20240522.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "haida-gwaii-south_2024-03-22_score0.58_52.404865_-131.60148_20240322.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "prince-rupert_2024-03-22_score0.58_54.21982_-130.56877_20240322.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nootka-sound_2024-05-22_score0.58_49.604865_-126.568503_20240522.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "quatsino-sound_2024-02-15_score0.58_50.444865_-128.03245_20240215.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "quatsino-sound_2024-03-16_score0.58_50.444865_-128.05245_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-05-10_score0.58_49.134865_-125.966603_20240510.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nanaimo_2023-05-13_score0.58_49.154865_-123.676603_20230513.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "masset-inlet_2024-02-14_score0.58_53.684865_-133.048264_20240214.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "denman-island_2024-02-12_score0.57_49.61991_-124.85886_20240212.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "quatsino-sound_2024-04-18_score0.57_50.464865_-128.09245_20240418.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "prince-rupert_2024-03-22_score0.57_54.33982_-130.48877_20240322.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-02-05_score0.57_49.214865_-126.066603_20240205.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "spiller-channel_2024-03-29_score0.57_52.244865_-128.44098_20240329.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "prince-rupert_2023-05-17_score0.57_54.33982_-130.48877_20230517.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "nanaimo_2023-05-13_score0.57_49.074865_-123.756603_20230513.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "denman-island_2024-03-18_score0.56_49.61991_-124.85886_20240318.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-03-16_score0.56_49.214865_-125.986603_20240316.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "quatsino-sound_2024-02-15_score0.56_50.464865_-128.09245_20240215.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "tofino_2024-05-10_score0.56_49.054865_-125.826603_20240510.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "denman-island_2023-04-28_score0.56_49.61991_-124.83886_20230428.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  },
+  {
+    "filename": "prince-rupert_2024-02-16_score0.56_54.29982_-130.60877_20240216.png",
+    "spawn": false,
+    "confidence": "high",
+    "notes": "Identified as surf/sediment or cloud cover; consistent with off-season signatures."
+  }
+]

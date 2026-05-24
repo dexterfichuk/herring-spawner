@@ -9,6 +9,8 @@ from shapely.geometry.base import BaseGeometry
 
 class SourceType(StrEnum):
     DFO = "dfo"
+    ALASKA = "alaska"
+    WASHINGTON = "washington"
     MANUAL = "manual"
     TRACK = "track"
     NEWS = "news"

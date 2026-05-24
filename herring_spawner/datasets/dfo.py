@@ -51,7 +51,9 @@ def _first(row: dict, *keys: str):
 def _parse_date(value) -> date | None:
     if value is None:
         return None
-    return pd.to_datetime(value).date()
-
+    parsed = pd.to_datetime(value, errors="coerce")
+    if pd.isna(parsed):
+        return None
+    return parsed.date()
 
 

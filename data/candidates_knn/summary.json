@@ -1,0 +1,26 @@
+{
+  "training_size": 205,
+  "points_scanned": 2863,
+  "candidates": 725,
+  "candidate_count": 725,
+  "candidate_regions": {
+    "qualicum": 87,
+    "nanaimo": 78,
+    "comox": 75,
+    "denman-island": 53,
+    "tofino": 35,
+    "ucluelet": 36,
+    "nootka-sound": 78,
+    "quatsino-sound": 65,
+    "spiller-channel": 25,
+    "milbanke-sound": 12,
+    "prince-rupert": 66,
+    "haida-gwaii-south": 8,
+    "masset-inlet": 107
+  },
+  "processed": 2863,
+  "no_scene": 0,
+  "download_errors": 0,
+  "low_score": 2138,
+  "elapsed_seconds": 852.3948290348053
+}

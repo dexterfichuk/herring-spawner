@@ -1,0 +1,122 @@
+[
+  {
+    "filename": "big-bay-prince-rupert_2023-03-28_cld11.png",
+    "correct": true,
+    "confidence": "high",
+    "notes": "Large, unmistakable bright turquoise plume filling the nearshore area."
+  },
+  {
+    "filename": "big-bay-prince-rupert_2023-03-28_cld12.png",
+    "correct": true,
+    "confidence": "high",
+    "notes": "Consistent with cld11; major turquoise spawning event visible."
+  },
+  {
+    "filename": "bradys-beach-bamfield_2025-02-11_cld1.png",
+    "correct": false,
+    "confidence": "high",
+    "notes": "Mostly textural cloud cover; nearshore water is dark without turquoise plumes."
+  },
+  {
+    "filename": "bradys-beach-bamfield_2025-02-11_cld3.png",
+    "correct": false,
+    "confidence": "high",
+    "notes": "Identical to cld1; heavy cloud interference, no turquoise detected."
+  },
+  {
+    "filename": "dfo-verified-anderson-point_2024-03-18_20240318.png",
+    "correct": true,
+    "confidence": "high",
+    "notes": "Vivid turquoise plumes around the headland."
+  },
+  {
+    "filename": "dfo-verified-anderson-point_2024-03-18_cloud24.png",
+    "correct": true,
+    "confidence": "high",
+    "notes": "Clear turquoise signal through slight atmospheric haze."
+  },
+  {
+    "filename": "dfo-verified-breakwater-island_2024-03-18_20240318.png",
+    "correct": true,
+    "confidence": "high",
+    "notes": "Classic diffuse bright blue patches in protected nearshore water."
+  },
+  {
+    "filename": "dfo-verified-breakwater-island_2024-03-18_cloud0.png",
+    "correct": true,
+    "confidence": "high",
+    "notes": "Clear view of bright turquoise spawn plumes."
+  },
+  {
+    "filename": "dfo-verified-fan-island_2024-03-22_20240322.png",
+    "correct": true,
+    "confidence": "high",
+    "notes": "Extensive bright turquoise plumes surrounding the island."
+  },
+  {
+    "filename": "dfo-verified-fan-island_2024-03-22_cloud11.png",
+    "correct": false,
+    "confidence": "high",
+    "notes": "Thick textural cloud cover totally obscuring the water surface."
+  },
+  {
+    "filename": "dfo-verified-fan-island_2024-03-22_cloud12.png",
+    "correct": false,
+    "confidence": "high",
+    "notes": "Same as cloud11; unusable due to clouds."
+  },
+  {
+    "filename": "dfo-verified-qualicum-beach_2024-03-15_20240315.png",
+    "correct": true,
+    "confidence": "high",
+    "notes": "Wide, bright turquoise band along the beach."
+  },
+  {
+    "filename": "dfo-verified-qualicum-beach_2024-03-15_cloud16.png",
+    "correct": true,
+    "confidence": "high",
+    "notes": "Spawn plume clearly visible despite some thin cloud streaks."
+  },
+  {
+    "filename": "dfo-verified-ucluelet_2024-03-18_20240318.png",
+    "correct": true,
+    "confidence": "high",
+    "notes": "Intense turquoise swirling plumes near the shore."
+  },
+  {
+    "filename": "dfo-verified-ucluelet_2024-03-18_cloud2.png",
+    "correct": true,
+    "confidence": "high",
+    "notes": "Consistent with the non-cloud image; turquoise signature is prominent."
+  },
+  {
+    "filename": "french-creek-bc_2025-03-05_cld36.png",
+    "correct": false,
+    "confidence": "high",
+    "notes": "Water is dark with some white coastal reflection/surf; lacks the turquoise hue."
+  },
+  {
+    "filename": "news-salmon-beach-2025_2025-02-06_cloud3.png",
+    "correct": false,
+    "confidence": "high",
+    "notes": "Coastal brightness follows rock lines (surf); no turquoise plumes detected."
+  },
+  {
+    "filename": "news-salmon-beach-2025_2025-02-11_20250211.png",
+    "correct": false,
+    "confidence": "high",
+    "notes": "White shoreline features (surf) without turquoise signature."
+  },
+  {
+    "filename": "news-salmon-beach-2025_2025-02-11_cloud1.png",
+    "correct": false,
+    "confidence": "high",
+    "notes": "Water is very dark; bright spots are breaking waves on reefs."
+  },
+  {
+    "filename": "news-salmon-beach-2025_2025-02-11_cloud3.png",
+    "correct": false,
+    "confidence": "high",
+    "notes": "Same as news-salmon-beach cloud1; false positive due to surf."
+  }
+]

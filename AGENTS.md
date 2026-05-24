@@ -1,44 +1,64 @@
-# Herring Spawn Detection — Project Status & Plan
+# Herring Spawn Detection — Agent Context
 
 ## Repository
 https://github.com/dexterfichuk/herring-spawner
 
+For the detailed audit and current handoff, read `docs/agent_handoff.md` first.
+
 ## What's Built
 
 ### Pipeline
+- `scripts/scan_bc_coast_knn.py` — Current KNN/DINOv2 scan pipeline for BC habitat regions
+- `scripts/scan_bc_coast.py` — Original BC coast scan with DINOv2/SVM scoring
+- `scripts/final_bc_sweep.py` — Rose-verified training sweep, model retrain, temporal review orchestration
+- `scripts/ingress_dfo_gee_search.py` — DFO event Sentinel-2 thumbnail ingress and review page builder
+- `scripts/knn_detector.py` — DINOv2 KNN voting evaluation and report builder
 - `scripts/run_gee_search.py` — Search Sentinel-2 for known events, download thumbnails
 - `scripts/run_embeddings.py` — DINOv2 embedding ranking with positive/negative scoring
-- `scripts/run_clay_multispectral.py` — Clay v1.5 encoder on multi-spectral GeoTIFF chips
-- `scripts/download_and_review.py` — Batch thumbnail download + review page generator
+- `scripts/run_clay_multispectral.py` — Clay v1.5 encoder on multispectral GeoTIFF chips
+- `scripts/download_and_review.py` — Batch thumbnail download and review page generator
 - `scripts/label_images.py` — Terminal-based labeling tool
-- `scripts/build_event_catalog.py` — Combines DFO + manual + track events into GeoJSON
+- `scripts/build_event_catalog.py` — Combines DFO, manual, and track events into GeoJSON
 
 ### Data
-- `data/samples/positive/` — 14 confirmed spawn images (user-validated)
-- `data/samples/negative/` — 40 confirmed non-spawn images (user-validated)
-- `data/review/thumbnails/` — 27 thumbnails from initial 11 DFO/manual events
-- `data/review/thumbnails2/` — 47 thumbnails from 30 BC + WA events
-- `data/chips/` — 20 multi-spectral GeoTIFF chips for Clay
-- `data/embeddings/` — All embedding vectors saved as npz
+- `data/samples/positive/` — Current positive training thumbnails; see `data/samples/training_manifest.json`
+- `data/samples/negative/` — Current negative training thumbnails
+- `data/candidates_v2/` — Earlier SVM candidate set, review pages, labels, and temporal artifacts
+- `data/candidates_knn/` — Current KNN scan output: 725 candidates from 2,863 scanned points
+- `data/candidates_final/` — Final SVM sweep metadata and generated review artifacts
+- `data/sog_candidates/` — Strait of Georgia candidate thumbnails: 452 thumbnails from 333 filtered records
+- `data/ingressed/` — DFO/external ingressed records, thumbnails, manifests, and review pages
+- `data/models/` — DINOv2 SVM and improved feature model artifacts
+- `data/chips/` and `data/embeddings/` — Clay/DINO intermediate artifacts
+- Public generated-image dataset — `https://huggingface.co/datasets/dfichuk/herring-spawn-candidates`
 
 ### Model Performance
-- **DINOv2 similarity**: 88.9% accuracy (48/54), 0.0607 separation, 14 spawn + 40 no spawn
-- **DINOv2 + SVM**: 84.3% ± 8.3% 5-fold CV, 1.4811 separation, 98.6% full-dataset accuracy (20 pos + 50 neg)
-- **Clay v1.5**: 0.0951 separation, needs more labeled multi-spectral data
+- **Current DINOv2 + SVM**: 94.5% mean CV, 1.8658 separation, trained on 5 rose-verified positives + 50 negatives
+- **KNN DINOv2 scan**: 205 training labels, 2,863 points scanned, 725 candidates saved in `data/candidates_knn/`
+- **Improved feature model**: 85.1% mean CV, 97.0% combined-feature accuracy on 67 labeled samples
+- **Earlier DINOv2 similarity**: 88.9% accuracy on 54 labeled thumbnails, useful as historical baseline only
+- **Clay/delta direction**: preferred research path because paired temporal/multispectral change reduces shoreline bias
 
 ### Review Pages
-- `data/review/interactive_review.html` — Working interactive labeler (batch 1)
-- `data/review/label.html` — Interactive labeler served via HTTP at :8766
-- `data/review/review2_ref.html` — Zero-JS reference (numbers only)
-- `data/review/combined_results.html` — Clay + DINOv2 side-by-side
+- `data/candidates_knn/review.html` — Current KNN candidate review page
+- `data/sog_candidates/review.html` and `data/sog_candidates/top.html` — Strait of Georgia candidate reviews
+- `data/ingressed/review.html` and `data/ingressed/label.html` — DFO/external ingress review pages
+- `data/candidates_v2/review.html`, `koko_review.html`, `rose_spawns.html`, `temporal_review.html` — Earlier and temporal review pages
+- `data/review/` — Earlier review experiments, ignored by git by default
+- `data/candidates_final/review.html` — Final sweep review page, uploaded to Hugging Face when generated
 
 ## Current Approach
 
-Given the small dataset (54 labeled, 14 spawn), DINOv2 on RGB thumbnails outperforms Clay (0.0607 vs 0.0465 separation). We use:
-1. DINOv2 ViT-S/14 for embeddings (384-dim, 84MB model, fast on CPU)
-2. Mean of 14 positive embeddings as reference vector
-3. Cosine similarity to reference minus similarity to negative mean
-4. Threshold at 0 (zero) gives 88.9% accuracy
+Use DINOv2 thumbnail models to triage candidates, then require temporal support or human review before treating anything as a real spawn.
+
+1. Build candidates from known event records or BC habitat grid points.
+2. Download Sentinel-2 RGB thumbnails from Earth Engine project `redd-fish`.
+3. Embed thumbnails with DINOv2 ViT-S/14.
+4. Rank with KNN or SVM using current human-reviewed labels.
+5. Store candidate thumbnails, manifests, summaries, and static review pages.
+6. Confirm with temporal repeatability, paired deltas, or human labels.
+
+Do not rely on single-image model score alone for final truth. The model can learn shoreline, surf, sediment, and bright beach patterns.
 
 ## Next Phase: BC Coast Scanning
 
@@ -46,11 +66,11 @@ Given the small dataset (54 labeled, 14 spawn), DINOv2 on RGB thumbnails outperf
 Scan the entire BC coastline during herring spawn season (Feb-April) to find new spawn events.
 
 ### Method
-1. Generate ~5,000 sampling points along the BC coastline
-2. For each point, check Sentinel-2 scenes during spawn window
-3. Download RGB thumbnail → run DINOv2 → score
-4. Score above threshold? Save as candidate. Below? Discard immediately.
-5. Present candidates for human review
+1. Generate sampling points across the 13 known BC herring habitat regions.
+2. For each point, check Sentinel-2 scenes during the spawn window.
+3. Download RGB thumbnail and run DINOv2 embedding.
+4. Classify with KNN/SVM and save only candidate thumbnails.
+5. Present candidates for human review and temporal validation.
 
 ### Coastline Sampling
 - Use Natural Earth or DFO coastline data
@@ -70,6 +90,7 @@ Scan the entire BC coastline during herring spawn season (Feb-April) to find new
 - Candidates stored as: `data/candidates/{event_id}_{date}_{score}.png`
 - Candidate manifest: `data/candidates/manifest.json`
 - Each candidate includes: lat, lon, date, score, scene_id, thumbnail path
+- Image-heavy generated assets should be uploaded to Hugging Face with `scripts/upload_hf_dataset.py` instead of committed to GitHub.
 
 ### Estimated Scale
 - 5,000 coastal points × 2-3 clear scenes each = ~12,500 thumbnails processed
@@ -79,24 +100,38 @@ Scan the entire BC coastline during herring spawn season (Feb-April) to find new
 
 ### Running
 ```bash
-# Scan with SVM classifier (better precision)
-python scripts/scan_bc_coast.py \
-  --output data/candidates_v2 \
-  --classifier svm \
-  --start 2024-03-01 \
-  --end 2024-04-15 \
+source .venv/bin/activate
+python scripts/scan_bc_coast_knn.py \
+  --output data/candidates_knn \
+  --start 2024-02-01 \
+  --end 2024-05-31 \
   --max-cloud 50 \
   --grid-spacing 0.02 \
-  --workers 8
+  --workers 6 \
+  --k 3
 
-# Review candidates
-python -m http.server 8766 --directory data/candidates_v2
+python -m http.server 8766 --directory data/candidates_knn
 # Then open http://localhost:8766/review.html
 ```
 
+## Commit/Storage Notes
+
+- Commit scripts, docs, tests, manifests, labels, model summaries, and reasonably sized review artifacts.
+- Do not commit `.venv/`, caches, raw `checkpoints/`, generated candidate imagery, or files larger than GitHub's normal 100 MB limit unless Git LFS is configured.
+- Upload image-heavy generated outputs to `dfichuk/herring-spawn-candidates`:
+
+```bash
+source .venv/bin/activate
+python -m pip install huggingface_hub
+huggingface-cli login
+python scripts/upload_hf_dataset.py --repo-id dfichuk/herring-spawn-candidates
+```
+
+- Large generated temporal artifacts in `data/candidates_v2/` should remain local unless explicitly moved to LFS or external storage.
+
 ## Future Work
-- **Fix: delta-based approach** — Instead of scoring single images, compare pre-spawn baseline vs spawn-season imagery at each location. A spawn event = large embedding change; barren shoreline = minimal change.
+- **Delta-based approach** — Instead of scoring single images, compare pre-spawn baseline vs spawn-season imagery at each location. A spawn event = large embedding change; barren shoreline = minimal change.
 - Full Clay pipeline with proper GeoTIFF exports
-- Multi-year scanning (2023, 2024, 2025)
+- Multi-year scanning and review consolidation across 2023-2026
 - Web dashboard for candidate review
 - Kelp forest detection adaptation

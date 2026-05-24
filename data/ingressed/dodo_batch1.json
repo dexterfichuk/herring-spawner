@@ -1,0 +1,62 @@
+[
+  {
+    "filename": "dfo-2016-03-23-spiller-inlt_2016-03-31_20160331.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "Dark nearshore water with no bright turquoise/milky plume; mostly shadowed land and open water."
+  },
+  {
+    "filename": "dfo-2016-03-25-wilby-pt_2016-03-31_20160331.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "Looks like surf/bright shoreline foam, not diffuse turquoise water."
+  },
+  {
+    "filename": "dfo-2016-04-02-spiller-chnl_2016-03-31_20160331.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "Mostly dark water with no obvious turquoise bloom."
+  },
+  {
+    "filename": "dfo-2017-03-27-qualicum-beach_2017-03-30_20170330.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "Urban beach scene with dark water; no milky turquoise patch."
+  },
+  {
+    "filename": "dfo-2018-03-02-qualicum-beach_2018-03-10_20180310.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "Shoreline and surf only; water stays dark without diffuse turquoise coloring."
+  },
+  {
+    "filename": "dfo-2018-03-03-big-qualicum-rvr_2018-03-10_20180310.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "Faint greenish water by shore, but not the bright turquoise milky patch seen in positives."
+  },
+  {
+    "filename": "dfo-2019-03-08-strange-is_2019-03-18_20190318.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "Mostly land and dark water; no clear spawn-like turquoise plume."
+  },
+  {
+    "filename": "dfo-2019-03-19-big-qualicum-rvr_2019-03-20_20190320.png",
+    "spawn": true,
+    "confidence": "medium",
+    "visual_cues": "Bright turquoise/milky band along the nearshore water matches the spawn reference style."
+  },
+  {
+    "filename": "dfo-2019-03-23-tree-bluff_2019-04-01_20190401.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "Bright linear shoreline surf/foam, sharp-edged rather than diffuse turquoise water."
+  },
+  {
+    "filename": "dfo-2019-03-24-spiller-chnl_2019-03-28_20190328.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "Nearly black tile with no visible turquoise plume."
+  }
+]

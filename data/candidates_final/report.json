@@ -1,0 +1,328 @@
+{
+  "training": {
+    "positive_samples": 5,
+    "negative_samples": 50,
+    "svm_kernel": "rbf",
+    "cv_accuracy": 0.9451,
+    "cv_std": 0.0318,
+    "full_accuracy": 1.0,
+    "separation": 1.8658
+  },
+  "sweep": {
+    "total_grid_points": 2863,
+    "regions_scanned": 13,
+    "total_candidates": 878,
+    "grid_spacing_deg": 0.02,
+    "date_range": "2024-02-01 to 2024-05-31",
+    "max_cloud_pct": 50,
+    "threshold": 0.0
+  },
+  "candidates_by_region": {
+    "comox": {
+      "count": 30,
+      "mean_score": 0.2664,
+      "max_score": 0.7208,
+      "high_conf": 5
+    },
+    "denman-island": {
+      "count": 26,
+      "mean_score": 0.284,
+      "max_score": 1.0468,
+      "high_conf": 5
+    },
+    "haida-gwaii-south": {
+      "count": 37,
+      "mean_score": 0.2002,
+      "max_score": 0.6718,
+      "high_conf": 2
+    },
+    "masset-inlet": {
+      "count": 160,
+      "mean_score": 0.4525,
+      "max_score": 1.0379,
+      "high_conf": 70
+    },
+    "milbanke-sound": {
+      "count": 23,
+      "mean_score": 0.0943,
+      "max_score": 0.2363,
+      "high_conf": 0
+    },
+    "nanaimo": {
+      "count": 42,
+      "mean_score": 0.3276,
+      "max_score": 0.7334,
+      "high_conf": 11
+    },
+    "nootka-sound": {
+      "count": 110,
+      "mean_score": 0.3774,
+      "max_score": 0.9011,
+      "high_conf": 35
+    },
+    "prince-rupert": {
+      "count": 95,
+      "mean_score": 0.2397,
+      "max_score": 0.7178,
+      "high_conf": 6
+    },
+    "qualicum": {
+      "count": 49,
+      "mean_score": 0.4062,
+      "max_score": 1.0093,
+      "high_conf": 20
+    },
+    "quatsino-sound": {
+      "count": 139,
+      "mean_score": 0.3316,
+      "max_score": 0.9098,
+      "high_conf": 30
+    },
+    "spiller-channel": {
+      "count": 60,
+      "mean_score": 0.2057,
+      "max_score": 0.4826,
+      "high_conf": 0
+    },
+    "tofino": {
+      "count": 71,
+      "mean_score": 0.3173,
+      "max_score": 1.0003,
+      "high_conf": 11
+    },
+    "ucluelet": {
+      "count": 36,
+      "mean_score": 0.2723,
+      "max_score": 0.8274,
+      "high_conf": 4
+    }
+  },
+  "score_distribution": {
+    "0_to_0.1": 170,
+    "0.1_to_0.2": 144,
+    "0.2_to_0.5": 365,
+    "0.5_to_1.0": 195,
+    "above_1.0": 4
+  },
+  "scenes_by_date": {
+    "2024-02-05": 2,
+    "2024-02-14": 1,
+    "2024-02-15": 49,
+    "2024-03-16": 159,
+    "2024-03-18": 49,
+    "2024-03-20": 2,
+    "2024-03-22": 37,
+    "2024-03-24": 83,
+    "2024-03-29": 37,
+    "2024-04-16": 53,
+    "2024-04-19": 206,
+    "2024-05-22": 200
+  },
+  "top_20_candidates": [
+    {
+      "region": "denman-island",
+      "lat": 49.47991,
+      "lon": -124.85886,
+      "date": "2024-05-22",
+      "scene_id": "20240522T191911_20240522T192652_T09UYQ",
+      "cloud": 0.248573,
+      "score": 1.0468,
+      "thumbnail_path": "denman-island_2024-05-22_score1.05_49.47991_-124.85886_20240522.png"
+    },
+    {
+      "region": "masset-inlet",
+      "lat": 53.684865,
+      "lon": -132.768264,
+      "date": "2024-04-19",
+      "scene_id": "20240419T195859_20240419T200901_T08UPE",
+      "cloud": 0.428124,
+      "score": 1.0379,
+      "thumbnail_path": "masset-inlet_2024-04-19_score1.04_53.684865_-132.768264_20240419.png"
+    },
+    {
+      "region": "qualicum",
+      "lat": 49.294865,
+      "lon": -124.557442,
+      "date": "2024-04-19",
+      "scene_id": "20240419T190921_20240419T191144_T10UCV",
+      "cloud": 0.884634,
+      "score": 1.0093,
+      "thumbnail_path": "qualicum_2024-04-19_score1.01_49.294865_-124.557442_20240419.png"
+    },
+    {
+      "region": "tofino",
+      "lat": 49.114865,
+      "lon": -125.806603,
+      "date": "2024-03-16",
+      "scene_id": "20240316T193141_20240316T194053_T09UYQ",
+      "cloud": 0.001537,
+      "score": 1.0003,
+      "thumbnail_path": "tofino_2024-03-16_score1.00_49.114865_-125.806603_20240316.png"
+    },
+    {
+      "region": "tofino",
+      "lat": 49.194865,
+      "lon": -126.026603,
+      "date": "2024-03-16",
+      "scene_id": "20240316T193141_20240316T194053_T09UYQ",
+      "cloud": 0.001537,
+      "score": 0.9997,
+      "thumbnail_path": "tofino_2024-03-16_score1.00_49.194865_-126.026603_20240316.png"
+    },
+    {
+      "region": "tofino",
+      "lat": 49.194865,
+      "lon": -126.046603,
+      "date": "2024-03-16",
+      "scene_id": "20240316T193141_20240316T194053_T09UYQ",
+      "cloud": 0.001537,
+      "score": 0.9651,
+      "thumbnail_path": "tofino_2024-03-16_score0.97_49.194865_-126.046603_20240316.png"
+    },
+    {
+      "region": "masset-inlet",
+      "lat": 53.784865,
+      "lon": -132.788264,
+      "date": "2024-04-19",
+      "scene_id": "20240419T195859_20240419T200901_T08UPE",
+      "cloud": 0.428124,
+      "score": 0.961,
+      "thumbnail_path": "masset-inlet_2024-04-19_score0.96_53.784865_-132.788264_20240419.png"
+    },
+    {
+      "region": "qualicum",
+      "lat": 49.274865,
+      "lon": -124.557442,
+      "date": "2024-04-19",
+      "scene_id": "20240419T190921_20240419T191144_T10UCV",
+      "cloud": 0.884634,
+      "score": 0.9574,
+      "thumbnail_path": "qualicum_2024-04-19_score0.96_49.274865_-124.557442_20240419.png"
+    },
+    {
+      "region": "masset-inlet",
+      "lat": 53.804865,
+      "lon": -132.808264,
+      "date": "2024-04-19",
+      "scene_id": "20240419T195859_20240419T200901_T08UPE",
+      "cloud": 0.428124,
+      "score": 0.9547,
+      "thumbnail_path": "masset-inlet_2024-04-19_score0.95_53.804865_-132.808264_20240419.png"
+    },
+    {
+      "region": "masset-inlet",
+      "lat": 53.784865,
+      "lon": -132.748264,
+      "date": "2024-04-19",
+      "scene_id": "20240419T195859_20240419T200901_T08UPE",
+      "cloud": 0.428124,
+      "score": 0.9408,
+      "thumbnail_path": "masset-inlet_2024-04-19_score0.94_53.784865_-132.748264_20240419.png"
+    },
+    {
+      "region": "masset-inlet",
+      "lat": 53.824865,
+      "lon": -132.908264,
+      "date": "2024-04-19",
+      "scene_id": "20240419T195859_20240419T200901_T08UPE",
+      "cloud": 0.428124,
+      "score": 0.9265,
+      "thumbnail_path": "masset-inlet_2024-04-19_score0.93_53.824865_-132.908264_20240419.png"
+    },
+    {
+      "region": "masset-inlet",
+      "lat": 53.764865,
+      "lon": -132.808264,
+      "date": "2024-04-19",
+      "scene_id": "20240419T195859_20240419T200901_T08UPE",
+      "cloud": 0.428124,
+      "score": 0.9204,
+      "thumbnail_path": "masset-inlet_2024-04-19_score0.92_53.764865_-132.808264_20240419.png"
+    },
+    {
+      "region": "masset-inlet",
+      "lat": 53.704865,
+      "lon": -132.748264,
+      "date": "2024-04-19",
+      "scene_id": "20240419T195859_20240419T200901_T08UPE",
+      "cloud": 0.428124,
+      "score": 0.9109,
+      "thumbnail_path": "masset-inlet_2024-04-19_score0.91_53.704865_-132.748264_20240419.png"
+    },
+    {
+      "region": "quatsino-sound",
+      "lat": 50.524865,
+      "lon": -127.87245,
+      "date": "2024-03-16",
+      "scene_id": "20240316T193141_20240316T193137_T09UWR",
+      "cloud": 7.5e-05,
+      "score": 0.9098,
+      "thumbnail_path": "quatsino-sound_2024-03-16_score0.91_50.524865_-127.87245_20240316.png"
+    },
+    {
+      "region": "nootka-sound",
+      "lat": 49.564865,
+      "lon": -126.508503,
+      "date": "2024-05-22",
+      "scene_id": "20240522T191911_20240522T192652_T09UXQ",
+      "cloud": 0.002695,
+      "score": 0.9011,
+      "thumbnail_path": "nootka-sound_2024-05-22_score0.90_49.564865_-126.508503_20240522.png"
+    },
+    {
+      "region": "masset-inlet",
+      "lat": 53.684865,
+      "lon": -132.788264,
+      "date": "2024-04-19",
+      "scene_id": "20240419T195859_20240419T200901_T08UPE",
+      "cloud": 0.428124,
+      "score": 0.8914,
+      "thumbnail_path": "masset-inlet_2024-04-19_score0.89_53.684865_-132.788264_20240419.png"
+    },
+    {
+      "region": "quatsino-sound",
+      "lat": 50.524865,
+      "lon": -127.83245,
+      "date": "2024-03-16",
+      "scene_id": "20240316T193141_20240316T193137_T09UWR",
+      "cloud": 7.5e-05,
+      "score": 0.8911,
+      "thumbnail_path": "quatsino-sound_2024-03-16_score0.89_50.524865_-127.83245_20240316.png"
+    },
+    {
+      "region": "masset-inlet",
+      "lat": 53.764865,
+      "lon": -132.768264,
+      "date": "2024-04-19",
+      "scene_id": "20240419T195859_20240419T200901_T08UPE",
+      "cloud": 0.428124,
+      "score": 0.891,
+      "thumbnail_path": "masset-inlet_2024-04-19_score0.89_53.764865_-132.768264_20240419.png"
+    },
+    {
+      "region": "masset-inlet",
+      "lat": 53.644865,
+      "lon": -132.788264,
+      "date": "2024-04-19",
+      "scene_id": "20240419T195859_20240419T200901_T08UPE",
+      "cloud": 0.428124,
+      "score": 0.8891,
+      "thumbnail_path": "masset-inlet_2024-04-19_score0.89_53.644865_-132.788264_20240419.png"
+    },
+    {
+      "region": "nootka-sound",
+      "lat": 49.684865,
+      "lon": -126.708503,
+      "date": "2024-05-22",
+      "scene_id": "20240522T191911_20240522T192652_T09UXR",
+      "cloud": 0.004884,
+      "score": 0.8873,
+      "thumbnail_path": "nootka-sound_2024-05-22_score0.89_49.684865_-126.708503_20240522.png"
+    }
+  ],
+  "temporal_validation": {
+    "super_positive_2plus_dates": 0,
+    "positive_1_date": 878
+  },
+  "new_discoveries": 863
+}

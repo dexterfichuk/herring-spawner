@@ -12,6 +12,22 @@ data/exports/
 data/embeddings/
 data/review/
 data/candidates/
+data/candidates_knn/*.png
+data/candidates_knn/review.html
+data/candidates_final/*.png
+data/candidates_final/review.html
+data/sog_candidates/thumbnails/
+data/ingressed/thumbnails/
+data/candidates_salmon_coast/
+data/candidates_salmon_coast_2023/
+data/candidates_salmon_coast_2025/
+data/candidates_salmon_coast_2026/
+data/candidates_v2/temporal_cache/
+data/candidates_v2/temporal_results.json
+data/candidates_v2/temporal_review.html
+
+checkpoints/
+*.ckpt
 
 .env
 *.jsonl

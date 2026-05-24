@@ -44,6 +44,20 @@ python scripts/search_known_events.py \
 
 The generated files are ignored by git. Review them locally before running GEE-backed exports.
 
+## Generated Dataset Storage
+
+Image-heavy generated candidate assets live in the public Hugging Face dataset:
+https://huggingface.co/datasets/dfichuk/herring-spawn-candidates
+
+GitHub should keep code, docs, tests, labels, manifests, and lightweight model summaries. Upload regenerated candidate imagery and review assets with:
+
+```bash
+source .venv/bin/activate
+python -m pip install huggingface_hub
+huggingface-cli login
+python scripts/upload_hf_dataset.py --repo-id dfichuk/herring-spawn-candidates
+```
+
 ## Running Tests
 
 ```bash

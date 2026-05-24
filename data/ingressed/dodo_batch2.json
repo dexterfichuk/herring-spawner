@@ -1,0 +1,94 @@
+[
+  {
+    "filename": "dfo-2019-03-15-whalebone-pt_2019-03-20_20190320.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "Dark water and coastline with some surf/bright edges, but no diffuse turquoise milky patch."
+  },
+  {
+    "filename": "dfo-2019-03-19-big-qualicum-rvr_2019-03-20_20190320.png",
+    "spawn": true,
+    "confidence": "high",
+    "segmentation": "right side, hugging the shoreline from the river mouth downward",
+    "visual_cues": "Bright turquoise/milky nearshore plume is clearly visible along the coast."
+  },
+  {
+    "filename": "dfo-2019-03-19-bowser_2019-03-20_20190320.png",
+    "spawn": true,
+    "confidence": "medium",
+    "segmentation": "upper-right quadrant and lower-right near the shoreline",
+    "visual_cues": "Distinct turquoise diffuse water patches appear offshore of the coast, unlike pure white surf."
+  },
+  {
+    "filename": "dfo-2019-03-20-dries-inlt_2019-03-19_20190319.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "Mostly dark inlet water with no bright turquoise spawn-like patch."
+  },
+  {
+    "filename": "dfo-2019-03-23-swamp-is_2019-04-01_20190401.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "Dark water and land; no obvious turquoise bloom."
+  },
+  {
+    "filename": "dfo-2019-03-23-tree-bluff_2019-04-01_20190401.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "White, sharp shoreline surf/foam rather than diffuse turquoise water."
+  },
+  {
+    "filename": "dfo-2019-03-24-don-lgn_2019-03-28_20190328.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "Mostly dark water with no distinct turquoise plume."
+  },
+  {
+    "filename": "dfo-2019-03-24-mosquito-bay_2019-03-28_20190328.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "No bright turquoise patch; just dark bay water and shoreline."
+  },
+  {
+    "filename": "dfo-2019-03-24-neekas-cv_2019-03-28_20190328.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "Narrow inlet of dark water with forested land, lacking the spawn coloration."
+  },
+  {
+    "filename": "dfo-2019-03-24-neekas-inlt_2019-03-28_20190328.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "Dark inlet water and land textures only; no turquoise plume."
+  },
+  {
+    "filename": "dfo-2019-03-24-norman-morrison-bay_2019-03-28_20190328.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "Mostly dark water and shoreline; no distinctive milky blue area."
+  },
+  {
+    "filename": "dfo-2019-03-24-osment-inlt_2019-03-31_20190331.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "No clear turquoise nearshore patch, just dark water and land."
+  },
+  {
+    "filename": "dfo-2019-03-24-spiller-chnl_2019-03-28_20190328.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "Tile is mostly black/dark water with no visible spawn signal."
+  },
+  {
+    "filename": "dfo-2019-03-24-wilby-pt_2019-03-31_20190331.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "Bright white surf and rocks dominate the shoreline; not diffuse turquoise spawn."
+  },
+  {
+    "filename": "dfo-2019-03-26-wilcox-grp_2019-03-19_20190319.png",
+    "spawn": false,
+    "confidence": "low",
+    "visual_cues": "Scattered islands in dark water without the bright turquoise milky patch."
+  }
+]

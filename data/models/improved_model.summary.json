@@ -1,0 +1,21 @@
+{
+  "n_train": 67,
+  "n_pos": 17,
+  "n_neg": 50,
+  "mean_turquoise_pos": 0.01699328859981808,
+  "mean_turquoise_neg": 0.019244626115341768,
+  "mean_bright_cyan_pos": 0.029700895946182075,
+  "mean_bright_cyan_neg": 0.06830062959173333,
+  "mean_edge_pos": 0.03506355383699852,
+  "mean_edge_neg": 0.039757030994229475,
+  "mean_foam_pos": 0.0018491048787339166,
+  "mean_foam_neg": 0.01203972800340095,
+  "mean_sediment_pos": 0.03319139890555827,
+  "mean_sediment_neg": 0.03410089755388327,
+  "cv_accuracy_mean": 0.8505494505494505,
+  "cv_accuracy_std": 0.06660827455249116,
+  "full_accuracy": 1.0,
+  "svm_separation": 1.5996393907496085,
+  "combined_separation": 0.37447545370090973,
+  "combined_accuracy": 0.9701492537313433
+}

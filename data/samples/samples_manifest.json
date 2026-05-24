@@ -138,5 +138,68 @@
     "filename": "thompson-bay_2023-03-27_cld0.png",
     "label": "no_spawn",
     "confirmed_by": "user"
+  },
+  {
+    "filename": "SoG_2021-03-11_score0.00_49.2449_-124.023_20210311.png",
+    "label": "spawn_visible",
+    "confirmed_by": "user",
+    "location": "Sunrise Beach +",
+    "year": "2021"
+  },
+  {
+    "filename": "SoG_2019-03-20_score0.00_49.701389_-124.86_20190320.png",
+    "label": "spawn_visible",
+    "confirmed_by": "user",
+    "location": "Cape Lazo",
+    "year": "2019"
+  },
+  {
+    "filename": "SoG_2019-03-20_score0.00_49.701389_-124.86_20190320.png",
+    "label": "spawn_visible",
+    "confirmed_by": "user",
+    "location": "Cape Lazo",
+    "year": "2019"
+  },
+  {
+    "filename": "SoG_2018-03-10_score0.33_49.465556_-124.736111_20180310.png",
+    "label": "spawn_visible",
+    "confirmed_by": "user",
+    "location": "Mapleguard Pt",
+    "year": "2018"
+  },
+  {
+    "filename": "SoG_2018-03-10_score0.33_49.465556_-124.736111_20180310.png",
+    "label": "spawn_visible",
+    "confirmed_by": "user",
+    "location": "Mapleguard Pt",
+    "year": "2018"
+  },
+  {
+    "filename": "SoG_2021-03-11_score0.00_49.248611_-124.033611_20210311.png",
+    "label": "spawn_visible",
+    "confirmed_by": "user",
+    "location": "Icarus Pt",
+    "year": "2021"
+  },
+  {
+    "filename": "SoG_2021-03-11_score0.00_49.528056_-124.606667_20210311.png",
+    "label": "spawn_visible",
+    "confirmed_by": "user",
+    "location": "Whaling Station Bay",
+    "year": "2021"
+  },
+  {
+    "filename": "SoG_2019-03-20_score0.33_49.474722_-124.685_20190320.png",
+    "label": "spawn_visible",
+    "confirmed_by": "user",
+    "location": "Boyle Pt",
+    "year": "2019"
+  },
+  {
+    "filename": "SoG_2019-03-20_score0.00_49.481944_-124.731667_20190320.png",
+    "label": "spawn_visible",
+    "confirmed_by": "user",
+    "location": "Repulse Pt",
+    "year": "2019"
   }
 ]

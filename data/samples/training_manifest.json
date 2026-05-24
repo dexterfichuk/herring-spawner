@@ -1,0 +1,12 @@
+{
+  "description": "Training data for final BC coast sweep",
+  "rose_verified_positives": [
+    "qualicum_2024-03-18_score0.01_49.254865_-124.497442_20240318.png",
+    "tofino_2024-03-16_score0.00_49.114865_-125.806603_20240316.png",
+    "tofino_2024-03-16_score0.01_49.194865_-126.026603_20240316.png",
+    "nootka-sound_2024-03-16_score0.00_49.584865_-126.528503_20240316.png",
+    "nootka-sound_2024-02-12_score0.00_49.564865_-126.508503_20240212.png"
+  ],
+  "positive_count": 5,
+  "negative_count": 50
+}

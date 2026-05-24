@@ -39,6 +39,17 @@ For the detailed audit and current handoff, read `docs/agent_handoff.md` first.
 - **Earlier DINOv2 similarity**: 88.9% accuracy on 54 labeled thumbnails, useful as historical baseline only
 - **Clay/delta direction**: preferred research path because paired temporal/multispectral change reduces shoreline bias
 
+### Human-Reviewed Positives
+- Current final-sweep human-reviewed positives are exactly the 5 Rose-verified files in `data/samples/training_manifest.json`.
+- The filenames are:
+  - `qualicum_2024-03-18_score0.01_49.254865_-124.497442_20240318.png`
+  - `tofino_2024-03-16_score0.00_49.114865_-125.806603_20240316.png`
+  - `tofino_2024-03-16_score0.01_49.194865_-126.026603_20240316.png`
+  - `nootka-sound_2024-03-16_score0.00_49.584865_-126.528503_20240316.png`
+  - `nootka-sound_2024-02-12_score0.00_49.564865_-126.508503_20240212.png`
+- Model-ranked candidates, high-confidence score buckets, temporal positives, and generated review pages are not human-reviewed positives unless they also appear in a human label file.
+- Treat `rose_*`, `silo_labels.json`, and other explicit review-label files as provenance sources; preserve reviewer/source names when promoting labels into training manifests.
+
 ### Review Pages
 - `data/candidates_knn/review.html` — Current KNN candidate review page
 - `data/sog_candidates/review.html` and `data/sog_candidates/top.html` — Strait of Georgia candidate reviews

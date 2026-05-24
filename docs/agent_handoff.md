@@ -93,11 +93,21 @@ Event/data ingestion and review:
 
 High-value labeled data:
 
-- `data/samples/positive/` - confirmed positive spawn thumbnails used for training.
+- `data/samples/positive/` - positive spawn thumbnails used for training. The current final-sweep human-reviewed subset is the 5 Rose-verified files listed below.
 - `data/samples/negative/` - confirmed non-spawn thumbnails used for training.
 - `data/samples/training_manifest.json` - current final-sweep training manifest: 5 rose-verified positives and 50 negatives.
 - `data/candidates_v2/rose_super_review.json`, `rose_200_labels.json`, `rose_training_verify.json`, `ai_labels.json` - human/AI review labels and verification aids.
 - `data/candidates_knn/silo_labels.json`, `data/sog_candidates/silo_labels.json`, `data/ingressed/silo_labels.json` - Silo-style labels from review workflows.
+
+Current final-sweep human-reviewed positives:
+
+- `qualicum_2024-03-18_score0.01_49.254865_-124.497442_20240318.png`
+- `tofino_2024-03-16_score0.00_49.114865_-125.806603_20240316.png`
+- `tofino_2024-03-16_score0.01_49.194865_-126.026603_20240316.png`
+- `nootka-sound_2024-03-16_score0.00_49.584865_-126.528503_20240316.png`
+- `nootka-sound_2024-02-12_score0.00_49.564865_-126.508503_20240212.png`
+
+Do not treat model-ranked candidates, high-confidence score buckets, temporal positives, or generated review pages as human-reviewed positives unless they also appear in an explicit human label file. When promoting labels into training manifests, preserve reviewer/source provenance such as Rose or Silo.
 
 Candidate and review outputs:
 
@@ -106,7 +116,6 @@ Candidate and review outputs:
 - `data/candidates_final/` - final SVM sweep outputs. Commit lightweight reports and logs; upload generated PNGs and review pages to Hugging Face.
 - `data/sog_candidates/` - Strait of Georgia candidate thumbnails from 333 filtered SOG records. Summary: 452 thumbnails, 241 records with scenes, 0 download errors.
 - `data/ingressed/` - ingressed DFO/external events, downloaded thumbnails, manifests, and review pages. The DFO GEE search selected 200 events and downloaded 128 clear thumbnails.
-- `data/candidates_final/` - final sweep manifests and temporal validation reports.
 - `data/candidates_salmon_coast*/` - related salmon coast scan outputs by year.
 - `https://huggingface.co/datasets/dfichuk/herring-spawn-candidates` - public home for generated candidate thumbnails, review pages, and other image-heavy scan outputs.
 

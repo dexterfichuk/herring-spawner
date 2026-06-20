@@ -8,7 +8,10 @@ For the detailed audit and current handoff, read `docs/agent_handoff.md` first.
 ## What's Built
 
 ### Pipeline
-- `scripts/scan_bc_coast_knn.py` — Current KNN/DINOv2 scan pipeline for BC habitat regions
+- `scripts/label_gradio.py` — **Current labeling app**: Gradio with Single Image + Grid Scan tabs, keyboard shortcuts, auto-save JSON. Replaces all Flask labeling apps.
+- `scripts/consolidate_candidates.py` — MD5-deduplicate all candidate directories into `data/unified/`, preserving labels from 6+ sources
+- `scripts/scan_shsi_candidates.py` — SHSI (Green²/Red) Earth Engine pre-screener: scans BC regions, downloads top-N candidate thumbnails, builds review page
+- `scripts/scan_bc_coast_knn.py` — KNN/DINOv2 scan pipeline for BC habitat regions
 - `scripts/scan_bc_coast.py` — Original BC coast scan with DINOv2/SVM scoring
 - `scripts/train_from_manifest.py` — Train DINOv2 SVM from training_manifest.json
 - `scripts/final_bc_sweep.py` — Rose-verified training sweep, model retrain, temporal review orchestration
@@ -18,7 +21,7 @@ For the detailed audit and current handoff, read `docs/agent_handoff.md` first.
 - `scripts/scan_13regions_subspacead.py` — Multi-year SubspaceAD scan of all 13 BC habitat regions
 - `scripts/subspace_ad.py` — DINOv2 SubspaceAD anomaly detector
 - `scripts/patch_subspace_ad.py` — Patch-level SubspaceAD with spatial segmentation
-- `scripts/fewshot_subspace_variants.py` — DINOv2 few-shot SubspaceAD variants (dual-subspace, positive-aware, MIL, confounder-aware, Mahalanobis)
+- `scripts/fewshot_subspace_variants.py` — DINOv2 few-shot SubspaceAD variants
 - `scripts/temporal_detector.py` — Before-during-after triplet delta and intra-season timeseries detector
 - `scripts/temporal_v2.py` — Five temporal modes: outlier, YOY, spectral, trajectory, cloud-fusion
 - `scripts/environmental_matcher.py` — Sun+tide-matched embedding outlier detection per location
@@ -26,24 +29,23 @@ For the detailed audit and current handoff, read `docs/agent_handoff.md` first.
 - `scripts/prompt_detector.py` — SenCLIP/RemoteCLIP contrastive prompt scoring with multi-scale crops
 - `scripts/benchmark_prompt_models.py` — Prompt model benchmark on golden set
 - `scripts/rs_foundation_probe.py` — frozen-embedding linear probe benchmark for remote-sensing foundation backbones
-- `scripts/label_subspace_app.py` — Flask labeling app for SubspaceAD candidates
-- `scripts/label_svm_app.py` — Flask labeling app for SVM candidates
-- `scripts/final_review_app.py` — Flask final review app for golden set labeling
-- `scripts/dual_subspace_review_app.py` — Flask labeling app for dual-subspace contrast candidates
+- `scripts/segment_spawn.py` — DINOv3 + SAM interactive click-to-segment web app
+- `scripts/dinov3_feature_extractor.py` — DINOv3 ViT-L/16 SAT-493M feature extraction with similarity heatmaps
+- `scripts/build_event_catalog.py` — Combines DFO, manual, and track events into GeoJSON
+- `scripts/download_and_review.py` — Batch thumbnail download and review page generator
 - `scripts/run_gee_search.py` — Search Sentinel-2 for known events, download thumbnails
 - `scripts/run_embeddings.py` — DINOv2 embedding ranking with positive/negative scoring
 - `scripts/run_clay_multispectral.py` — Clay v1.5 encoder on multispectral GeoTIFF chips
-- `scripts/download_and_review.py` — Batch thumbnail download and review page generator
-- `scripts/label_images.py` — Terminal-based labeling tool
-- `scripts/build_event_catalog.py` — Combines DFO, manual, and track events into GeoJSON
-- `scripts/segment_spawn.py` — DINOv3 + SAM interactive click-to-segment web app for pixel-level spawn masks
-- `scripts/dinov3_feature_extractor.py` — DINOv3 ViT-L/16 SAT-493M feature extraction with similarity heatmaps
 
 ### Data
-- `data/samples/positive/` — Current positive training thumbnails; see `data/samples/training_manifest.json`
-- `data/samples/negative/` — Current negative training thumbnails
+- `data/unified/` — **Current unified dataset**: 4,605 unique images (MD5-deduplicated from all sources), symlinked from `thumbs/`, manifest + labels in root. Point Gradio at this.
+- `data/candidates_shsi/` — SHSI pipeline output: 150 candidates from 2024 scan
+- `data/olmoearth_chips/` — 12-band Sentinel-2 GeoTIFF chips (npy) for OlmoEarth embedding
+- `data/samples/positive/` — Positive training thumbnails; see `data/samples/training_manifest.json`
+- `data/samples/negative/` — Negative training thumbnails (164 files)
+- `data/samples/rejected/` — Explicitly rejected images (11 files)
 - `data/candidates_v2/` — Earlier SVM candidate set, review pages, labels, and temporal artifacts
-- `data/candidates_knn/` — Current KNN scan output: 725 candidates from 2,863 scanned points
+- `data/candidates_knn/` — KNN scan output: 725 candidates from 2,863 scanned points
 - `data/candidates_final/` — Final SVM sweep metadata and generated review artifacts
 - `data/sog_candidates/` — Strait of Georgia candidate thumbnails: 452 thumbnails from 333 filtered records
 - `data/ingressed/` — DFO/external ingressed records, thumbnails, manifests, and review pages
@@ -51,38 +53,56 @@ For the detailed audit and current handoff, read `docs/agent_handoff.md` first.
 - `data/chips/` and `data/embeddings/` — Clay/DINO intermediate artifacts
 - Public generated-image dataset — `https://huggingface.co/datasets/dfichuk/herring-spawn-candidates`
 
-### Model Performance
-- **Current DINOv2 + SVM**: 95.6% full accuracy, 1.8540 separation, trained on 16 golden positives + 164 negatives (model: `data/models/svm_16pos_164neg.pkl`)
-- **DINOv2 Dual-Subspace Contrast (few-shot)**: AUROC 0.981, AP 0.901, best F1 0.846 — trains separate PCA on positives and negatives, score = negative_residual - positive_residual
-- **DINOv2 SubspaceAD (zero-shot)**: AUROC 0.997, AP 0.965 — PCA reconstruction residual on DINOv2 patch tokens; detects generic shoreline anomalies, use as screening tool only
-- **DINOv2 RS Foundation Linear Probe**: AUROC 0.972, AP 0.728, acc 0.939 — frozen DINOv2 + sklearn logistic regression; Prithvi/SatMAE/SkySense optional backbones fail clearly if deps unavailable
-- **DINOv2 Delta detector**: 100% LOO CV on 37 locations — compares pre-spawn vs spawn-season DINOv2 embeddings; 2x better separation than single-image scoring
-- **Environmental Matcher (S2 + Landsat)**: AUROC 0.745, AP 0.450 — sun+tide-matched embedding outliers across S2 + Landsat 8/9 scenes; 2.4x more scenes per location than S2-only
-- **Prompt-based CLIP scoring**: try `pallavijainpj/SenCLIP` first for satellite prompt scoring; keep the existing RemoteCLIP pipeline as a separate additive baseline. Use contrastive scoring `spawn_mean - max(confounder_group_means)` and multi-scale crop scoring for small plumes. Process one image at a time, prefer CPU by default, and keep crop batches tiny to stay RAM-safe. BioCLIP/BiomedCLIP are not recommended for nadir Sentinel-2 imagery.
-- **Prompt calibration (first-class)**: benchmark outputs now include raw spawn score, per-confounder group scores, max confounder group/mean, margin, and threshold sweeps (baseline 0.0, best accuracy, best balanced accuracy, best F1).
-- **RS foundation linear probe**: `scripts/rs_foundation_probe.py` trains a frozen-embedding sklearn linear probe with DINOv2 as the guaranteed fallback; optional Prithvi/SatMAE/SkySense-style backbones are best-effort and fail clearly if deps/model ids are unavailable. Keep it low-RAM by embedding one image at a time.
+### Model Benchmarks (2026-06-20, on full unified dataset: 588 images, 28 spawn / 560 no-spawn)
 
-### Human-Reviewed Positives
-- **Canonical training data** is in `data/samples/training_manifest.json` (16 positives, 164 negatives).
-- Positive images: `data/samples/positive/` (16 files)
-- Negative images: `data/samples/negative/` (164 files)
-- Rejected images from the final review cleanup: `data/samples/rejected/` (9 files)
+All benchmarks use KNN (cosine metric) with LOO cross-validation unless noted.
 
-- **14 final-review positives (all verified by dexterfichuk via dual_subspace_contrast review on 2026-05-25):**
-  - 4 Strait of Georgia: `SoG_2018-03-10_score0.33_49.465556_-124.736111_20180310.png`, `SoG_2019-03-20_score0.00_49.481944_-124.731667_20190320.png`, `SoG_2019-03-20_score0.00_49.701389_-124.86_20190320.png`, `SoG_2019-03-20_score0.33_49.474722_-124.685_20190320.png`
-  - 4 Strait of Georgia: `SoG_2021-03-11_score0.00_49.2449_-124.023_20210311.png`, `SoG_2021-03-11_score0.00_49.248611_-124.033611_20210311.png`, `SoG_2021-03-11_score0.00_49.5175_-124.577222_20210311.png`, `SoG_2021-03-11_score0.00_49.528056_-124.606667_20210311.png`
-  - 1 breakwater-island: `dfo-verified-breakwater-island_2024-03-18_cloud0.png`
-  - 3 milbanke-sound: `milbanke-sound_2024-03-24_score0.25_52.544865_-128.741984_20240324.png`, `milbanke-sound_2024-03-24_score0.26_52.544865_-128.721984_20240324.png`, `milbanke-sound_2024-03-24_score0.51_52.524865_-128.741984_20240324.png`
-  - 2 nanaimo: `nanaimo_2024-03-18_score0.15_49.134865_-123.676603_20240318.png`, `nanaimo_2024-03-18_score0.21_49.134865_-123.696603_20240318.png`
+| Rank | Model | Dim | AUROC | AP | Input | Notes |
+|---|---|---|---|---|---|---|
+| **1** | **GeoRSCLIP ViT-B-32** | 512 | **0.969** | 0.653 | RGB thumbnails (512px, 0-3000 stretch) | Trained on RS5M remote sensing dataset. Load via `open_clip` from `Zilun/GeoRSCLIP`. Also available: ViT-L-14 variant. |
+| 2 | DINOv2 ViT-S/14 | 384 | 0.900 | 0.323 | RGB thumbnails | Previously 0.981 on 16/164 golden set. Drops on harder 588-image set. |
+| 3 | DINOv3 ViT-L/16 SAT-493M | 1024 | 0.875 | 0.266 | RGB thumbnails | Satellite-pretrained, but tuned for segmentation not classification. |
+| 4 | OlmoEarth v1.1 Nano | 128 | 0.842 | 0.744 | 12-band S2 GeoTIFF chips | Requires full multi-spectral download. 1.7M params. |
+| 5 | OlmoEarth v1.1 Base | 768 | 0.831 | 0.715 | 12-band S2 GeoTIFF chips | 88.8M params but underperforms Nano — missing modalities confuse it. |
+| — | SHSI (Green²/Red) | 1 | — | — | S2 bands in GEE | 44% recall at best threshold (0.02). Sediment confound. Screening only. |
 
-- **1 legacy Rose-verified positive** (verified by dexterfichuk via `data/candidates_v2/rose_training_verify.json`):
-  - `dfo-verified-qualicum-beach_2024-03-15_cloud16.png`
+**Imagery quality tests**: Higher resolution (1024px), different rendering stretches (0-500, 0-1000), percentile stretch, and raw GeoTIFF RGB all scored LOWER than current 512px/0-3000 thumbnails. Current approach is optimal.
 
-- **9 explicit rejects** (4 final-review rejects + 5 preexisting rejects in `data/samples/rejected/`):
-  - `big-bay-prince-rupert_2023-03-28_cld11.png`, `big-bay-prince-rupert_2023-03-28_cld12.png`, `dfo-verified-anderson-point_2024-03-18_cloud24.png`, `dfo-verified-ucluelet_2024-03-18_cloud2.png`, `nootka-sound_2024-02-12_score0.00_49.564865_-126.508503_20240212.png`, `nootka-sound_2024-03-16_score0.00_49.584865_-126.528503_20240316.png`, `qualicum_2024-03-18_score0.01_49.254865_-124.497442_20240318.png`, `tofino_2024-03-16_score0.00_49.114865_-125.806603_20240316.png`, `tofino_2024-03-16_score0.01_49.194865_-126.026603_20240316.png`
+**Key insight**: GeoRSCLIP's remote-sensing-specific pretraining on RS5M gives it the edge over general-purpose DINOv2 on this task. It also works on simple RGB thumbnails — no need for multi-band GeoTIFF downloads.
 
-- All labeling provenance is tracked in `data/final_review/golden_set.json` and `data/samples/training_manifest.json`.
-- Do NOT use model-ranked candidates or high-confidence score buckets as training labels unless they also appear in a human label file.
+### Labeling Infrastructure
+
+**Gradio app** (`scripts/label_gradio.py`) replaces all 6 old Flask labeling apps:
+- **Single Image tab**: metadata sidebar, spawn/no-spawn/skip buttons, keyboard shortcuts (Y/N/S/arrows)
+- **Grid Scan tab**: 48-image grid, click=spawn, right-click=no-spawn, paginated
+- Auto-saves `labels.json` on every decision, resumes from where you left off
+- Pre-loaded with existing labels from 6 sources (golden set, KNN, SoG, dual-subspace, SHSI, Rose)
+
+```bash
+source .venv/bin/activate
+python scripts/label_gradio.py \
+    --manifest data/unified/manifest.json \
+    --image-dir data/unified/thumbs \
+    --labels data/unified/labels.json \
+    --port 7888
+# Open http://localhost:7888
+```
+
+### SHSI Earth Engine Pipeline
+
+`scripts/scan_shsi_candidates.py` implements the Spectral Herring Spawning Index (SHSI = Green²/Red) from UVic research:
+- Scans BC habitat regions via GEE, computes raw SHSI at each grid point
+- No pre-filters (NIR<0.025 kills spawn since milt reflects NIR)
+- Threshold 0.02 for high recall, downloads top-N candidate thumbnails
+- Generates `review.html` card grid for manual review
+- 150 candidates from 2024 scan, 4 spawns found (all in Milbanke/Nootka)
+
+### Human-Reviewed Positives (28 total, up from 16)
+
+**Unified set** at `data/unified/`:
+- 28 spawn positives, 340 no-spawn negatives, 1 skip (as of 2026-06-20)
+- Labels consolidated from: golden set, KNN silo, SoG silo, dual-subspace review, SHSI labeling, Rose review
+- Remaining: 4,245 unlabeled images to work through
 
 ### Review Pages
 - `data/candidates_knn/review.html` — Current KNN candidate review page
@@ -210,29 +230,34 @@ python scripts/upload_hf_dataset.py --repo-id dfichuk/herring-spawn-candidates
 - Web dashboard for candidate review
 - Kelp forest detection adaptation
 
-## Session Status (2026-05-25)
+## Session Status (2026-06-20)
 
 ### Accomplished Today
-- **Golden set**: finalized 16 positives + 164 negatives through dual_subspace_contrast human review
-- **Detection methods benchmarked**: dual-subspace contrast (AUROC 0.981), RS linear probe (0.972), SVM (95.6%), SubspaceAD (0.997)
-- **Temporal approaches**: before-during-after triplet, YOY contrast, environmental sun+tide matching, trajectory classification, cloud-fusion
-- **Landsat enrichment**: Added Landsat 8/9 embeddings alongside Sentinel-2, achieving 2.4x more scenes per location (+32% AUROC for environmental matcher)
-- **Prompt-based**: SenCLIP/RemoteCLIP contrastive scoring with multi-scale crops, calibration with threshold sweeps
-- **Multi-year scan**: SVM scan across 2023/2024/2025, 53 candidates, 3 multi-year confirmed locations (all nanaimo)
-- **Few-shot SubspaceAD variants**: 6 variants benchmarked, dual_subspace_contrast is champion
-- **Labeling infrastructure**: final_review_app, dual_subspace_review_app, label_svm_app, label_subspace_app, env_match_review
-- **Documentation**: AGENTS.md and agent_handoff.md synced with current state
+- **Unified labeling infrastructure**: Built `consolidate_candidates.py` (MD5-deduplicates all candidate dirs into `data/unified/` — 4,605 unique images) and `label_gradio.py` (Gradio app with Single Image + Grid Scan tabs, keyboard shortcuts, auto-save JSON). Removed 6 old Flask labeling apps.
+- **SHSI Earth Engine pipeline**: Ported and ran the UVic SHSI (Green²/Red) detector in GEE. Found best config: raw SHSI at threshold 0.02 with no pre-filters (NIR kills spawn). 150 candidates from 2024 scan, 4 spawns found.
+- **Model benchmarks on full unified set** (588 images, 28 spawn / 560 no-spawn):
+  - **GeoRSCLIP ViT-B-32**: **AUROC 0.969**, AP 0.653 — new champion, beats DINOv2 on hard set
+  - DINOv2 ViT-S/14: AUROC 0.900, AP 0.323 — dropped from 0.981 on easier golden set
+  - DINOv3 ViT-L/16 SAT: AUROC 0.875, AP 0.266 — tuned for segmentation, not classification
+  - OlmoEarth v1.1 Nano: AUROC 0.842, AP 0.744 (on 77 S2 chips)
+  - OlmoEarth v1.1 Base: AUROC 0.831, AP 0.715 (underperforms Nano — missing modalities hurt)
+- **Imagery quality tests**: Current 512px thumbnails with 0-3000 rendering are optimal. Higher res, different stretches, and raw GeoTIFFs all scored lower.
+- **GeoRSCLIP model integration**: Loaded via `open_clip` from `Zilun/GeoRSCLIP` (trained on RS5M dataset). Works on RGB thumbnails — no S2 chip downloads needed.
+- **Extended golden set**: 28 spawn positives (up from 16), 340 no-spawn negatives, 1 skip. Consolidated from 6 label sources.
+- **OlmoEarth evaluation**: Built custom encoder for both Nano and Base variants. Requires 12-band S2 GeoTIFF chips (77 chips downloaded). Base model needs full multi-modal input to perform well.
+- **Commit and push**: New labeling infrastructure committed, model blobs gitignored.
 
 ### Key Findings
-1. Single-image DINOv2 methods remain practical champions: dual-subspace (AUROC 0.981), SVM (95.6%), RS probe (0.972)
-2. Temporal approaches are data-limited: only 2 of 16 positives could form complete triplets, only 4 had multi-year coverage
-3. Landsat 8/9 addition improves temporal coverage 2.4x (1.9 → 4.6 scenes/location) with near-zero disk cost
-4. Environmental matching (sun+tide) is the best temporal method when imagery is available (AUROC 0.745 with S2+Landsat)
-5. Prompt-based methods lag behind embedding methods (RemoteCLIP AUROC 0.729 vs DINOv2 0.981)
+1. **GeoRSCLIP is the new champion** — remote-sensing-specific pretraining on RS5M gives it the edge. AUROC 0.969 vs DINOv2's 0.900 on the full 588-image set.
+2. **Current imagery is optimal** — 512px RGB thumbnails with 0-3000 GEE rendering. Tested higher res, different stretches, raw GeoTIFFs — all worse.
+3. **SHSI is a weak screener** — max 44% recall on known positives. Sediment/turbidity confound. Best used as coarse pre-filter before DINOv2/GeoRSCLIP.
+4. **OlmoEarth needs data we don't have** — requires multi-modal (S1+S2+Landsat+SRTM+landcover), multi-temporal input. Single-sensor S2-only gives AUROC 0.831.
+5. **DINOv3 SAT underperforms** — designed for dense segmentation tasks, not image-level classification.
 
 ### Recommended Next Steps
-1. **Expand Landsat coverage** to all 16 positive locations and scan negatives — more temporal coverage is the highest-leverage improvement
-2. **Re-run multi-year scan** with SVM trained on all 16+164, ideally with 0.01° grid spacing for finer coverage
-3. **Install SenCLIP dependencies** (`pip install transformers huggingface_hub`) and benchmark against RemoteCLIP
-4. **Upload image-heavy outputs** to Hugging Face and clean local disk
-5. **Active learning loop**: scan → review top candidates → add to golden set → retrain → repeat
+1. **Active learning scan**: Use GeoRSCLIP to scan BC coast, review top candidates, add to golden set, retrain
+2. **Try GeoRSCLIP ViT-L-14**: Larger variant in `Zilun/GeoRSCLIP` (`ckpt/RS5M_ViT-L-14.pt`) — may push AUROC above 0.97
+3. **Multi-scale crop ensembling**: Full + center + tight crops for small spawn plumes
+4. **Landsat integration**: Add Landsat 8/9 thumbnails for locations where S2 is cloudy (2.4x more scenes)
+5. **Label remaining 4,245 unlabeled**: Use Grid Scan tab for rapid visual review
+6. **Update AGENTS.md with all model benchmark results**

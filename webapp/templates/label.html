@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SubspaceAD Labeling — Herring Spawn</title>
+<style>
+* { box-sizing: border-box; }
+body { font-family: -apple-system, system-ui, sans-serif; margin: 0; background: #0d0d1a; color: #ddd; }
+h1, h2, h3, p { margin: 0; }
+
+/* Header */
+.header { background: #1a1a2e; padding: 12px 24px; display: flex; align-items: center; gap: 16px; border-bottom: 1px solid #2a2a4e; }
+.header h1 { font-size: 16px; color: #fff; }
+.header .subtitle { font-size: 12px; color: #888; }
+.header .stats { margin-left: auto; display: flex; gap: 16px; font-size: 12px; }
+.header .stats span { color: #888; }
+.header .stats strong { color: #fff; }
+
+/* Main layout */
+.main { display: flex; height: calc(100vh - 48px); }
+
+/* Image panel */
+.image-panel { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; background: #0d0d1a; position: relative; }
+.image-container { position: relative; width: 672px; height: 224px; }
+.image-view { display: flex; gap: 0; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.6); }
+.image-view img { width: 224px; height: 224px; object-fit: cover; display: block; }
+.image-view .img-wrap { position: relative; }
+.image-view .img-label { position: absolute; bottom: 0; left: 0; right: 0; text-align: center; font-size: 10px; padding: 3px; background: rgba(0,0,0,0.7); color: #aaa; text-transform: uppercase; letter-spacing: 0.5px; }
+.image-nav { display: flex; gap: 12px; align-items: center; margin-top: 16px; }
+.image-nav .nav-btn { background: #1a1a2e; border: 1px solid #2a2a4e; color: #ddd; padding: 6px 16px; border-radius: 4px; cursor: pointer; font-size: 13px; }
+.image-nav .nav-btn:hover { background: #2a2a4e; }
+.image-nav .nav-btn:disabled { opacity: 0.4; cursor: default; }
+.image-nav .counter { font-size: 13px; color: #888; }
+
+/* Right panel: info + controls */
+.info-panel { width: 380px; background: #12121e; border-left: 1px solid #2a2a4e; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 16px; }
+
+.filename { font-size: 11px; color: #666; word-break: break-all; font-family: monospace; background: #0a0a14; padding: 6px 10px; border-radius: 4px; }
+
+/* Score metrics */
+.metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.metric { background: #0a0a14; border-radius: 6px; padding: 10px 12px; border: 1px solid #1a1a2e; }
+.metric .label { font-size: 10px; color: #666; text-transform: uppercase; letter-spacing: 0.3px; }
+.metric .value { font-size: 18px; font-weight: 700; color: #fff; margin-top: 2px; font-variant-numeric: tabular-nums; }
+.metric .value.good { color: #4CAF50; }
+.metric .value.warn { color: #FFC107; }
+.metric .value.bad { color: #f44336; }
+.metric .value.info { color: #64B5F6; }
+
+/* Score bar */
+.score-bar-container { background: #0a0a14; border-radius: 4px; height: 8px; overflow: hidden; margin-top: 4px; }
+.score-bar { height: 100%; border-radius: 4px; transition: width 0.3s; }
+
+/* Label buttons */
+.label-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.label-btn { flex: 1; min-width: 100px; padding: 12px 16px; border: 2px solid #2a2a4e; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; background: #0a0a14; color: #888; transition: all 0.15s; text-align: center; }
+.label-btn:hover { filter: brightness(1.3); transform: translateY(-1px); }
+.label-btn:active { transform: translateY(0); }
+.label-btn.accept { border-color: #2a5a3a; color: #4CAF50; }
+.label-btn.accept:hover { background: #1a3a2a; border-color: #4CAF50; }
+.label-btn.accept.active { background: #1a4a2a; border-color: #4CAF50; color: #66d87a; }
+.label-btn.reject { border-color: #5a2a2a; color: #f44336; }
+.label-btn.reject:hover { background: #3a1a1a; border-color: #f44336; }
+.label-btn.reject.active { background: #4a1a1a; border-color: #f44336; color: #ff6666; }
+.label-btn.skip { border-color: #2a2a4e; color: #888; }
+.label-btn.skip:hover { background: #1a1a2e; border-color: #666; }
+.label-btn.skip.active { background: #2a2a3e; border-color: #888; color: #aaa; }
+
+/* Keyboard shortcuts */
+.shortcuts { font-size: 11px; color: #555; }
+.shortcuts kbd { background: #1a1a2e; border: 1px solid #2a2a4e; border-radius: 3px; padding: 1px 6px; font-size: 10px; color: #888; font-family: monospace; }
+
+/* Toggle overlay controls */
+.toggles { display: flex; gap: 8px; }
+.toggle-btn { padding: 6px 12px; border: 1px solid #2a2a4e; border-radius: 4px; font-size: 11px; cursor: pointer; background: #0a0a14; color: #666; transition: all 0.15s; }
+.toggle-btn.active { background: #1a2a3a; border-color: #64B5F6; color: #64B5F6; }
+.toggle-btn:hover { filter: brightness(1.3); }
+
+/* Training info */
+.train-info { font-size: 11px; color: #555; background: #0a0a14; padding: 8px 10px; border-radius: 4px; line-height: 1.5; }
+
+/* Toast notification */
+.toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: #1a1a2e; border: 1px solid #2a2a4e; border-radius: 8px; padding: 10px 20px; font-size: 13px; color: #ddd; box-shadow: 0 4px 20px rgba(0,0,0,0.5); opacity: 0; transition: opacity 0.3s; pointer-events: none; z-index: 100; }
+.toast.show { opacity: 1; }
+.toast.accept { border-color: #4CAF50; }
+.toast.reject { border-color: #f44336; }
+.toast.skip { border-color: #888; }
+
+/* Empty state */
+.empty-state { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: #555; gap: 12px; }
+.empty-state h2 { font-size: 20px; color: #888; }
+.empty-state p { font-size: 13px; }
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .main { flex-direction: column; height: auto; }
+    .image-panel { padding: 12px; }
+    .image-container { width: auto; }
+    .image-view img { width: 33.33vw; height: 33.33vw; max-width: 224px; max-height: 224px; }
+    .info-panel { width: 100%; border-left: none; border-top: 1px solid #2a2a4e; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>&#x1f41f; SubspaceAD Labeling</h1>
+    <span class="subtitle">DINOv2 patch-level anomaly detection</span>
+    <div class="stats">
+        <span>Progress: <strong id="statLabeled">0</strong>/<strong id="statTotal">0</strong></span>
+        <span>Accepted: <strong id="statAccepted" style="color:#4CAF50">0</strong></span>
+        <span>Rejected: <strong id="statRejected" style="color:#f44336">0</strong></span>
+    </div>
+</div>
+
+<div class="main">
+    <div class="image-panel" id="imagePanel">
+        <div class="image-container">
+            <div class="image-view" id="imageView">
+                <div class="img-wrap">
+                    <img id="imgOriginal" src="" alt="Original">
+                    <div class="img-label">Original RGB</div>
+                </div>
+                <div class="img-wrap">
+                    <img id="imgHeatmap" src="" alt="Heatmap">
+                    <div class="img-label">Heatmap (jet)</div>
+                </div>
+                <div class="img-wrap">
+                    <img id="imgSegmentation" src="" alt="Segmentation">
+                    <div class="img-label">Segmentation</div>
+                </div>
+            </div>
+        </div>
+        <div class="image-nav">
+            <button class="nav-btn" id="btnPrev" onclick="navigate(-1)">&#x25C0; Previous</button>
+            <span class="counter" id="counter">0 / 0</span>
+            <button class="nav-btn" id="btnNext" onclick="navigate(1)">Next &#x25B6;</button>
+        </div>
+    </div>
+
+    <div class="info-panel" id="infoPanel">
+        <div class="filename" id="filename">No candidate loaded</div>
+
+        <div class="metrics" id="metrics">
+            <div class="metric"><div class="label">Score (top-10%)</div><div class="value info" id="mScore">—</div></div>
+            <div class="metric"><div class="label">Mean Residual</div><div class="value" id="mMean">—</div></div>
+            <div class="metric"><div class="label">Max Residual</div><div class="value" id="mMax">—</div></div>
+            <div class="metric"><div class="label">Auto Threshold</div><div class="value" id="mThreshold">—</div></div>
+            <div class="metric"><div class="label">Spawn Area</div><div class="value good" id="mArea">—</div></div>
+            <div class="metric"><div class="label">Anomalous Patches</div><div class="value" id="mPatches">—</div></div>
+        </div>
+
+        <div class="toggles">
+            <button class="toggle-btn active" id="toggleHeatmap" onclick="toggleOverlay('heatmap')">&#x25C9; Heatmap</button>
+            <button class="toggle-btn active" id="toggleSegmentation" onclick="toggleOverlay('segmentation')">&#x25C9; Segmentation</button>
+        </div>
+
+        <div class="label-actions">
+            <button class="label-btn accept" id="btnAccept" onclick="doLabel('accept')">
+                &#x2713; Accept<br><span style="font-size:10px;font-weight:400;">(A)</span>
+            </button>
+            <button class="label-btn reject" id="btnReject" onclick="doLabel('reject')">
+                &#x2717; Reject<br><span style="font-size:10px;font-weight:400;">(R)</span>
+            </button>
+            <button class="label-btn skip" id="btnSkip" onclick="doLabel('skip')">
+                &#x21B7; Skip<br><span style="font-size:10px;font-weight:400;">(S)</span>
+            </button>
+        </div>
+
+        <div class="shortcuts">
+            <kbd>A</kbd> Accept &nbsp; <kbd>R</kbd> Reject &nbsp; <kbd>S</kbd> Skip &nbsp;
+            <kbd>&larr;</kbd><kbd>&rarr;</kbd> Navigate &nbsp;
+            <kbd>H</kbd> Heatmap &nbsp; <kbd>G</kbd> Segmentation
+        </div>
+
+        <div class="train-info" id="trainInfo">Training info loading...</div>
+    </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ── State ─────────────────────────────────────────────────────────────
+
+const candidates = {{ candidates | tojson }};
+const stats = {{ stats | tojson }};
+    const trainMeta = {{ train_meta | tojson }};
+
+let currentIndex = 0;
+let showHeatmap = true;
+let showSegmentation = true;
+
+// ── Initialization ────────────────────────────────────────────────────
+
+document.addEventListener('DOMContentLoaded', () => {
+    updateStats(stats);
+
+    // Fill training info
+    if (trainMeta && trainMeta.n_components) {
+        document.getElementById('trainInfo').innerHTML =
+            'PCA: ' + trainMeta.n_components + ' components &middot; ' +
+            'Trained on ' + trainMeta.n_images_used + ' negatives &middot; ' +
+            (trainMeta.n_patches_trained || 0) + ' patches &middot; ' +
+            'Var: ' + (trainMeta.explained_variance_ratio * 100).toFixed(1) + '%';
+    }
+
+    // Find first unlabeled candidate
+    const firstUnlabeled = candidates.findIndex(c => !c.label);
+    if (firstUnlabeled >= 0) currentIndex = firstUnlabeled;
+
+    if (candidates.length > 0) {
+        showCandidate(currentIndex);
+    } else {
+        document.getElementById('imagePanel').innerHTML =
+            '<div class="empty-state"><h2>No candidates found</h2><p>Check that the candidate directory contains PNG files.</p></div>';
+        document.getElementById('infoPanel').innerHTML = '';
+    }
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', (e) => {
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+        switch (e.key) {
+            case 'ArrowLeft': navigate(-1); e.preventDefault(); break;
+            case 'ArrowRight': navigate(1); e.preventDefault(); break;
+            case 'a': case 'A': doLabel('accept'); e.preventDefault(); break;
+            case 'r': case 'R': doLabel('reject'); e.preventDefault(); break;
+            case 's': case 'S': doLabel('skip'); e.preventDefault(); break;
+            case 'h': case 'H': toggleOverlay('heatmap'); e.preventDefault(); break;
+            case 'g': case 'G': toggleOverlay('segmentation'); e.preventDefault(); break;
+        }
+    });
+});
+
+// ── Navigation ────────────────────────────────────────────────────────
+
+function navigate(delta) {
+    const newIndex = currentIndex + delta;
+    if (newIndex < 0 || newIndex >= candidates.length) return;
+    currentIndex = newIndex;
+    showCandidate(currentIndex);
+}
+
+function showCandidate(index) {
+    const c = candidates[index];
+    if (!c) return;
+
+    // Update counter
+    document.getElementById('counter').textContent = `${index + 1} / ${candidates.length}`;
+    document.getElementById('filename').textContent = c.filename;
+
+    // Enable/disable nav buttons
+    document.getElementById('btnPrev').disabled = index === 0;
+    document.getElementById('btnNext').disabled = index === candidates.length - 1;
+
+    // Image URLs
+    const base = `/api/candidate/${encodeURIComponent(c.filename)}`;
+
+    // Use the API to get overlay URLs
+    fetch(base)
+        .then(r => r.json())
+        .then(data => {
+            document.getElementById('imgOriginal').src = data.original_url;
+            document.getElementById('imgHeatmap').src = data.heatmap_url;
+            document.getElementById('imgSegmentation').src = data.segmentation_url;
+
+            updateVisibility();
+
+            // Update scores
+            const s = data.scores;
+            document.getElementById('mScore').textContent = s.score_top10p.toFixed(6);
+            document.getElementById('mMean').textContent = s.score_mean.toFixed(6);
+            document.getElementById('mMax').textContent = s.score_max.toFixed(6);
+            document.getElementById('mThreshold').textContent = s.auto_threshold.toFixed(6);
+            document.getElementById('mArea').textContent = (s.spawn_area_frac * 100).toFixed(2) + '%';
+            document.getElementById('mPatches').textContent = `${s.n_spawn_patches} / ${s.n_patches || 256}`;
+
+            // Color-code score
+            const scoreEl = document.getElementById('mScore');
+            if (s.score_top10p > 1.0) scoreEl.className = 'value good';
+            else if (s.score_top10p > 0.5) scoreEl.className = 'value warn';
+            else scoreEl.className = 'value bad';
+
+            // Color-code spawn area
+            const areaEl = document.getElementById('mArea');
+            if (s.spawn_area_frac > 0.05) areaEl.className = 'value good';
+            else if (s.spawn_area_frac > 0.01) areaEl.className = 'value warn';
+            else areaEl.className = 'value';
+        })
+        .catch(err => {
+            console.error('Failed to load candidate:', err);
+            showToast('Error loading candidate', 'skip');
+        });
+
+    // Update label button states
+    updateLabelButtons(c.label);
+}
+
+// ── Overlay toggles ───────────────────────────────────────────────────
+
+function toggleOverlay(type) {
+    if (type === 'heatmap') {
+        showHeatmap = !showHeatmap;
+        document.getElementById('toggleHeatmap').classList.toggle('active');
+    } else if (type === 'segmentation') {
+        showSegmentation = !showSegmentation;
+        document.getElementById('toggleSegmentation').classList.toggle('active');
+    }
+    updateVisibility();
+}
+
+function updateVisibility() {
+    document.getElementById('imgHeatmap').style.display = showHeatmap ? 'block' : 'none';
+    document.getElementById('imgSegmentation').style.display = showSegmentation ? 'block' : 'none';
+}
+
+// ── Labeling ───────────────────────────────────────────────────────────
+
+function doLabel(label) {
+    const c = candidates[currentIndex];
+    if (!c) return;
+
+    fetch('/api/label', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({filename: c.filename, label: label}),
+    })
+    .then(r => r.json())
+    .then(data => {
+        if (data.status === 'ok') {
+            c.label = label;
+            updateLabelButtons(label);
+            updateLabelStats();
+            showToast(label === 'accept' ? 'Accepted as spawn' :
+                      label === 'reject' ? 'Rejected (non-spawn)' : 'Skipped', label);
+
+            // Auto-advance to next unlabeled
+            const nextUnlabeled = candidates.findIndex((cand, i) =>
+                i > currentIndex && !cand.label
+            );
+            if (nextUnlabeled >= 0) {
+                setTimeout(() => navigate(nextUnlabeled - currentIndex), 300);
+            }
+        }
+    })
+    .catch(err => {
+        console.error('Label error:', err);
+        showToast('Error saving label', 'skip');
+    });
+}
+
+function updateLabelButtons(label) {
+    document.querySelectorAll('.label-btn').forEach(btn => btn.classList.remove('active'));
+    if (label) {
+        const btn = document.querySelector(`.label-btn.${label}`);
+        if (btn) btn.classList.add('active');
+    }
+}
+
+// ── Stats ──────────────────────────────────────────────────────────────
+
+function updateLabelStats() {
+    fetch('/api/progress')
+        .then(r => r.json())
+        .then(s => updateStats(s))
+        .catch(() => {});
+}
+
+function updateStats(s) {
+    document.getElementById('statLabeled').textContent = s.labeled || 0;
+    document.getElementById('statTotal').textContent = s.total || 0;
+    document.getElementById('statAccepted').textContent = s.accepted || 0;
+    document.getElementById('statRejected').textContent = s.rejected || 0;
+}
+
+// ── Toast ──────────────────────────────────────────────────────────────
+
+let toastTimeout = null;
+
+function showToast(message, type) {
+    const toast = document.getElementById('toast');
+    toast.textContent = message;
+    toast.className = 'toast ' + (type || '') + ' show';
+    clearTimeout(toastTimeout);
+    toastTimeout = setTimeout(() => {
+        toast.classList.remove('show');
+    }, 2000);
+}
+</script>
+</body>
+</html>

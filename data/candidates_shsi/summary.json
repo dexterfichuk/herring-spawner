@@ -1,0 +1,27 @@
+{
+  "points_scanned": 3803,
+  "above_threshold": 3178,
+  "candidate_count": 150,
+  "regions_with_data": 19,
+  "region_counts": {
+    "howe-sound": 25,
+    "masset-inlet": 8,
+    "prince-rupert": 41,
+    "milbanke-sound": 3,
+    "hesquiat-harbour": 5,
+    "ucluelet": 3,
+    "nootka-sound": 21,
+    "qualicum": 4,
+    "port-mcneill": 1,
+    "haida-gwaii-south": 13,
+    "quatsino-sound": 9,
+    "kyuquot": 6,
+    "barkley-sound": 3,
+    "tofino": 3,
+    "nanaimo": 2,
+    "spiller-channel": 1,
+    "denman-island": 1,
+    "nanoose": 1
+  },
+  "elapsed_seconds": 512.8
+}

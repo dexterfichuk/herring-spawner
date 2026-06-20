@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spawn Segmentation</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #1a1a2e; color: #eee; }
+  .header { padding: 12px 20px; background: #16213e; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #0f3460; }
+  .header h1 { font-size: 18px; }
+  .stats { display: flex; gap: 20px; font-size: 14px; }
+  .stats span { padding: 4px 10px; border-radius: 4px; }
+  .stat-accept { background: #1b4332; color: #95d5b2; }
+  .stat-reject { background: #3e1f1f; color: #e07a7a; }
+  .stat-remain { background: #1a3a4a; color: #7ab8d4; }
+  .layout { display: flex; height: calc(100vh - 53px); }
+  .sidebar { width: 260px; background: #16213e; overflow-y: auto; border-right: 1px solid #0f3460; flex-shrink: 0; }
+  .sidebar .item { padding: 10px 14px; cursor: pointer; border-bottom: 1px solid #0f3460; font-size: 12px; word-break: break-all; }
+  .sidebar .item:hover { background: #1a1a3e; }
+  .sidebar .item.active { background: #0f3460; border-left: 3px solid #e94560; }
+  .sidebar .item .label-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+  .dot-accept { background: #95d5b2; }
+  .dot-reject { background: #e07a7a; }
+  .dot-none { background: #555; }
+  .main { flex: 1; display: flex; flex-direction: column; align-items: center; padding: 20px; overflow-y: auto; }
+  .viewer { position: relative; display: inline-block; }
+  .viewer img { max-width: 90vw; max-height: 70vh; display: block; border: 1px solid #333; }
+  .viewer canvas { position: absolute; top: 0; left: 0; }
+  .controls { margin-top: 16px; display: flex; gap: 12px; align-items: center; }
+  .controls button { padding: 8px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 14px; }
+  .btn-accept { background: #2d6a4f; color: #eee; }
+  .btn-accept:hover { background: #40916c; }
+  .btn-reject { background: #6a2d2d; color: #eee; }
+  .btn-reject:hover { background: #914040; }
+  .btn-clear { background: #444; color: #eee; }
+  .btn-clear:hover { background: #555; }
+  .toggle-label { display: flex; align-items: center; gap: 6px; font-size: 13px; }
+  .help { margin-top: 10px; font-size: 11px; color: #888; }
+  .status { padding: 6px 12px; font-size: 13px; border-radius: 4px; }
+  .status-ok { background: #1b4332; color: #95d5b2; }
+  .status-err { background: #3e1f1f; color: #e07a7a; }
+  .status-wait { background: #333; color: #aaa; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Herring Spawn Segmentation</h1>
+  <div class="stats">
+    <span class="stat-accept" id="stat-accept">Accepted: 0</span>
+    <span class="stat-reject" id="stat-reject">Rejected: 0</span>
+    <span class="stat-remain" id="stat-remain">Remaining: 0</span>
+  </div>
+</div>
+<div class="layout">
+  <div class="sidebar" id="sidebar"></div>
+  <div class="main">
+    <div class="viewer" id="viewer">
+      <img id="main-image" src="" alt="Click to segment">
+      <canvas id="overlay-canvas"></canvas>
+    </div>
+    <div class="controls">
+      <button class="btn-accept" id="btn-accept" onclick="acceptMask()" disabled>Accept (A)</button>
+      <button class="btn-reject" id="btn-reject" onclick="rejectMask()" disabled>Reject (R)</button>
+      <button class="btn-clear" id="btn-clear" onclick="clearMask()">Clear</button>
+      <label class="toggle-label">
+        <input type="checkbox" id="toggle-overlay" checked onchange="toggleOverlay()"> Show mask
+      </label>
+      <span class="status status-wait" id="status">Click on spawn region</span>
+    </div>
+    <div class="help">
+      Click spawn → DINOv3+SAM | Left=add spawn | Right=add background | A=Accept R=Reject &larr;&rarr;=Navigate | C=Clear
+    </div>
+  </div>
+</div>
+
+<script>
+  const PORT = {{ port }};
+  let images = [];
+  let currentIndex = -1;
+  let currentMask = null;
+  let currentOverlay = null;
+  let labels = {};
+  let clickCount = 0;
+
+  async function loadImages() {
+    const resp = await fetch('/api/images');
+    const data = await resp.json();
+    images = data.images;
+    renderSidebar();
+    updateStats();
+    if (images.length > 0) selectImage(0);
+  }
+
+  function renderSidebar() {
+    const sb = document.getElementById('sidebar');
+    sb.innerHTML = images.map((img, i) => {
+      const label = labels[img.filename];
+      let dot = 'dot-none';
+      if (label === 'accept') dot = 'dot-accept';
+      else if (label === 'reject') dot = 'dot-reject';
+      return `<div class="item ${i === currentIndex ? 'active' : ''}" onclick="selectImage(${i})">
+        <span class="label-dot ${dot}"></span>${img.filename}
+      </div>`;
+    }).join('');
+  }
+
+  async function selectImage(idx) {
+    if (currentIndex >= 0 && currentMask) {
+      await fetch('/api/clear', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({filename: images[currentIndex].filename}),
+      });
+    }
+    currentIndex = idx;
+    currentMask = null;
+    currentOverlay = null;
+    clickCount = 0;
+    const img = images[idx];
+    document.getElementById('main-image').src = `/api/image/${encodeURIComponent(img.filename)}`;
+    document.getElementById('btn-accept').disabled = true;
+    document.getElementById('btn-reject').disabled = true;
+    document.getElementById('btn-clear').disabled = false;
+    setStatus('Click on spawn region', 'wait');
+    clearCanvas();
+    renderSidebar();
+    if (labels[img.filename]) {
+      document.getElementById('btn-accept').disabled = false;
+      setStatus(`Labeled: ${labels[img.filename]}`, labels[img.filename] === 'accept' ? 'ok' : 'err');
+    }
+  }
+
+  async function doSegment(x, y, label, isRefine) {
+    setStatus(isRefine ? (label ? `Adding foreground point ${clickCount + 1}...` : 'Adding background point...') : 'DINOv3 + SAM segmenting...', 'wait');
+    const resp = await fetch('/api/segment', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({filename: images[currentIndex].filename, x, y, label}),
+    });
+    const data = await resp.json();
+    if (data.status === 'ok') {
+      currentMask = data.mask_url;
+      currentOverlay = data.overlay_url;
+      drawOverlay(data.overlay_url);
+      document.getElementById('btn-accept').disabled = false;
+      document.getElementById('btn-reject').disabled = false;
+      clickCount = data.region_count;
+      if (data.is_refinement) {
+        setStatus(`${clickCount} prompt${clickCount > 1 ? 's' : ''} — left=spawn, right=not, A=accept`, 'ok');
+      } else {
+        setStatus('DINOv3 mask — left/right click to refine', 'ok');
+      }
+    } else {
+      setStatus('Error: ' + (data.error || 'unknown'), 'err');
+    }
+  }
+
+  document.getElementById('viewer').addEventListener('click', async function(e) {
+    if (currentIndex < 0) return;
+    if (e.button !== 0) return; // only left-click
+    const coords = getImageCoords(e);
+    if (!coords) return;
+    doSegment(coords.x, coords.y, 1, currentMask !== null);
+  });
+
+  document.getElementById('viewer').addEventListener('contextmenu', async function(e) {
+    e.preventDefault();
+    if (currentIndex < 0 || !currentMask) return;
+    const coords = getImageCoords(e);
+    if (!coords) return;
+    doSegment(coords.x, coords.y, 0, true);
+  });
+
+  function getImageCoords(e) {
+    const img = document.getElementById('main-image');
+    const rect = img.getBoundingClientRect();
+    const scaleX = img.naturalWidth / rect.width;
+    const scaleY = img.naturalHeight / rect.height;
+    return {
+      x: Math.round((e.clientX - rect.left) * scaleX),
+      y: Math.round((e.clientY - rect.top) * scaleY),
+    };
+  }
+
+  function drawOverlay(overlayUrl) {
+    const img = document.getElementById('main-image');
+    const canvas = document.getElementById('overlay-canvas');
+    const overlay = new Image();
+    overlay.onload = () => {
+      canvas.width = overlay.naturalWidth;
+      canvas.height = overlay.naturalHeight;
+      canvas.style.width = img.offsetWidth + 'px';
+      canvas.style.height = img.offsetHeight + 'px';
+      canvas.style.display = document.getElementById('toggle-overlay').checked ? 'block' : 'none';
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      if (document.getElementById('toggle-overlay').checked) {
+        ctx.drawImage(overlay, 0, 0);
+      }
+    };
+    overlay.src = overlayUrl;
+  }
+
+  window.addEventListener('resize', () => {
+    if (currentOverlay) {
+      const img = document.getElementById('main-image');
+      const canvas = document.getElementById('overlay-canvas');
+      canvas.style.width = img.offsetWidth + 'px';
+      canvas.style.height = img.offsetHeight + 'px';
+    }
+  });
+
+  function clearCanvas() {
+    const canvas = document.getElementById('overlay-canvas');
+    const ctx = canvas.getContext('2d');
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+
+  function clearMask() {
+    currentMask = null;
+    currentOverlay = null;
+    clickCount = 0;
+    clearCanvas();
+    document.getElementById('btn-accept').disabled = true;
+    document.getElementById('btn-reject').disabled = true;
+    setStatus('Click on spawn region', 'wait');
+    if (currentIndex >= 0) {
+      fetch('/api/clear', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({filename: images[currentIndex].filename}),
+      });
+    }
+  }
+
+  async function acceptMask() {
+    if (currentIndex < 0) return;
+    labels[images[currentIndex].filename] = 'accept';
+    await fetch('/api/accept', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({filename: images[currentIndex].filename}),
+    });
+    renderSidebar();
+    updateStats();
+    setStatus('Accepted', 'ok');
+    nextImage();
+  }
+
+  async function rejectMask() {
+    if (currentIndex < 0) return;
+    labels[images[currentIndex].filename] = 'reject';
+    await fetch('/api/reject', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({filename: images[currentIndex].filename}),
+    });
+    currentMask = null;
+    currentOverlay = null;
+    clearCanvas();
+    renderSidebar();
+    updateStats();
+    setStatus('Rejected', 'err');
+    nextImage();
+  }
+
+  function nextImage() {
+    if (currentIndex < images.length - 1) selectImage(currentIndex + 1);
+  }
+  function prevImage() {
+    if (currentIndex > 0) selectImage(currentIndex - 1);
+  }
+
+  function toggleOverlay() {
+    const checked = document.getElementById('toggle-overlay').checked;
+    document.getElementById('overlay-canvas').style.display = checked ? 'block' : 'none';
+  }
+
+  function setStatus(msg, cls) {
+    const el = document.getElementById('status');
+    el.textContent = msg;
+    el.className = 'status status-' + cls;
+  }
+
+  async function updateStats() {
+    const resp = await fetch('/api/progress');
+    const data = await resp.json();
+    document.getElementById('stat-accept').textContent = `Accepted: ${data.accepted}`;
+    document.getElementById('stat-reject').textContent = `Rejected: ${data.rejected}`;
+    document.getElementById('stat-remain').textContent = `Remaining: ${data.unlabeled}`;
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') prevImage();
+    else if (e.key === 'ArrowRight') nextImage();
+    else if (e.key === 'a' && !e.ctrlKey && !e.metaKey) { e.preventDefault(); acceptMask(); }
+    else if (e.key === 'r' && !e.ctrlKey && !e.metaKey) { e.preventDefault(); rejectMask(); }
+    else if (e.key === 'c' && !e.ctrlKey && !e.metaKey) { e.preventDefault(); clearMask(); }
+  });
+
+  loadImages();
+</script>
+</body>
+</html>

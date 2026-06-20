@@ -1,0 +1,1785 @@
+{
+  "summary": {
+    "training_size": 205,
+    "spawn_count": 68,
+    "nospawn_count": 137,
+    "sog_ingested": 333,
+    "sog_raw_features": 5606,
+    "sog_by_year": {
+      "2016": 59,
+      "2017": 56,
+      "2018": 41,
+      "2019": 43,
+      "2020": 73,
+      "2021": 61
+    },
+    "match_summary": {
+      "matched_spawn": 4,
+      "matched_nospawn": 87,
+      "matched_rose_spawn": 10,
+      "negative_samples": 50,
+      "skipped_sog": 279,
+      "matched_sog": 54
+    }
+  },
+  "records": [
+    {
+      "id": "cand:tofino:49.134865:-125.946603:2023-04-28",
+      "source": "user_labels",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/candidates_v2/tofino_2023-04-28_score1.07_49.134865_-125.946603_20230428.png",
+      "thumbnail_path": "tofino_2023-04-28_score1.07_49.134865_-125.946603_20230428.png"
+    },
+    {
+      "id": "cand:nanaimo:49.134865:-123.676603:2024-03-18",
+      "source": "user_labels",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/candidates_v2/nanaimo_2024-03-18_score1.03_49.134865_-123.676603_20240318.png",
+      "thumbnail_path": "nanaimo_2024-03-18_score1.03_49.134865_-123.676603_20240318.png"
+    },
+    {
+      "id": "cand:nootka-sound:49.584865:-126.608503:2024-03-16",
+      "source": "user_labels",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/candidates_v2/nootka-sound_2024-03-16_score1.00_49.584865_-126.608503_20240316.png",
+      "thumbnail_path": "nootka-sound_2024-03-16_score1.00_49.584865_-126.608503_20240316.png"
+    },
+    {
+      "id": "cand:tofino:49.234865:-126.026603:2024-03-16",
+      "source": "user_labels",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/candidates_v2/tofino_2024-03-16_score0.88_49.234865_-126.026603_20240316.png",
+      "thumbnail_path": "tofino_2024-03-16_score0.88_49.234865_-126.026603_20240316.png"
+    },
+    {
+      "id": "cand:prince-rupert:54.29982:-130.62877:2024-04-16",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/prince-rupert_2024-04-16_score1.00_54.29982_-130.62877_20240416.png",
+      "thumbnail_path": "prince-rupert_2024-04-16_score1.00_54.29982_-130.62877_20240416.png"
+    },
+    {
+      "id": "cand:prince-rupert:54.29982:-130.60877:2024-04-16",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/prince-rupert_2024-04-16_score0.97_54.29982_-130.60877_20240416.png",
+      "thumbnail_path": "prince-rupert_2024-04-16_score0.97_54.29982_-130.60877_20240416.png"
+    },
+    {
+      "id": "cand:tofino:49.174865:-126.046603:2024-03-16",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-03-16_score0.96_49.174865_-126.046603_20240316.png",
+      "thumbnail_path": "tofino_2024-03-16_score0.96_49.174865_-126.046603_20240316.png"
+    },
+    {
+      "id": "cand:tofino:49.174865:-126.066603:2023-04-28",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2023-04-28_score0.96_49.174865_-126.066603_20230428.png",
+      "thumbnail_path": "tofino_2023-04-28_score0.96_49.174865_-126.066603_20230428.png"
+    },
+    {
+      "id": "cand:ucluelet:48.90991:-125.507155:2024-03-18",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/ucluelet_2024-03-18_score0.95_48.90991_-125.507155_20240318.png",
+      "thumbnail_path": "ucluelet_2024-03-18_score0.95_48.90991_-125.507155_20240318.png"
+    },
+    {
+      "id": "cand:tofino:49.214865:-126.046603:2024-03-16",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-03-16_score0.95_49.214865_-126.046603_20240316.png",
+      "thumbnail_path": "tofino_2024-03-16_score0.95_49.214865_-126.046603_20240316.png"
+    },
+    {
+      "id": "cand:tofino:49.114865:-125.946603:2024-02-05",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-02-05_score0.95_49.114865_-125.946603_20240205.png",
+      "thumbnail_path": "tofino_2024-02-05_score0.95_49.114865_-125.946603_20240205.png"
+    },
+    {
+      "id": "cand:tofino:49.214865:-126.046603:2023-04-28",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2023-04-28_score0.92_49.214865_-126.046603_20230428.png",
+      "thumbnail_path": "tofino_2023-04-28_score0.92_49.214865_-126.046603_20230428.png"
+    },
+    {
+      "id": "cand:tofino:49.134865:-125.966603:2023-04-28",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2023-04-28_score0.92_49.134865_-125.966603_20230428.png",
+      "thumbnail_path": "tofino_2023-04-28_score0.92_49.134865_-125.966603_20230428.png"
+    },
+    {
+      "id": "cand:quatsino-sound:50.404865:-127.97245:2024-03-16",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/quatsino-sound_2024-03-16_score0.91_50.404865_-127.97245_20240316.png",
+      "thumbnail_path": "quatsino-sound_2024-03-16_score0.91_50.404865_-127.97245_20240316.png"
+    },
+    {
+      "id": "cand:tofino:49.194865:-126.066603:2024-02-05",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-02-05_score0.91_49.194865_-126.066603_20240205.png",
+      "thumbnail_path": "tofino_2024-02-05_score0.91_49.194865_-126.066603_20240205.png"
+    },
+    {
+      "id": "cand:quatsino-sound:50.404865:-127.97245:2024-02-15",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/quatsino-sound_2024-02-15_score0.91_50.404865_-127.97245_20240215.png",
+      "thumbnail_path": "quatsino-sound_2024-02-15_score0.91_50.404865_-127.97245_20240215.png"
+    },
+    {
+      "id": "cand:tofino:49.134865:-125.986603:2023-04-28",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2023-04-28_score0.91_49.134865_-125.986603_20230428.png",
+      "thumbnail_path": "tofino_2023-04-28_score0.91_49.134865_-125.986603_20230428.png"
+    },
+    {
+      "id": "cand:quatsino-sound:50.464865:-128.11245:2023-05-14",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/quatsino-sound_2023-05-14_score0.90_50.464865_-128.11245_20230514.png",
+      "thumbnail_path": "quatsino-sound_2023-05-14_score0.90_50.464865_-128.11245_20230514.png"
+    },
+    {
+      "id": "cand:tofino:49.114865:-125.926603:2024-03-16",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-03-16_score0.90_49.114865_-125.926603_20240316.png",
+      "thumbnail_path": "tofino_2024-03-16_score0.90_49.114865_-125.926603_20240316.png"
+    },
+    {
+      "id": "cand:tofino:49.174865:-126.086603:2024-03-16",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-03-16_score0.90_49.174865_-126.086603_20240316.png",
+      "thumbnail_path": "tofino_2024-03-16_score0.90_49.174865_-126.086603_20240316.png"
+    },
+    {
+      "id": "cand:ucluelet:48.90991:-125.487155:2024-03-18",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/ucluelet_2024-03-18_score0.90_48.90991_-125.487155_20240318.png",
+      "thumbnail_path": "ucluelet_2024-03-18_score0.90_48.90991_-125.487155_20240318.png"
+    },
+    {
+      "id": "cand:tofino:49.094865:-125.906603:2023-04-28",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2023-04-28_score0.88_49.094865_-125.906603_20230428.png",
+      "thumbnail_path": "tofino_2023-04-28_score0.88_49.094865_-125.906603_20230428.png"
+    },
+    {
+      "id": "cand:spiller-channel:52.324865:-128.48098:2023-05-14",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/spiller-channel_2023-05-14_score0.88_52.324865_-128.48098_20230514.png",
+      "thumbnail_path": "spiller-channel_2023-05-14_score0.88_52.324865_-128.48098_20230514.png"
+    },
+    {
+      "id": "cand:milbanke-sound:52.624865:-128.821984:2024-04-18",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/milbanke-sound_2024-04-18_score0.86_52.624865_-128.821984_20240418.png",
+      "thumbnail_path": "milbanke-sound_2024-04-18_score0.86_52.624865_-128.821984_20240418.png"
+    },
+    {
+      "id": "cand:tofino:49.134865:-125.966603:2024-03-16",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-03-16_score0.86_49.134865_-125.966603_20240316.png",
+      "thumbnail_path": "tofino_2024-03-16_score0.86_49.134865_-125.966603_20240316.png"
+    },
+    {
+      "id": "cand:prince-rupert:54.19982:-130.56877:2024-04-16",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/prince-rupert_2024-04-16_score0.86_54.19982_-130.56877_20240416.png",
+      "thumbnail_path": "prince-rupert_2024-04-16_score0.86_54.19982_-130.56877_20240416.png"
+    },
+    {
+      "id": "cand:ucluelet:48.92991:-125.587155:2024-03-18",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/ucluelet_2024-03-18_score0.86_48.92991_-125.587155_20240318.png",
+      "thumbnail_path": "ucluelet_2024-03-18_score0.86_48.92991_-125.587155_20240318.png"
+    },
+    {
+      "id": "cand:denman-island:49.57991:-124.85886:2024-03-18",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/denman-island_2024-03-18_score0.86_49.57991_-124.85886_20240318.png",
+      "thumbnail_path": "denman-island_2024-03-18_score0.86_49.57991_-124.85886_20240318.png"
+    },
+    {
+      "id": "cand:milbanke-sound:52.464865:-128.781984:2024-03-24",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/milbanke-sound_2024-03-24_score0.85_52.464865_-128.781984_20240324.png",
+      "thumbnail_path": "milbanke-sound_2024-03-24_score0.85_52.464865_-128.781984_20240324.png"
+    },
+    {
+      "id": "cand:quatsino-sound:50.444865:-128.03245:2024-03-16",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/quatsino-sound_2024-03-16_score0.85_50.444865_-128.03245_20240316.png",
+      "thumbnail_path": "quatsino-sound_2024-03-16_score0.85_50.444865_-128.03245_20240316.png"
+    },
+    {
+      "id": "cand:quatsino-sound:50.444865:-127.95245:2024-02-15",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/quatsino-sound_2024-02-15_score0.85_50.444865_-127.95245_20240215.png",
+      "thumbnail_path": "quatsino-sound_2024-02-15_score0.85_50.444865_-127.95245_20240215.png"
+    },
+    {
+      "id": "cand:tofino:49.114865:-125.926603:2024-05-10",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-05-10_score0.84_49.114865_-125.926603_20240510.png",
+      "thumbnail_path": "tofino_2024-05-10_score0.84_49.114865_-125.926603_20240510.png"
+    },
+    {
+      "id": "cand:quatsino-sound:50.404865:-127.97245:2024-04-18",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/quatsino-sound_2024-04-18_score0.83_50.404865_-127.97245_20240418.png",
+      "thumbnail_path": "quatsino-sound_2024-04-18_score0.83_50.404865_-127.97245_20240418.png"
+    },
+    {
+      "id": "cand:nootka-sound:49.584865:-126.588503:2024-03-16",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/nootka-sound_2024-03-16_score0.83_49.584865_-126.588503_20240316.png",
+      "thumbnail_path": "nootka-sound_2024-03-16_score0.83_49.584865_-126.588503_20240316.png"
+    },
+    {
+      "id": "cand:comox:49.624865:-124.848846:2023-04-28",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/comox_2023-04-28_score0.82_49.624865_-124.848846_20230428.png",
+      "thumbnail_path": "comox_2023-04-28_score0.82_49.624865_-124.848846_20230428.png"
+    },
+    {
+      "id": "cand:tofino:49.214865:-126.026603:2024-03-16",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-03-16_score0.82_49.214865_-126.026603_20240316.png",
+      "thumbnail_path": "tofino_2024-03-16_score0.82_49.214865_-126.026603_20240316.png"
+    },
+    {
+      "id": "cand:comox:49.624865:-124.868846:2023-04-28",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/comox_2023-04-28_score0.81_49.624865_-124.868846_20230428.png",
+      "thumbnail_path": "comox_2023-04-28_score0.81_49.624865_-124.868846_20230428.png"
+    },
+    {
+      "id": "cand:masset-inlet:53.644865:-132.968264:2023-05-17",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/masset-inlet_2023-05-17_score0.81_53.644865_-132.968264_20230517.png",
+      "thumbnail_path": "masset-inlet_2023-05-17_score0.81_53.644865_-132.968264_20230517.png"
+    },
+    {
+      "id": "cand:ucluelet:48.90991:-125.527155:2023-04-28",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/ucluelet_2023-04-28_score0.81_48.90991_-125.527155_20230428.png",
+      "thumbnail_path": "ucluelet_2023-04-28_score0.81_48.90991_-125.527155_20230428.png"
+    },
+    {
+      "id": "cand:tofino:49.134865:-125.926603:2023-04-28",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2023-04-28_score0.80_49.134865_-125.926603_20230428.png",
+      "thumbnail_path": "tofino_2023-04-28_score0.80_49.134865_-125.926603_20230428.png"
+    },
+    {
+      "id": "cand:tofino:49.234865:-126.046603:2024-03-16",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-03-16_score0.80_49.234865_-126.046603_20240316.png",
+      "thumbnail_path": "tofino_2024-03-16_score0.80_49.234865_-126.046603_20240316.png"
+    },
+    {
+      "id": "cand:tofino:49.154865:-126.026603:2024-02-05",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-02-05_score0.80_49.154865_-126.026603_20240205.png",
+      "thumbnail_path": "tofino_2024-02-05_score0.80_49.154865_-126.026603_20240205.png"
+    },
+    {
+      "id": "cand:masset-inlet:53.744865:-133.088264:2024-03-20",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/masset-inlet_2024-03-20_score0.79_53.744865_-133.088264_20240320.png",
+      "thumbnail_path": "masset-inlet_2024-03-20_score0.79_53.744865_-133.088264_20240320.png"
+    },
+    {
+      "id": "cand:spiller-channel:52.364865:-128.48098:2024-04-18",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/spiller-channel_2024-04-18_score0.79_52.364865_-128.48098_20240418.png",
+      "thumbnail_path": "spiller-channel_2024-04-18_score0.79_52.364865_-128.48098_20240418.png"
+    },
+    {
+      "id": "cand:tofino:49.054865:-125.826603:2023-04-28",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2023-04-28_score0.79_49.054865_-125.826603_20230428.png",
+      "thumbnail_path": "tofino_2023-04-28_score0.79_49.054865_-125.826603_20230428.png"
+    },
+    {
+      "id": "cand:ucluelet:48.96991:-125.647155:2023-04-28",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/ucluelet_2023-04-28_score0.79_48.96991_-125.647155_20230428.png",
+      "thumbnail_path": "ucluelet_2023-04-28_score0.79_48.96991_-125.647155_20230428.png"
+    },
+    {
+      "id": "cand:tofino:49.134865:-125.926603:2024-02-05",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-02-05_score0.79_49.134865_-125.926603_20240205.png",
+      "thumbnail_path": "tofino_2024-02-05_score0.79_49.134865_-125.926603_20240205.png"
+    },
+    {
+      "id": "cand:ucluelet:48.90991:-125.487155:2023-04-28",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/ucluelet_2023-04-28_score0.79_48.90991_-125.487155_20230428.png",
+      "thumbnail_path": "ucluelet_2023-04-28_score0.79_48.90991_-125.487155_20230428.png"
+    },
+    {
+      "id": "cand:prince-rupert:54.19982:-130.56877:2024-03-22",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/prince-rupert_2024-03-22_score0.78_54.19982_-130.56877_20240322.png",
+      "thumbnail_path": "prince-rupert_2024-03-22_score0.78_54.19982_-130.56877_20240322.png"
+    },
+    {
+      "id": "cand:tofino:49.234865:-126.046603:2024-02-05",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-02-05_score0.78_49.234865_-126.046603_20240205.png",
+      "thumbnail_path": "tofino_2024-02-05_score0.78_49.234865_-126.046603_20240205.png"
+    },
+    {
+      "id": "cand:tofino:49.114865:-125.946603:2024-03-16",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-03-16_score0.78_49.114865_-125.946603_20240316.png",
+      "thumbnail_path": "tofino_2024-03-16_score0.78_49.114865_-125.946603_20240316.png"
+    },
+    {
+      "id": "cand:ucluelet:48.90991:-125.567155:2024-03-18",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/ucluelet_2024-03-18_score0.78_48.90991_-125.567155_20240318.png",
+      "thumbnail_path": "ucluelet_2024-03-18_score0.78_48.90991_-125.567155_20240318.png"
+    },
+    {
+      "id": "cand:tofino:49.134865:-125.946603:2024-02-05",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-02-05_score0.77_49.134865_-125.946603_20240205.png",
+      "thumbnail_path": "tofino_2024-02-05_score0.77_49.134865_-125.946603_20240205.png"
+    },
+    {
+      "id": "cand:tofino:49.174865:-126.046603:2023-04-28",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2023-04-28_score0.77_49.174865_-126.046603_20230428.png",
+      "thumbnail_path": "tofino_2023-04-28_score0.77_49.174865_-126.046603_20230428.png"
+    },
+    {
+      "id": "cand:prince-rupert:54.19982:-130.54877:2024-03-22",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/prince-rupert_2024-03-22_score0.77_54.19982_-130.54877_20240322.png",
+      "thumbnail_path": "prince-rupert_2024-03-22_score0.77_54.19982_-130.54877_20240322.png"
+    },
+    {
+      "id": "cand:ucluelet:48.90991:-125.507155:2023-04-28",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/ucluelet_2023-04-28_score0.76_48.90991_-125.507155_20230428.png",
+      "thumbnail_path": "ucluelet_2023-04-28_score0.76_48.90991_-125.507155_20230428.png"
+    },
+    {
+      "id": "cand:tofino:49.214865:-126.046603:2024-02-05",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-02-05_score0.76_49.214865_-126.046603_20240205.png",
+      "thumbnail_path": "tofino_2024-02-05_score0.76_49.214865_-126.046603_20240205.png"
+    },
+    {
+      "id": "cand:haida-gwaii-south:52.364865:-131.20148:2023-05-17",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/haida-gwaii-south_2023-05-17_score0.76_52.364865_-131.20148_20230517.png",
+      "thumbnail_path": "haida-gwaii-south_2023-05-17_score0.76_52.364865_-131.20148_20230517.png"
+    },
+    {
+      "id": "cand:nanaimo:49.154865:-123.676603:2024-03-18",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/nanaimo_2024-03-18_score0.76_49.154865_-123.676603_20240318.png",
+      "thumbnail_path": "nanaimo_2024-03-18_score0.76_49.154865_-123.676603_20240318.png"
+    },
+    {
+      "id": "cand:tofino:49.154865:-125.966603:2023-04-28",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2023-04-28_score0.76_49.154865_-125.966603_20230428.png",
+      "thumbnail_path": "tofino_2023-04-28_score0.76_49.154865_-125.966603_20230428.png"
+    },
+    {
+      "id": "cand:milbanke-sound:52.624865:-128.821984:2023-05-14",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/milbanke-sound_2023-05-14_score0.76_52.624865_-128.821984_20230514.png",
+      "thumbnail_path": "milbanke-sound_2023-05-14_score0.76_52.624865_-128.821984_20230514.png"
+    },
+    {
+      "id": "cand:tofino:49.134865:-125.966603:2024-02-05",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-02-05_score0.75_49.134865_-125.966603_20240205.png",
+      "thumbnail_path": "tofino_2024-02-05_score0.75_49.134865_-125.966603_20240205.png"
+    },
+    {
+      "id": "cand:prince-rupert:54.23982:-130.36877:2023-05-17",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/prince-rupert_2023-05-17_score0.75_54.23982_-130.36877_20230517.png",
+      "thumbnail_path": "prince-rupert_2023-05-17_score0.75_54.23982_-130.36877_20230517.png"
+    },
+    {
+      "id": "cand:milbanke-sound:52.624865:-128.801984:2023-05-14",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/milbanke-sound_2023-05-14_score0.75_52.624865_-128.801984_20230514.png",
+      "thumbnail_path": "milbanke-sound_2023-05-14_score0.75_52.624865_-128.801984_20230514.png"
+    },
+    {
+      "id": "cand:masset-inlet:53.644865:-132.968264:2024-04-19",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/masset-inlet_2024-04-19_score0.74_53.644865_-132.968264_20240419.png",
+      "thumbnail_path": "masset-inlet_2024-04-19_score0.74_53.644865_-132.968264_20240419.png"
+    },
+    {
+      "id": "cand:quatsino-sound:50.464865:-128.09245:2024-03-16",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/quatsino-sound_2024-03-16_score0.73_50.464865_-128.09245_20240316.png",
+      "thumbnail_path": "quatsino-sound_2024-03-16_score0.73_50.464865_-128.09245_20240316.png"
+    },
+    {
+      "id": "cand:masset-inlet:53.744865:-133.068264:2024-03-20",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/masset-inlet_2024-03-20_score0.73_53.744865_-133.068264_20240320.png",
+      "thumbnail_path": "masset-inlet_2024-03-20_score0.73_53.744865_-133.068264_20240320.png"
+    },
+    {
+      "id": "cand:tofino:49.174865:-126.066603:2024-05-10",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-05-10_score0.73_49.174865_-126.066603_20240510.png",
+      "thumbnail_path": "tofino_2024-05-10_score0.73_49.174865_-126.066603_20240510.png"
+    },
+    {
+      "id": "cand:tofino:49.214865:-126.026603:2023-04-28",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2023-04-28_score0.73_49.214865_-126.026603_20230428.png",
+      "thumbnail_path": "tofino_2023-04-28_score0.73_49.214865_-126.026603_20230428.png"
+    },
+    {
+      "id": "cand:quatsino-sound:50.444865:-128.03245:2024-04-18",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/quatsino-sound_2024-04-18_score0.73_50.444865_-128.03245_20240418.png",
+      "thumbnail_path": "quatsino-sound_2024-04-18_score0.73_50.444865_-128.03245_20240418.png"
+    },
+    {
+      "id": "cand:spiller-channel:52.364865:-128.48098:2023-05-14",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/spiller-channel_2023-05-14_score0.72_52.364865_-128.48098_20230514.png",
+      "thumbnail_path": "spiller-channel_2023-05-14_score0.72_52.364865_-128.48098_20230514.png"
+    },
+    {
+      "id": "cand:prince-rupert:54.29982:-130.60877:2024-03-22",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/prince-rupert_2024-03-22_score0.72_54.29982_-130.60877_20240322.png",
+      "thumbnail_path": "prince-rupert_2024-03-22_score0.72_54.29982_-130.60877_20240322.png"
+    },
+    {
+      "id": "cand:haida-gwaii-south:52.324865:-131.26148:2024-02-26",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/haida-gwaii-south_2024-02-26_score0.72_52.324865_-131.26148_20240226.png",
+      "thumbnail_path": "haida-gwaii-south_2024-02-26_score0.72_52.324865_-131.26148_20240226.png"
+    },
+    {
+      "id": "cand:tofino:49.114865:-125.926603:2024-02-05",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-02-05_score0.72_49.114865_-125.926603_20240205.png",
+      "thumbnail_path": "tofino_2024-02-05_score0.72_49.114865_-125.926603_20240205.png"
+    },
+    {
+      "id": "cand:quatsino-sound:50.424865:-127.95245:2024-03-16",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/quatsino-sound_2024-03-16_score0.72_50.424865_-127.95245_20240316.png",
+      "thumbnail_path": "quatsino-sound_2024-03-16_score0.72_50.424865_-127.95245_20240316.png"
+    },
+    {
+      "id": "cand:prince-rupert:54.29982:-130.48877:2024-04-16",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/prince-rupert_2024-04-16_score0.71_54.29982_-130.48877_20240416.png",
+      "thumbnail_path": "prince-rupert_2024-04-16_score0.71_54.29982_-130.48877_20240416.png"
+    },
+    {
+      "id": "cand:ucluelet:48.90991:-125.467155:2024-03-18",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/ucluelet_2024-03-18_score0.71_48.90991_-125.467155_20240318.png",
+      "thumbnail_path": "ucluelet_2024-03-18_score0.71_48.90991_-125.467155_20240318.png"
+    },
+    {
+      "id": "cand:tofino:49.134865:-125.946603:2024-03-16",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-03-16_score0.71_49.134865_-125.946603_20240316.png",
+      "thumbnail_path": "tofino_2024-03-16_score0.71_49.134865_-125.946603_20240316.png"
+    },
+    {
+      "id": "cand:milbanke-sound:52.484865:-128.781984:2023-05-14",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/milbanke-sound_2023-05-14_score0.71_52.484865_-128.781984_20230514.png",
+      "thumbnail_path": "milbanke-sound_2023-05-14_score0.71_52.484865_-128.781984_20230514.png"
+    },
+    {
+      "id": "cand:comox:49.624865:-124.848846:2024-03-18",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/comox_2024-03-18_score0.71_49.624865_-124.848846_20240318.png",
+      "thumbnail_path": "comox_2024-03-18_score0.71_49.624865_-124.848846_20240318.png"
+    },
+    {
+      "id": "cand:prince-rupert:54.29982:-130.48877:2023-05-17",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/prince-rupert_2023-05-17_score0.70_54.29982_-130.48877_20230517.png",
+      "thumbnail_path": "prince-rupert_2023-05-17_score0.70_54.29982_-130.48877_20230517.png"
+    },
+    {
+      "id": "cand:tofino:49.174865:-125.906603:2024-03-16",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-03-16_score0.70_49.174865_-125.906603_20240316.png",
+      "thumbnail_path": "tofino_2024-03-16_score0.70_49.174865_-125.906603_20240316.png"
+    },
+    {
+      "id": "cand:tofino:49.154865:-125.946603:2024-02-05",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2024-02-05_score0.70_49.154865_-125.946603_20240205.png",
+      "thumbnail_path": "tofino_2024-02-05_score0.70_49.154865_-125.946603_20240205.png"
+    },
+    {
+      "id": "cand:milbanke-sound:52.504865:-128.841984:2024-02-03",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/milbanke-sound_2024-02-03_score0.70_52.504865_-128.841984_20240203.png",
+      "thumbnail_path": "milbanke-sound_2024-02-03_score0.70_52.504865_-128.841984_20240203.png"
+    },
+    {
+      "id": "cand:tofino:49.154865:-125.986603:2023-04-28",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2023-04-28_score0.69_49.154865_-125.986603_20230428.png",
+      "thumbnail_path": "tofino_2023-04-28_score0.69_49.154865_-125.986603_20230428.png"
+    },
+    {
+      "id": "cand:denman-island:49.61991:-124.85886:2023-04-28",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/denman-island_2023-04-28_score0.69_49.61991_-124.85886_20230428.png",
+      "thumbnail_path": "denman-island_2023-04-28_score0.69_49.61991_-124.85886_20230428.png"
+    },
+    {
+      "id": "cand:ucluelet:48.90991:-125.527155:2024-03-18",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/ucluelet_2024-03-18_score0.69_48.90991_-125.527155_20240318.png",
+      "thumbnail_path": "ucluelet_2024-03-18_score0.69_48.90991_-125.527155_20240318.png"
+    },
+    {
+      "id": "cand:nootka-sound:49.544865:-126.568503:2024-02-12",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/nootka-sound_2024-02-12_score0.69_49.544865_-126.568503_20240212.png",
+      "thumbnail_path": "nootka-sound_2024-02-12_score0.69_49.544865_-126.568503_20240212.png"
+    },
+    {
+      "id": "cand:comox:49.624865:-124.868846:2024-02-12",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/comox_2024-02-12_score0.69_49.624865_-124.868846_20240212.png",
+      "thumbnail_path": "comox_2024-02-12_score0.69_49.624865_-124.868846_20240212.png"
+    },
+    {
+      "id": "cand:tofino:49.054865:-125.766603:2023-04-28",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/tofino_2023-04-28_score0.69_49.054865_-125.766603_20230428.png",
+      "thumbnail_path": "tofino_2023-04-28_score0.69_49.054865_-125.766603_20230428.png"
+    },
+    {
+      "id": "cand:comox:49.624865:-124.828846:2024-05-22",
+      "source": "user_labels",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/candidates_v2/comox_2024-05-22_score0.69_49.624865_-124.828846_20240522.png",
+      "thumbnail_path": "comox_2024-05-22_score0.69_49.624865_-124.828846_20240522.png"
+    },
+    {
+      "id": "rose:0:qualicum_2024-03-18_score0.01_49.254865_-124.497442_20240318.png",
+      "source": "rose_verified",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/candidates_v2/qualicum_2024-03-18_score0.01_49.254865_-124.497442_20240318.png",
+      "thumbnail_path": "qualicum_2024-03-18_score0.01_49.254865_-124.497442_20240318.png",
+      "notes": "Confirmed distinctive milky turquoise plume pattern."
+    },
+    {
+      "id": "rose:1:qualicum_2024-03-18_score0.01_49.254865_-124.497442_20240318.png",
+      "source": "rose_verified",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/candidates_v2/qualicum_2024-03-18_score0.01_49.254865_-124.497442_20240318.png",
+      "thumbnail_path": "qualicum_2024-03-18_score0.01_49.254865_-124.497442_20240318.png",
+      "notes": "Confirmed distinctive milky turquoise plume pattern."
+    },
+    {
+      "id": "rose:2:tofino_2024-03-16_score0.00_49.114865_-125.806603_20240316.png",
+      "source": "rose_verified",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/candidates_v2/tofino_2024-03-16_score0.00_49.114865_-125.806603_20240316.png",
+      "thumbnail_path": "tofino_2024-03-16_score0.00_49.114865_-125.806603_20240316.png",
+      "notes": "Confirmed distinctive milky turquoise plume pattern."
+    },
+    {
+      "id": "rose:3:tofino_2024-03-16_score0.01_49.194865_-126.026603_20240316.png",
+      "source": "rose_verified",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/candidates_v2/tofino_2024-03-16_score0.01_49.194865_-126.026603_20240316.png",
+      "thumbnail_path": "tofino_2024-03-16_score0.01_49.194865_-126.026603_20240316.png",
+      "notes": "Confirmed distinctive milky turquoise plume pattern."
+    },
+    {
+      "id": "rose:4:tofino_2024-03-16_score0.01_49.194865_-126.026603_20240316.png",
+      "source": "rose_verified",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/candidates_v2/tofino_2024-03-16_score0.01_49.194865_-126.026603_20240316.png",
+      "thumbnail_path": "tofino_2024-03-16_score0.01_49.194865_-126.026603_20240316.png",
+      "notes": "Confirmed distinctive milky turquoise plume pattern."
+    },
+    {
+      "id": "rose:5:nootka-sound_2024-03-16_score0.00_49.584865_-126.528503_20240316.png",
+      "source": "rose_verified",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/candidates_v2/nootka-sound_2024-03-16_score0.00_49.584865_-126.528503_20240316.png",
+      "thumbnail_path": "nootka-sound_2024-03-16_score0.00_49.584865_-126.528503_20240316.png",
+      "notes": "Confirmed distinctive milky turquoise plume pattern."
+    },
+    {
+      "id": "rose:6:nootka-sound_2024-02-12_score0.00_49.564865_-126.508503_20240212.png",
+      "source": "rose_verified",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/candidates_v2/nootka-sound_2024-02-12_score0.00_49.564865_-126.508503_20240212.png",
+      "thumbnail_path": "nootka-sound_2024-02-12_score0.00_49.564865_-126.508503_20240212.png",
+      "notes": "Confirmed distinctive milky turquoise plume pattern."
+    },
+    {
+      "id": "rose:7:nootka-sound_2024-03-16_score0.00_49.584865_-126.528503_20240316.png",
+      "source": "rose_verified",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/candidates_v2/nootka-sound_2024-03-16_score0.00_49.584865_-126.528503_20240316.png",
+      "thumbnail_path": "nootka-sound_2024-03-16_score0.00_49.584865_-126.528503_20240316.png",
+      "notes": "Confirmed distinctive milky turquoise plume pattern."
+    },
+    {
+      "id": "rose:8:nootka-sound_2024-03-16_score0.00_49.584865_-126.528503_20240316.png",
+      "source": "rose_verified",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/candidates_v2/nootka-sound_2024-03-16_score0.00_49.584865_-126.528503_20240316.png",
+      "thumbnail_path": "nootka-sound_2024-03-16_score0.00_49.584865_-126.528503_20240316.png",
+      "notes": "Distinct bright blue spawning plume in protected nearshore area."
+    },
+    {
+      "id": "rose:9:nootka-sound_2024-03-16_score0.00_49.584865_-126.528503_20240316.png",
+      "source": "rose_verified",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/candidates_v2/nootka-sound_2024-03-16_score0.00_49.584865_-126.528503_20240316.png",
+      "thumbnail_path": "nootka-sound_2024-03-16_score0.00_49.584865_-126.528503_20240316.png",
+      "notes": "Distinct bright blue spawning plume in protected nearshore area."
+    },
+    {
+      "id": "negative:dfo-verified-anderson-point_2024-03-16_cloud0",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/dfo-verified-anderson-point_2024-03-16_cloud0.png",
+      "thumbnail_path": "dfo-verified-anderson-point_2024-03-16_cloud0.png"
+    },
+    {
+      "id": "negative:dfo-verified-anderson-point_2024-03-26_cloud44",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/dfo-verified-anderson-point_2024-03-26_cloud44.png",
+      "thumbnail_path": "dfo-verified-anderson-point_2024-03-26_cloud44.png"
+    },
+    {
+      "id": "negative:dfo-verified-qualicum-beach_2024-03-18_20240318",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/dfo-verified-qualicum-beach_2024-03-18_20240318.png",
+      "thumbnail_path": "dfo-verified-qualicum-beach_2024-03-18_20240318.png"
+    },
+    {
+      "id": "negative:dfo-verified-qualicum-beach_2024-03-18_cloud2",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/dfo-verified-qualicum-beach_2024-03-18_cloud2.png",
+      "thumbnail_path": "dfo-verified-qualicum-beach_2024-03-18_cloud2.png"
+    },
+    {
+      "id": "negative:dfo-verified-tree-bluff_2024-03-05_20240305",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/dfo-verified-tree-bluff_2024-03-05_20240305.png",
+      "thumbnail_path": "dfo-verified-tree-bluff_2024-03-05_20240305.png"
+    },
+    {
+      "id": "negative:dfo-verified-tree-bluff_2024-03-20_20240320",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/dfo-verified-tree-bluff_2024-03-20_20240320.png",
+      "thumbnail_path": "dfo-verified-tree-bluff_2024-03-20_20240320.png"
+    },
+    {
+      "id": "negative:dfo-verified-tree-bluff_2024-03-22_20240322",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/dfo-verified-tree-bluff_2024-03-22_20240322.png",
+      "thumbnail_path": "dfo-verified-tree-bluff_2024-03-22_20240322.png"
+    },
+    {
+      "id": "negative:dfo-verified-tree-bluff_2024-03-22_cloud0",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/dfo-verified-tree-bluff_2024-03-22_cloud0.png",
+      "thumbnail_path": "dfo-verified-tree-bluff_2024-03-22_cloud0.png"
+    },
+    {
+      "id": "negative:dfo-verified-tree-bluff_2024-03-22_cloud5",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/dfo-verified-tree-bluff_2024-03-22_cloud5.png",
+      "thumbnail_path": "dfo-verified-tree-bluff_2024-03-22_cloud5.png"
+    },
+    {
+      "id": "negative:false-creek-vancouver_2024-02-09_cld39",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/false-creek-vancouver_2024-02-09_cld39.png",
+      "thumbnail_path": "false-creek-vancouver_2024-02-09_cld39.png"
+    },
+    {
+      "id": "negative:false-creek-vancouver_2024-03-18_cld0",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/false-creek-vancouver_2024-03-18_cld0.png",
+      "thumbnail_path": "false-creek-vancouver_2024-03-18_cld0.png"
+    },
+    {
+      "id": "negative:fisgard-light-victoria_2024-03-05_cld40",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/fisgard-light-victoria_2024-03-05_cld40.png",
+      "thumbnail_path": "fisgard-light-victoria_2024-03-05_cld40.png"
+    },
+    {
+      "id": "negative:holmes-harbor-wa_2023-03-18_cld1",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/holmes-harbor-wa_2023-03-18_cld1.png",
+      "thumbnail_path": "holmes-harbor-wa_2023-03-18_cld1.png"
+    },
+    {
+      "id": "negative:kitasu-bay_2025-04-03_cld1",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/kitasu-bay_2025-04-03_cld1.png",
+      "thumbnail_path": "kitasu-bay_2025-04-03_cld1.png"
+    },
+    {
+      "id": "negative:lambert-channel-(denman)_2025-03-18_cld52",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/lambert-channel-(denman)_2025-03-18_cld52.png",
+      "thumbnail_path": "lambert-channel-(denman)_2025-03-18_cld52.png"
+    },
+    {
+      "id": "negative:louscoone-inlet_2024-03-22_cld14",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/louscoone-inlet_2024-03-22_cld14.png",
+      "thumbnail_path": "louscoone-inlet_2024-03-22_cld14.png"
+    },
+    {
+      "id": "negative:louscoone-inlet_2024-03-22_cld16",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/louscoone-inlet_2024-03-22_cld16.png",
+      "thumbnail_path": "louscoone-inlet_2024-03-22_cld16.png"
+    },
+    {
+      "id": "negative:manual-2026-04-04-event-1-point-1_2026-03-28_cloud30",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/manual-2026-04-04-event-1-point-1_2026-03-28_cloud30.png",
+      "thumbnail_path": "manual-2026-04-04-event-1-point-1_2026-03-28_cloud30.png"
+    },
+    {
+      "id": "negative:manual-2026-04-04-event-1-point-1_2026-04-07_cloud18",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/manual-2026-04-04-event-1-point-1_2026-04-07_cloud18.png",
+      "thumbnail_path": "manual-2026-04-04-event-1-point-1_2026-04-07_cloud18.png"
+    },
+    {
+      "id": "negative:manual-2026-04-04-event-1-point-1_2026-04-10_cloud0",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/manual-2026-04-04-event-1-point-1_2026-04-10_cloud0.png",
+      "thumbnail_path": "manual-2026-04-04-event-1-point-1_2026-04-10_cloud0.png"
+    },
+    {
+      "id": "negative:manual-2026-04-04-event-1-point-2_2026-03-28_cloud30",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/manual-2026-04-04-event-1-point-2_2026-03-28_cloud30.png",
+      "thumbnail_path": "manual-2026-04-04-event-1-point-2_2026-03-28_cloud30.png"
+    },
+    {
+      "id": "negative:manual-2026-04-04-event-1-point-2_2026-04-07_cloud18",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/manual-2026-04-04-event-1-point-2_2026-04-07_cloud18.png",
+      "thumbnail_path": "manual-2026-04-04-event-1-point-2_2026-04-07_cloud18.png"
+    },
+    {
+      "id": "negative:manual-2026-04-04-event-1-point-2_2026-04-10_cloud0",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/manual-2026-04-04-event-1-point-2_2026-04-10_cloud0.png",
+      "thumbnail_path": "manual-2026-04-04-event-1-point-2_2026-04-10_cloud0.png"
+    },
+    {
+      "id": "negative:manual-2026-04-04-event-2-point-1_2026-03-28_20260328",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/manual-2026-04-04-event-2-point-1_2026-03-28_20260328.png",
+      "thumbnail_path": "manual-2026-04-04-event-2-point-1_2026-03-28_20260328.png"
+    },
+    {
+      "id": "negative:manual-2026-04-04-event-2-point-1_2026-03-28_cloud30",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/manual-2026-04-04-event-2-point-1_2026-03-28_cloud30.png",
+      "thumbnail_path": "manual-2026-04-04-event-2-point-1_2026-03-28_cloud30.png"
+    },
+    {
+      "id": "negative:manual-2026-04-04-event-2-point-1_2026-04-07_20260407",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/manual-2026-04-04-event-2-point-1_2026-04-07_20260407.png",
+      "thumbnail_path": "manual-2026-04-04-event-2-point-1_2026-04-07_20260407.png"
+    },
+    {
+      "id": "negative:manual-2026-04-04-event-2-point-1_2026-04-07_cloud18",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/manual-2026-04-04-event-2-point-1_2026-04-07_cloud18.png",
+      "thumbnail_path": "manual-2026-04-04-event-2-point-1_2026-04-07_cloud18.png"
+    },
+    {
+      "id": "negative:manual-2026-04-04-event-2-point-1_2026-04-10_20260410",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/manual-2026-04-04-event-2-point-1_2026-04-10_20260410.png",
+      "thumbnail_path": "manual-2026-04-04-event-2-point-1_2026-04-10_20260410.png"
+    },
+    {
+      "id": "negative:manual-2026-04-04-event-2-point-1_2026-04-10_cloud0",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/manual-2026-04-04-event-2-point-1_2026-04-10_cloud0.png",
+      "thumbnail_path": "manual-2026-04-04-event-2-point-1_2026-04-10_cloud0.png"
+    },
+    {
+      "id": "negative:manual-2026-04-04-event-2-point-1_20260328T193841_20260328T194003_T09UXS_2026-03-28",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/manual-2026-04-04-event-2-point-1_20260328T193841_20260328T194003_T09UXS_2026-03-28.png",
+      "thumbnail_path": "manual-2026-04-04-event-2-point-1_20260328T193841_20260328T194003_T09UXS_2026-03-28.png"
+    },
+    {
+      "id": "negative:manual-2026-04-04-event-2-point-1_20260407T191909_20260407T192519_T09UXS_2026-04-07",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/manual-2026-04-04-event-2-point-1_20260407T191909_20260407T192519_T09UXS_2026-04-07.png",
+      "thumbnail_path": "manual-2026-04-04-event-2-point-1_20260407T191909_20260407T192519_T09UXS_2026-04-07.png"
+    },
+    {
+      "id": "negative:manual-2026-04-04-event-2-point-1_20260410T192909_20260410T194001_T09UXS_2026-04-10",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/manual-2026-04-04-event-2-point-1_20260410T192909_20260410T194001_T09UXS_2026-04-10.png",
+      "thumbnail_path": "manual-2026-04-04-event-2-point-1_20260410T192909_20260410T194001_T09UXS_2026-04-10.png"
+    },
+    {
+      "id": "negative:manual-2026-04-04-event-2-point-2_2026-03-28_cloud30",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/manual-2026-04-04-event-2-point-2_2026-03-28_cloud30.png",
+      "thumbnail_path": "manual-2026-04-04-event-2-point-2_2026-03-28_cloud30.png"
+    },
+    {
+      "id": "negative:manual-2026-04-04-event-2-point-2_2026-04-07_cloud18",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/manual-2026-04-04-event-2-point-2_2026-04-07_cloud18.png",
+      "thumbnail_path": "manual-2026-04-04-event-2-point-2_2026-04-07_cloud18.png"
+    },
+    {
+      "id": "negative:manual-2026-04-04-event-2-point-2_2026-04-10_cloud0",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/manual-2026-04-04-event-2-point-2_2026-04-10_cloud0.png",
+      "thumbnail_path": "manual-2026-04-04-event-2-point-2_2026-04-10_cloud0.png"
+    },
+    {
+      "id": "negative:parksville-beach-bc_2025-03-05_cld36",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/parksville-beach-bc_2025-03-05_cld36.png",
+      "thumbnail_path": "parksville-beach-bc_2025-03-05_cld36.png"
+    },
+    {
+      "id": "negative:point-julia-port-gamble_2023-02-24_cld9",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/point-julia-port-gamble_2023-02-24_cld9.png",
+      "thumbnail_path": "point-julia-port-gamble_2023-02-24_cld9.png"
+    },
+    {
+      "id": "negative:point-julia-port-gamble_2023-03-18_cld1",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/point-julia-port-gamble_2023-03-18_cld1.png",
+      "thumbnail_path": "point-julia-port-gamble_2023-03-18_cld1.png"
+    },
+    {
+      "id": "negative:port-mcneill_2024-03-06_cld33",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/port-mcneill_2024-03-06_cld33.png",
+      "thumbnail_path": "port-mcneill_2024-03-06_cld33.png"
+    },
+    {
+      "id": "negative:port-mcneill_2024-03-16_cld1",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/port-mcneill_2024-03-16_cld1.png",
+      "thumbnail_path": "port-mcneill_2024-03-16_cld1.png"
+    },
+    {
+      "id": "negative:port-orchard-wa_2024-03-15_cld13",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/port-orchard-wa_2024-03-15_cld13.png",
+      "thumbnail_path": "port-orchard-wa_2024-03-15_cld13.png"
+    },
+    {
+      "id": "negative:port-orchard-wa_2024-03-17_cld1",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/port-orchard-wa_2024-03-17_cld1.png",
+      "thumbnail_path": "port-orchard-wa_2024-03-17_cld1.png"
+    },
+    {
+      "id": "negative:quilcene-bay-wa_2024-03-15_cld13",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/quilcene-bay-wa_2024-03-15_cld13.png",
+      "thumbnail_path": "quilcene-bay-wa_2024-03-15_cld13.png"
+    },
+    {
+      "id": "negative:quilcene-bay-wa_2024-03-15_cld24",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/quilcene-bay-wa_2024-03-15_cld24.png",
+      "thumbnail_path": "quilcene-bay-wa_2024-03-15_cld24.png"
+    },
+    {
+      "id": "negative:salmon-beach-barkley-sound_2024-03-18_cld2",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/salmon-beach-barkley-sound_2024-03-18_cld2.png",
+      "thumbnail_path": "salmon-beach-barkley-sound_2024-03-18_cld2.png"
+    },
+    {
+      "id": "negative:spiller-channel_2024-03-24_cld1",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/spiller-channel_2024-03-24_cld1.png",
+      "thumbnail_path": "spiller-channel_2024-03-24_cld1.png"
+    },
+    {
+      "id": "negative:spiller-channel_2024-03-29_cld0",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/spiller-channel_2024-03-29_cld0.png",
+      "thumbnail_path": "spiller-channel_2024-03-29_cld0.png"
+    },
+    {
+      "id": "negative:squamish-estuary-bc_2025-04-16_cld0",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/squamish-estuary-bc_2025-04-16_cld0.png",
+      "thumbnail_path": "squamish-estuary-bc_2025-04-16_cld0.png"
+    },
+    {
+      "id": "negative:thompson-bay_2023-03-25_cld39",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/thompson-bay_2023-03-25_cld39.png",
+      "thumbnail_path": "thompson-bay_2023-03-25_cld39.png"
+    },
+    {
+      "id": "negative:thompson-bay_2023-03-27_cld0",
+      "source": "negative_samples",
+      "label": "nospawn",
+      "label_int": 0,
+      "image_path": "data/samples/negative/thompson-bay_2023-03-27_cld0.png",
+      "thumbnail_path": "thompson-bay_2023-03-27_cld0.png"
+    },
+    {
+      "id": "sog:oyster-rvr:2016-02-27:18564",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2020-03-08-oyster-rvr_2020-03-14_20200314.png",
+      "thumbnail_path": "dfo-2020-03-08-oyster-rvr_2020-03-14_20200314.png",
+      "location_name": "Oyster Rvr",
+      "start_date": "2016-02-27"
+    },
+    {
+      "id": "sog:kitty-coleman-beach:2016-03-07:18565",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2020-03-03-kitty-coleman-beach_2020-03-14_20200314.png",
+      "thumbnail_path": "dfo-2020-03-03-kitty-coleman-beach_2020-03-14_20200314.png",
+      "location_name": "Kitty Coleman Beach",
+      "start_date": "2016-03-07"
+    },
+    {
+      "id": "sog:komas-bluff:2016-03-07:18570",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2019-03-14-komas-bluff_2019-03-20_20190320.png",
+      "thumbnail_path": "dfo-2019-03-14-komas-bluff_2019-03-20_20190320.png",
+      "location_name": "Komas Bluff",
+      "start_date": "2016-03-07"
+    },
+    {
+      "id": "sog:whalebone-pt:2016-03-07:18580",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2019-03-15-whalebone-pt_2019-03-20_20190320.png",
+      "thumbnail_path": "dfo-2019-03-15-whalebone-pt_2019-03-20_20190320.png",
+      "location_name": "Whalebone Pt",
+      "start_date": "2016-03-07"
+    },
+    {
+      "id": "sog:collishaw-pt:2016-03-07:18581",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2022-03-04-collishaw-pt_2022-03-09_20220309.png",
+      "thumbnail_path": "dfo-2022-03-04-collishaw-pt_2022-03-09_20220309.png",
+      "location_name": "Collishaw Pt",
+      "start_date": "2016-03-07"
+    },
+    {
+      "id": "sog:qualicum-beach:2016-03-31:18587",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2017-03-27-qualicum-beach_2017-03-30_20170330.png",
+      "thumbnail_path": "dfo-2017-03-27-qualicum-beach_2017-03-30_20170330.png",
+      "location_name": "Qualicum Beach",
+      "start_date": "2016-03-31"
+    },
+    {
+      "id": "sog:qualicum-beach:2016-03-14:18588",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2017-03-27-qualicum-beach_2017-03-30_20170330.png",
+      "thumbnail_path": "dfo-2017-03-27-qualicum-beach_2017-03-30_20170330.png",
+      "location_name": "Qualicum Beach",
+      "start_date": "2016-03-14"
+    },
+    {
+      "id": "sog:big-qualicum-rvr:2016-03-31:18589",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2018-03-03-big-qualicum-rvr_2018-03-10_20180310.png",
+      "thumbnail_path": "dfo-2018-03-03-big-qualicum-rvr_2018-03-10_20180310.png",
+      "location_name": "Big Qualicum Rvr",
+      "start_date": "2016-03-31"
+    },
+    {
+      "id": "sog:big-qualicum-rvr:2016-03-31:18590",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2018-03-03-big-qualicum-rvr_2018-03-10_20180310.png",
+      "thumbnail_path": "dfo-2018-03-03-big-qualicum-rvr_2018-03-10_20180310.png",
+      "location_name": "Big Qualicum Rvr",
+      "start_date": "2016-03-31"
+    },
+    {
+      "id": "sog:kitty-coleman-beach:2017-03-08:18618",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2020-03-03-kitty-coleman-beach_2020-03-14_20200314.png",
+      "thumbnail_path": "dfo-2020-03-03-kitty-coleman-beach_2020-03-14_20200314.png",
+      "location_name": "Kitty Coleman Beach",
+      "start_date": "2017-03-08"
+    },
+    {
+      "id": "sog:komas-bluff:2017-03-16:18621",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2019-03-14-komas-bluff_2019-03-20_20190320.png",
+      "thumbnail_path": "dfo-2019-03-14-komas-bluff_2019-03-20_20190320.png",
+      "location_name": "Komas Bluff",
+      "start_date": "2017-03-16"
+    },
+    {
+      "id": "sog:komas-bluff:2017-03-31:18622",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2019-03-14-komas-bluff_2019-03-20_20190320.png",
+      "thumbnail_path": "dfo-2019-03-14-komas-bluff_2019-03-20_20190320.png",
+      "location_name": "Komas Bluff",
+      "start_date": "2017-03-31"
+    },
+    {
+      "id": "sog:komas-bluff:2017-03-31:18623",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2019-03-14-komas-bluff_2019-03-20_20190320.png",
+      "thumbnail_path": "dfo-2019-03-14-komas-bluff_2019-03-20_20190320.png",
+      "location_name": "Komas Bluff",
+      "start_date": "2017-03-31"
+    },
+    {
+      "id": "sog:whalebone-pt:2017-03-15:18631",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2019-03-15-whalebone-pt_2019-03-20_20190320.png",
+      "thumbnail_path": "dfo-2019-03-15-whalebone-pt_2019-03-20_20190320.png",
+      "location_name": "Whalebone Pt",
+      "start_date": "2017-03-15"
+    },
+    {
+      "id": "sog:collishaw-pt:2017-03-18:18632",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2022-03-04-collishaw-pt_2022-03-09_20220309.png",
+      "thumbnail_path": "dfo-2022-03-04-collishaw-pt_2022-03-09_20220309.png",
+      "location_name": "Collishaw Pt",
+      "start_date": "2017-03-18"
+    },
+    {
+      "id": "sog:collishaw-pt:2017-03-31:18633",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2022-03-04-collishaw-pt_2022-03-09_20220309.png",
+      "thumbnail_path": "dfo-2022-03-04-collishaw-pt_2022-03-09_20220309.png",
+      "location_name": "Collishaw Pt",
+      "start_date": "2017-03-31"
+    },
+    {
+      "id": "sog:qualicum-beach:2017-03-06:18636",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2017-03-27-qualicum-beach_2017-03-30_20170330.png",
+      "thumbnail_path": "dfo-2017-03-27-qualicum-beach_2017-03-30_20170330.png",
+      "location_name": "Qualicum Beach",
+      "start_date": "2017-03-06"
+    },
+    {
+      "id": "sog:qualicum-beach:2017-03-27:18637",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2017-03-27-qualicum-beach_2017-03-30_20170330.png",
+      "thumbnail_path": "dfo-2017-03-27-qualicum-beach_2017-03-30_20170330.png",
+      "location_name": "Qualicum Beach",
+      "start_date": "2017-03-27"
+    },
+    {
+      "id": "sog:bowser:2017-03-06:18641",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2018-03-08-bowser_2018-03-10_20180310.png",
+      "thumbnail_path": "dfo-2018-03-08-bowser_2018-03-10_20180310.png",
+      "location_name": "Bowser",
+      "start_date": "2017-03-06"
+    },
+    {
+      "id": "sog:big-qualicum-rvr:2017-03-05:18642",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2018-03-03-big-qualicum-rvr_2018-03-10_20180310.png",
+      "thumbnail_path": "dfo-2018-03-03-big-qualicum-rvr_2018-03-10_20180310.png",
+      "location_name": "Big Qualicum Rvr",
+      "start_date": "2017-03-05"
+    },
+    {
+      "id": "sog:komas-bluff:2018-03-29:18676",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2019-03-14-komas-bluff_2019-03-20_20190320.png",
+      "thumbnail_path": "dfo-2019-03-14-komas-bluff_2019-03-20_20190320.png",
+      "location_name": "Komas Bluff",
+      "start_date": "2018-03-29"
+    },
+    {
+      "id": "sog:whalebone-pt:2018-03-09:18681",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2019-03-15-whalebone-pt_2019-03-20_20190320.png",
+      "thumbnail_path": "dfo-2019-03-15-whalebone-pt_2019-03-20_20190320.png",
+      "location_name": "Whalebone Pt",
+      "start_date": "2018-03-09"
+    },
+    {
+      "id": "sog:whalebone-pt:2018-03-27:18682",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2019-03-15-whalebone-pt_2019-03-20_20190320.png",
+      "thumbnail_path": "dfo-2019-03-15-whalebone-pt_2019-03-20_20190320.png",
+      "location_name": "Whalebone Pt",
+      "start_date": "2018-03-27"
+    },
+    {
+      "id": "sog:whalebone-pt:2018-03-27:18683",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2019-03-15-whalebone-pt_2019-03-20_20190320.png",
+      "thumbnail_path": "dfo-2019-03-15-whalebone-pt_2019-03-20_20190320.png",
+      "location_name": "Whalebone Pt",
+      "start_date": "2018-03-27"
+    },
+    {
+      "id": "sog:collishaw-pt:2018-03-03:18684",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2022-03-04-collishaw-pt_2022-03-09_20220309.png",
+      "thumbnail_path": "dfo-2022-03-04-collishaw-pt_2022-03-09_20220309.png",
+      "location_name": "Collishaw Pt",
+      "start_date": "2018-03-03"
+    },
+    {
+      "id": "sog:qualicum-beach:2018-03-02:18687",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2018-03-02-qualicum-beach_2018-03-10_20180310.png",
+      "thumbnail_path": "dfo-2018-03-02-qualicum-beach_2018-03-10_20180310.png",
+      "location_name": "Qualicum Beach",
+      "start_date": "2018-03-02"
+    },
+    {
+      "id": "sog:bowser:2018-03-08:18690",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2018-03-08-bowser_2018-03-10_20180310.png",
+      "thumbnail_path": "dfo-2018-03-08-bowser_2018-03-10_20180310.png",
+      "location_name": "Bowser",
+      "start_date": "2018-03-08"
+    },
+    {
+      "id": "sog:big-qualicum-rvr:2018-03-03:18691",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2018-03-03-big-qualicum-rvr_2018-03-10_20180310.png",
+      "thumbnail_path": "dfo-2018-03-03-big-qualicum-rvr_2018-03-10_20180310.png",
+      "location_name": "Big Qualicum Rvr",
+      "start_date": "2018-03-03"
+    },
+    {
+      "id": "sog:komas-bluff:2019-03-14:18716",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2019-03-14-komas-bluff_2019-03-20_20190320.png",
+      "thumbnail_path": "dfo-2019-03-14-komas-bluff_2019-03-20_20190320.png",
+      "location_name": "Komas Bluff",
+      "start_date": "2019-03-14"
+    },
+    {
+      "id": "sog:whalebone-pt:2019-03-15:18724",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2019-03-15-whalebone-pt_2019-03-20_20190320.png",
+      "thumbnail_path": "dfo-2019-03-15-whalebone-pt_2019-03-20_20190320.png",
+      "location_name": "Whalebone Pt",
+      "start_date": "2019-03-15"
+    },
+    {
+      "id": "sog:collishaw-pt:2019-03-08:18725",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2022-03-04-collishaw-pt_2022-03-09_20220309.png",
+      "thumbnail_path": "dfo-2022-03-04-collishaw-pt_2022-03-09_20220309.png",
+      "location_name": "Collishaw Pt",
+      "start_date": "2019-03-08"
+    },
+    {
+      "id": "sog:collishaw-pt:2019-03-16:18726",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2022-03-04-collishaw-pt_2022-03-09_20220309.png",
+      "thumbnail_path": "dfo-2022-03-04-collishaw-pt_2022-03-09_20220309.png",
+      "location_name": "Collishaw Pt",
+      "start_date": "2019-03-16"
+    },
+    {
+      "id": "sog:bowser:2019-03-19:18730",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2019-03-19-bowser_2019-03-20_20190320.png",
+      "thumbnail_path": "dfo-2019-03-19-bowser_2019-03-20_20190320.png",
+      "location_name": "Bowser",
+      "start_date": "2019-03-19"
+    },
+    {
+      "id": "sog:bowser:2019-04-01:18731",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2018-03-08-bowser_2018-03-10_20180310.png",
+      "thumbnail_path": "dfo-2018-03-08-bowser_2018-03-10_20180310.png",
+      "location_name": "Bowser",
+      "start_date": "2019-04-01"
+    },
+    {
+      "id": "sog:big-qualicum-rvr:2019-03-19:18732",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2019-03-19-big-qualicum-rvr_2019-03-20_20190320.png",
+      "thumbnail_path": "dfo-2019-03-19-big-qualicum-rvr_2019-03-20_20190320.png",
+      "location_name": "Big Qualicum Rvr",
+      "start_date": "2019-03-19"
+    },
+    {
+      "id": "sog:oyster-rvr:2020-03-08:18752",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2020-03-08-oyster-rvr_2020-03-14_20200314.png",
+      "thumbnail_path": "dfo-2020-03-08-oyster-rvr_2020-03-14_20200314.png",
+      "location_name": "Oyster Rvr",
+      "start_date": "2020-03-08"
+    },
+    {
+      "id": "sog:kitty-coleman-beach:2020-03-03:18753",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2020-03-03-kitty-coleman-beach_2020-03-14_20200314.png",
+      "thumbnail_path": "dfo-2020-03-03-kitty-coleman-beach_2020-03-14_20200314.png",
+      "location_name": "Kitty Coleman Beach",
+      "start_date": "2020-03-03"
+    },
+    {
+      "id": "sog:kitty-coleman-beach:2020-02-21:18754",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2020-03-03-kitty-coleman-beach_2020-03-14_20200314.png",
+      "thumbnail_path": "dfo-2020-03-03-kitty-coleman-beach_2020-03-14_20200314.png",
+      "location_name": "Kitty Coleman Beach",
+      "start_date": "2020-02-21"
+    },
+    {
+      "id": "sog:oyster-bay:2020-03-08:18755",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2020-03-08-oyster-bay_2020-03-14_20200314.png",
+      "thumbnail_path": "dfo-2020-03-08-oyster-bay_2020-03-14_20200314.png",
+      "location_name": "Oyster Bay",
+      "start_date": "2020-03-08"
+    },
+    {
+      "id": "sog:komas-bluff:2020-03-06:18762",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2020-03-06-komas-bluff_2020-03-14_20200314.png",
+      "thumbnail_path": "dfo-2020-03-06-komas-bluff_2020-03-14_20200314.png",
+      "location_name": "Komas Bluff",
+      "start_date": "2020-03-06"
+    },
+    {
+      "id": "sog:whalebone-pt:2020-03-08:18769",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2019-03-15-whalebone-pt_2019-03-20_20190320.png",
+      "thumbnail_path": "dfo-2019-03-15-whalebone-pt_2019-03-20_20190320.png",
+      "location_name": "Whalebone Pt",
+      "start_date": "2020-03-08"
+    },
+    {
+      "id": "sog:qualicum-beach:2020-03-10:18773",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2020-03-10-qualicum-beach_2020-03-21_20200321.png",
+      "thumbnail_path": "dfo-2020-03-10-qualicum-beach_2020-03-21_20200321.png",
+      "location_name": "Qualicum Beach",
+      "start_date": "2020-03-10"
+    },
+    {
+      "id": "sog:bowser:2020-03-12:18777",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2018-03-08-bowser_2018-03-10_20180310.png",
+      "thumbnail_path": "dfo-2018-03-08-bowser_2018-03-10_20180310.png",
+      "location_name": "Bowser",
+      "start_date": "2020-03-12"
+    },
+    {
+      "id": "sog:big-qualicum-rvr:2020-03-08:18778",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2020-03-08-big-qualicum-rvr_2020-03-21_20200321.png",
+      "thumbnail_path": "dfo-2020-03-08-big-qualicum-rvr_2020-03-21_20200321.png",
+      "location_name": "Big Qualicum Rvr",
+      "start_date": "2020-03-08"
+    },
+    {
+      "id": "sog:kitty-coleman-beach:2021-03-10:18816",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2020-03-03-kitty-coleman-beach_2020-03-14_20200314.png",
+      "thumbnail_path": "dfo-2020-03-03-kitty-coleman-beach_2020-03-14_20200314.png",
+      "location_name": "Kitty Coleman Beach",
+      "start_date": "2021-03-10"
+    },
+    {
+      "id": "sog:kitty-coleman-beach:2021-02-24:18817",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2020-03-03-kitty-coleman-beach_2020-03-14_20200314.png",
+      "thumbnail_path": "dfo-2020-03-03-kitty-coleman-beach_2020-03-14_20200314.png",
+      "location_name": "Kitty Coleman Beach",
+      "start_date": "2021-02-24"
+    },
+    {
+      "id": "sog:kitty-coleman-beach:2021-02-26:18818",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2020-03-03-kitty-coleman-beach_2020-03-14_20200314.png",
+      "thumbnail_path": "dfo-2020-03-03-kitty-coleman-beach_2020-03-14_20200314.png",
+      "location_name": "Kitty Coleman Beach",
+      "start_date": "2021-02-26"
+    },
+    {
+      "id": "sog:oyster-bay:2021-03-12:18819",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2020-03-08-oyster-bay_2020-03-14_20200314.png",
+      "thumbnail_path": "dfo-2020-03-08-oyster-bay_2020-03-14_20200314.png",
+      "location_name": "Oyster Bay",
+      "start_date": "2021-03-12"
+    },
+    {
+      "id": "sog:komas-bluff:2021-03-12:18825",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2019-03-14-komas-bluff_2019-03-20_20190320.png",
+      "thumbnail_path": "dfo-2019-03-14-komas-bluff_2019-03-20_20190320.png",
+      "location_name": "Komas Bluff",
+      "start_date": "2021-03-12"
+    },
+    {
+      "id": "sog:whalebone-pt:2021-03-12:18831",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2019-03-15-whalebone-pt_2019-03-20_20190320.png",
+      "thumbnail_path": "dfo-2019-03-15-whalebone-pt_2019-03-20_20190320.png",
+      "location_name": "Whalebone Pt",
+      "start_date": "2021-03-12"
+    },
+    {
+      "id": "sog:collishaw-pt:2021-03-12:18832",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2022-03-04-collishaw-pt_2022-03-09_20220309.png",
+      "thumbnail_path": "dfo-2022-03-04-collishaw-pt_2022-03-09_20220309.png",
+      "location_name": "Collishaw Pt",
+      "start_date": "2021-03-12"
+    },
+    {
+      "id": "sog:qualicum-beach:2021-03-13:18838",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2021-03-13-qualicum-beach_2021-03-16_20210316.png",
+      "thumbnail_path": "dfo-2021-03-13-qualicum-beach_2021-03-16_20210316.png",
+      "location_name": "Qualicum Beach",
+      "start_date": "2021-03-13"
+    },
+    {
+      "id": "sog:bowser:2021-03-22:18839",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2021-03-22-bowser_2021-03-31_20210331.png",
+      "thumbnail_path": "dfo-2021-03-22-bowser_2021-03-31_20210331.png",
+      "location_name": "Bowser",
+      "start_date": "2021-03-22"
+    },
+    {
+      "id": "sog:big-qualicum-rvr:2021-03-12:18840",
+      "source": "sog",
+      "label": "spawn",
+      "label_int": 1,
+      "image_path": "data/ingressed/thumbnails/dfo-2021-03-12-big-qualicum-rvr_2021-03-16_20210316.png",
+      "thumbnail_path": "dfo-2021-03-12-big-qualicum-rvr_2021-03-16_20210316.png",
+      "location_name": "Big Qualicum Rvr",
+      "start_date": "2021-03-12"
+    }
+  ]
+}

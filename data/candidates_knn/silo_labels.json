@@ -1,0 +1,4354 @@
+{
+  "classifications": [
+    {
+      "filename": "comox_2024-05-22_score0.67_49.564865_-124.788846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.584865_-124.768846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.584865_-124.888846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.584865_-124.908846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.604865_-124.928846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.604865_-124.948846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.604865_-124.988846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.624865_-124.988846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.624865_-125.048846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.624865_-125.068846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.664865_-124.968846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.664865_-124.988846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.664865_-125.048846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.684865_-124.868846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.704865_-124.908846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.724865_-124.888846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.724865_-125.028846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.744865_-124.908846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.744865_-124.928846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.744865_-124.948846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.744865_-124.988846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.744865_-125.008846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.744865_-125.048846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.764865_-124.948846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.764865_-124.988846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.764865_-125.028846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.784865_-124.968846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score0.67_49.804865_-124.808846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.564865_-124.888846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.564865_-124.908846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.564865_-124.928846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.564865_-124.948846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.564865_-124.968846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.564865_-124.988846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.584865_-124.788846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.584865_-124.808846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.584865_-124.828846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.584865_-124.848846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.584865_-124.868846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.584865_-124.928846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.584865_-124.948846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.584865_-124.968846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.584865_-124.988846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.584865_-125.008846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.604865_-124.808846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.604865_-124.828846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.604865_-124.848846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.604865_-124.888846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.604865_-124.908846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.604865_-124.968846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.604865_-125.008846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.604865_-125.028846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.604865_-125.048846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.624865_-124.888846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.624865_-124.908846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.624865_-124.928846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.624865_-124.948846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.624865_-124.968846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.644865_-124.928846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.644865_-124.948846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.644865_-124.968846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.664865_-124.888846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.664865_-124.908846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.664865_-125.068846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.684865_-125.028846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.684865_-125.048846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.684865_-125.068846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.704865_-124.848846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.704865_-124.868846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.704865_-125.068846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.724865_-124.868846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.724865_-124.908846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.724865_-125.048846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.724865_-125.068846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "comox_2024-05-22_score1.00_49.784865_-125.008846_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-03-18_score1.00_49.49991_-124.71886_20240318.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-03-18_score1.00_49.51991_-124.71886_20240318.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-04-19_score0.67_49.51991_-124.67886_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-04-19_score1.00_49.49991_-124.69886_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-04-19_score1.00_49.51991_-124.69886_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score0.67_49.47991_-124.81886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score0.67_49.51991_-124.79886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score0.67_49.51991_-124.85886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score0.67_49.53991_-124.77886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score0.67_49.53991_-124.83886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score0.67_49.55991_-124.77886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score0.67_49.57991_-124.83886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score0.67_49.57991_-124.87886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score0.67_49.57991_-124.89886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score0.67_49.59991_-124.87886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.47991_-124.73886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.47991_-124.83886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.47991_-124.85886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.47991_-124.87886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.49991_-124.73886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.49991_-124.75886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.49991_-124.77886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.49991_-124.79886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.49991_-124.81886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.49991_-124.83886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.49991_-124.85886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.49991_-124.87886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.49991_-124.89886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.51991_-124.73886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.51991_-124.75886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.51991_-124.77886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.51991_-124.81886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.51991_-124.83886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.51991_-124.87886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.51991_-124.89886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.51991_-124.91886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.53991_-124.75886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.53991_-124.79886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.53991_-124.81886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.53991_-124.85886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.53991_-124.87886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.53991_-124.89886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.53991_-124.91886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.55991_-124.75886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.55991_-124.83886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.55991_-124.87886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.57991_-124.77886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.57991_-124.79886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.57991_-124.81886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.57991_-124.91886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.59991_-124.81886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.59991_-124.83886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "denman-island_2024-05-22_score1.00_49.59991_-124.89886_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "haida-gwaii-south_2024-04-16_score0.67_52.324865_-131.52148_20240416.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "haida-gwaii-south_2024-04-16_score0.67_52.324865_-131.56148_20240416.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "haida-gwaii-south_2024-04-16_score0.67_52.344865_-131.54148_20240416.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "haida-gwaii-south_2024-04-16_score0.67_52.364865_-131.38148_20240416.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "haida-gwaii-south_2024-04-16_score0.67_52.404865_-131.26148_20240416.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "haida-gwaii-south_2024-04-16_score0.67_52.424865_-131.30148_20240416.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "haida-gwaii-south_2024-04-16_score1.00_52.424865_-131.46148_20240416.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "haida-gwaii-south_2024-04-16_score1.00_52.444865_-131.50148_20240416.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.584865_-132.948264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.604865_-132.828264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.624865_-132.928264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.644865_-132.768264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.664865_-132.708264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.664865_-132.728264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.664865_-132.748264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.664865_-132.768264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.664865_-132.808264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.684865_-132.848264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.684865_-132.928264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.724865_-132.728264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.724865_-132.848264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.724865_-132.868264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.724865_-132.948264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.764865_-132.828264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.764865_-132.848264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.764865_-132.888264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.784865_-132.768264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.784865_-132.808264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.784865_-133.008264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score0.67_53.824865_-132.828264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.584865_-132.788264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.584865_-132.808264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.584865_-132.828264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.584865_-132.928264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.604865_-132.788264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.604865_-132.808264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.624865_-132.808264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.624865_-132.828264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.644865_-132.708264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.644865_-132.728264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.644865_-132.748264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.644865_-132.788264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.644865_-132.808264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.644865_-132.908264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.644865_-132.928264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.664865_-132.688264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.664865_-132.788264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.664865_-132.828264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.664865_-132.928264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.684865_-132.708264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.684865_-132.728264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.684865_-132.748264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.684865_-132.768264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.684865_-132.788264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.684865_-132.808264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.684865_-132.828264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.684865_-132.868264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.684865_-132.888264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.684865_-132.908264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.704865_-132.688264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.704865_-132.708264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.704865_-132.728264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.704865_-132.748264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.704865_-132.768264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.704865_-132.788264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.704865_-132.828264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.724865_-132.688264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.724865_-132.708264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.724865_-132.748264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.724865_-132.768264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.724865_-132.788264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.724865_-132.808264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.724865_-132.828264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.724865_-132.968264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.744865_-132.688264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.744865_-132.708264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.744865_-132.728264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.744865_-132.748264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.744865_-132.768264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.744865_-132.788264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.744865_-132.868264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.744865_-132.888264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.744865_-132.908264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.744865_-132.928264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.744865_-132.948264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.764865_-132.708264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.764865_-132.728264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.764865_-132.748264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.764865_-132.768264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.764865_-132.788264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.764865_-132.808264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.764865_-132.868264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.764865_-132.908264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.784865_-132.728264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.784865_-132.748264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.784865_-132.788264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.784865_-132.848264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.784865_-132.908264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.784865_-132.928264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.784865_-132.948264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.784865_-132.968264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.784865_-132.988264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.804865_-132.808264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.804865_-132.828264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.804865_-132.868264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.804865_-132.888264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.804865_-132.908264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.804865_-132.948264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.804865_-132.988264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.804865_-133.008264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.804865_-133.028264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.824865_-132.868264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.824865_-132.888264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.824865_-132.908264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "masset-inlet_2024-04-19_score1.00_53.824865_-132.968264_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "milbanke-sound_2024-03-24_score0.67_52.384865_-128.701984_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "milbanke-sound_2024-03-24_score0.67_52.404865_-128.741984_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "milbanke-sound_2024-03-24_score0.67_52.444865_-128.641984_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "milbanke-sound_2024-03-24_score0.67_52.464865_-128.661984_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "milbanke-sound_2024-03-24_score0.67_52.464865_-128.681984_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "milbanke-sound_2024-03-24_score0.67_52.484865_-128.601984_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "milbanke-sound_2024-03-24_score0.67_52.504865_-128.781984_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "milbanke-sound_2024-03-24_score0.67_52.544865_-128.641984_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "milbanke-sound_2024-03-24_score0.67_52.544865_-128.781984_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "milbanke-sound_2024-03-24_score1.00_52.464865_-128.701984_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "milbanke-sound_2024-03-24_score1.00_52.524865_-128.781984_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "milbanke-sound_2024-03-29_score0.67_52.504865_-129.001984_20240329.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.034865_-123.776603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.034865_-123.796603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.034865_-123.836603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.034865_-123.856603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.034865_-123.876603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.034865_-123.896603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.054865_-123.796603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.054865_-123.816603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.054865_-123.836603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.074865_-123.876603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.094865_-123.876603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.094865_-123.896603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.114865_-123.856603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.114865_-123.876603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.114865_-123.896603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.134865_-123.736603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.134865_-123.876603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.134865_-123.976603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.154865_-123.876603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.154865_-124.016603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.174865_-123.836603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.174865_-123.856603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.194865_-123.836603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.194865_-123.876603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.214865_-124.016603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score0.67_49.234865_-123.956603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.034865_-123.756603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.034865_-123.816603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.034865_-123.916603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.034865_-123.936603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.034865_-123.956603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.054865_-123.756603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.054865_-123.776603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.054865_-123.916603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.054865_-123.956603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.074865_-123.776603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.074865_-123.816603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.074865_-123.836603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.074865_-123.856603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.074865_-123.896603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.074865_-123.916603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.074865_-123.936603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.074865_-123.956603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.074865_-123.976603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.074865_-123.996603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.074865_-124.016603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.094865_-123.816603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.094865_-123.936603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.094865_-123.956603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.094865_-123.976603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.094865_-123.996603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.094865_-124.016603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.094865_-124.036603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.114865_-123.836603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.114865_-123.916603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.114865_-123.956603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.114865_-123.976603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.114865_-123.996603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.114865_-124.016603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.114865_-124.036603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.134865_-123.816603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.134865_-123.996603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.134865_-124.016603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.134865_-124.036603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.154865_-123.696603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.154865_-123.716603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.154865_-123.736603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.154865_-123.756603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.154865_-123.776603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.154865_-123.816603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.154865_-123.856603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.174865_-123.756603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.174865_-123.776603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.174865_-123.796603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.174865_-123.816603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.174865_-124.036603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.214865_-123.936603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nanaimo_2024-03-18_score1.00_49.234865_-123.976603_20240318.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.504865_-126.548503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.504865_-126.568503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.524865_-126.528503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.524865_-126.568503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.544865_-126.528503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.584865_-126.488503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.584865_-126.508503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.604865_-126.448503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.604865_-126.688503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.604865_-126.768503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.624865_-126.628503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.624865_-126.708503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.624865_-126.728503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.624865_-126.748503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.624865_-126.768503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.644865_-126.708503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.664865_-126.448503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.664865_-126.628503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.664865_-126.748503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.684865_-126.468503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.684865_-126.548503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score0.67_49.704865_-126.468503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.504865_-126.468503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.504865_-126.488503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.524865_-126.428503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.524865_-126.448503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.524865_-126.468503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.524865_-126.488503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.524865_-126.508503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.544865_-126.468503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.544865_-126.488503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.544865_-126.508503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.564865_-126.408503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.564865_-126.428503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.564865_-126.448503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.564865_-126.488503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.564865_-126.508503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.564865_-126.528503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.584865_-126.408503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.584865_-126.428503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.584865_-126.448503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.584865_-126.468503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.584865_-126.528503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.604865_-126.408503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.604865_-126.428503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.604865_-126.668503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.624865_-126.408503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.624865_-126.428503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.624865_-126.688503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.644865_-126.408503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.644865_-126.648503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.644865_-126.668503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.644865_-126.688503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.644865_-126.728503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.644865_-126.748503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.644865_-126.768503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.644865_-126.788503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.664865_-126.648503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.664865_-126.668503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.664865_-126.688503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.664865_-126.708503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.664865_-126.728503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.664865_-126.768503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.684865_-126.448503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.684865_-126.628503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.684865_-126.648503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.684865_-126.668503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.684865_-126.688503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.684865_-126.708503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.684865_-126.728503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.684865_-126.748503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.704865_-126.568503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.704865_-126.668503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.704865_-126.688503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.704865_-126.708503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.704865_-126.728503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.724865_-126.648503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "nootka-sound_2024-05-22_score1.00_49.724865_-126.668503_20240522.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score0.67_54.21982_-130.30877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score0.67_54.23982_-130.30877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score0.67_54.23982_-130.32877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score0.67_54.25982_-130.26877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score0.67_54.25982_-130.30877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score0.67_54.27982_-130.34877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score0.67_54.29982_-130.32877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score0.67_54.37982_-130.22877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score0.67_54.41982_-130.18877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score0.67_54.41982_-130.20877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score0.67_54.45982_-130.26877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score0.67_54.45982_-130.30877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score0.67_54.45982_-130.32877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score0.67_54.45982_-130.36877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.21982_-130.28877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.21982_-130.32877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.23982_-130.34877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.25982_-130.32877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.27982_-130.28877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.27982_-130.30877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.27982_-130.32877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.29982_-130.28877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.31982_-130.32877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.37982_-130.28877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.37982_-130.30877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.39982_-130.20877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.39982_-130.22877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.39982_-130.30877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.39982_-130.32877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.39982_-130.34877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.41982_-130.22877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.41982_-130.24877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.41982_-130.26877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.43982_-130.20877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.43982_-130.24877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.43982_-130.26877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.43982_-130.28877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.43982_-130.30877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.45982_-130.28877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-22_score1.00_54.45982_-130.34877_20240322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score0.67_54.19982_-130.18877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score0.67_54.19982_-130.20877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score0.67_54.19982_-130.22877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score0.67_54.21982_-130.18877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score0.67_54.23982_-130.12877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score0.67_54.23982_-130.16877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score0.67_54.25982_-130.10877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score0.67_54.29982_-130.10877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score0.67_54.29982_-130.20877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score0.67_54.31982_-130.12877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score0.67_54.31982_-130.14877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score0.67_54.31982_-130.20877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score0.67_54.37982_-130.12877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score0.67_54.37982_-130.16877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score1.00_54.25982_-130.14877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score1.00_54.27982_-130.20877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score1.00_54.29982_-130.12877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score1.00_54.35982_-130.14877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score1.00_54.37982_-130.18877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score1.00_54.39982_-130.14877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-03-24_score1.00_54.39982_-130.18877_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-04-16_score0.67_54.25982_-130.40877_20240416.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-04-16_score0.67_54.25982_-130.42877_20240416.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-04-16_score0.67_54.27982_-130.44877_20240416.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-04-16_score1.00_54.27982_-130.42877_20240416.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "prince-rupert_2024-04-16_score1.00_54.29982_-130.38877_20240416.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-03-18_score0.67_49.234865_-124.357442_20240318.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-03-18_score0.67_49.254865_-124.337442_20240318.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-03-18_score0.67_49.254865_-124.357442_20240318.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-03-18_score0.67_49.274865_-124.297442_20240318.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-03-18_score0.67_49.294865_-124.297442_20240318.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-03-18_score0.67_49.314865_-124.297442_20240318.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-03-18_score0.67_49.314865_-124.317442_20240318.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-03-18_score0.67_49.334865_-124.357442_20240318.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-03-18_score1.00_49.254865_-124.317442_20240318.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-03-18_score1.00_49.274865_-124.317442_20240318.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-03-18_score1.00_49.274865_-124.337442_20240318.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-03-18_score1.00_49.314865_-124.257442_20240318.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-03-18_score1.00_49.314865_-124.277442_20240318.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-03-18_score1.00_49.334865_-124.277442_20240318.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-03-18_score1.00_49.334865_-124.297442_20240318.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-03-18_score1.00_49.354865_-124.357442_20240318.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-03-18_score1.00_49.354865_-124.377442_20240318.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.234865_-124.497442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.234865_-124.517442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.234865_-124.557442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.294865_-124.457442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.294865_-124.497442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.294865_-124.577442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.314865_-124.437442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.314865_-124.457442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.314865_-124.477442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.314865_-124.557442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.334865_-124.477442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.334865_-124.517442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.334865_-124.537442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.334865_-124.557442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.334865_-124.577442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.354865_-124.397442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.354865_-124.417442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.354865_-124.437442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.354865_-124.497442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.354865_-124.537442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.354865_-124.597442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.354865_-124.617442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.354865_-124.637442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.374865_-124.477442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.374865_-124.577442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.374865_-124.597442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.394865_-124.617442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score0.67_49.394865_-124.637442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.234865_-124.377442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.234865_-124.397442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.234865_-124.417442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.234865_-124.437442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.234865_-124.457442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.234865_-124.477442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.234865_-124.537442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.254865_-124.377442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.254865_-124.397442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.254865_-124.417442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.254865_-124.437442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.254865_-124.457442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.254865_-124.477442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.254865_-124.497442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.254865_-124.517442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.254865_-124.537442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.254865_-124.557442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.274865_-124.377442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.274865_-124.437442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.274865_-124.457442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.274865_-124.477442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.274865_-124.497442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.274865_-124.517442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.274865_-124.537442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.274865_-124.557442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.274865_-124.617442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.294865_-124.517442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.294865_-124.537442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.294865_-124.557442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.314865_-124.417442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.314865_-124.537442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.314865_-124.577442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.314865_-124.597442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.334865_-124.597442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.334865_-124.617442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.334865_-124.637442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.354865_-124.457442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.354865_-124.477442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.374865_-124.617442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.374865_-124.637442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.394865_-124.577442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "qualicum_2024-04-19_score1.00_49.394865_-124.597442_20240419.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score0.67_50.564865_-127.97245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score0.67_50.564865_-128.05245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score0.67_50.564865_-128.07245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score0.67_50.584865_-127.85245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score0.67_50.584865_-127.89245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score0.67_50.584865_-127.97245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score0.67_50.604865_-127.89245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score0.67_50.604865_-128.01245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score0.67_50.624865_-127.97245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score0.67_50.624865_-128.07245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score1.00_50.564865_-127.99245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score1.00_50.564865_-128.01245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score1.00_50.564865_-128.03245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score1.00_50.564865_-128.15245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score1.00_50.584865_-127.87245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score1.00_50.584865_-127.93245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score1.00_50.584865_-127.95245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score1.00_50.584865_-127.99245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score1.00_50.584865_-128.03245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score1.00_50.584865_-128.05245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score1.00_50.584865_-128.07245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score1.00_50.584865_-128.09245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score1.00_50.604865_-127.87245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score1.00_50.604865_-127.95245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score1.00_50.604865_-127.97245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score1.00_50.604865_-127.99245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score1.00_50.624865_-127.99245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score1.00_50.624865_-128.01245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-02-15_score1.00_50.624865_-128.03245_20240215.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score0.67_50.384865_-127.89245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score0.67_50.384865_-127.91245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score0.67_50.424865_-127.83245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score0.67_50.424865_-127.85245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score0.67_50.444865_-127.91245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score0.67_50.484865_-127.93245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score0.67_50.484865_-128.07245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score0.67_50.504865_-127.91245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score0.67_50.504865_-128.11245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score0.67_50.524865_-127.91245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score0.67_50.524865_-128.03245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score0.67_50.524865_-128.05245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score0.67_50.524865_-128.07245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score0.67_50.544865_-127.85245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score0.67_50.544865_-127.87245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score0.67_50.544865_-128.07245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score0.67_50.544865_-128.09245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score0.67_50.544865_-128.11245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score0.67_50.544865_-128.17245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score1.00_50.384865_-127.93245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score1.00_50.444865_-127.81245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score1.00_50.484865_-127.95245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score1.00_50.484865_-127.99245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score1.00_50.504865_-127.89245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score1.00_50.504865_-127.95245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score1.00_50.524865_-127.79245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score1.00_50.524865_-127.81245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score1.00_50.524865_-127.83245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score1.00_50.524865_-127.85245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score1.00_50.524865_-127.87245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score1.00_50.524865_-128.09245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score1.00_50.524865_-128.11245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score1.00_50.524865_-128.13245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score1.00_50.524865_-128.15245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score1.00_50.544865_-127.83245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "quatsino-sound_2024-03-16_score1.00_50.544865_-128.19245_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-24_score0.67_52.404865_-128.22098_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-24_score0.67_52.424865_-128.30098_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-24_score1.00_52.364865_-128.12098_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-24_score1.00_52.364865_-128.28098_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-24_score1.00_52.364865_-128.30098_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-24_score1.00_52.384865_-128.26098_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-24_score1.00_52.384865_-128.30098_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-24_score1.00_52.384865_-128.38098_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-24_score1.00_52.384865_-128.40098_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-24_score1.00_52.384865_-128.42098_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-24_score1.00_52.384865_-128.44098_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-24_score1.00_52.404865_-128.20098_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-24_score1.00_52.404865_-128.36098_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-24_score1.00_52.424865_-128.32098_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-24_score1.00_52.424865_-128.34098_20240324.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-29_score0.67_52.204865_-128.36098_20240329.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-29_score0.67_52.224865_-128.36098_20240329.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-29_score0.67_52.324865_-128.10098_20240329.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-29_score0.67_52.324865_-128.14098_20240329.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-29_score0.67_52.324865_-128.34098_20240329.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-29_score0.67_52.344865_-128.44098_20240329.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-29_score1.00_52.224865_-128.38098_20240329.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-29_score1.00_52.224865_-128.40098_20240329.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-29_score1.00_52.344865_-128.10098_20240329.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "spiller-channel_2024-03-29_score1.00_52.344865_-128.40098_20240329.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-02-05_score0.67_49.274865_-125.926603_20240205.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-02-05_score1.00_49.274865_-125.906603_20240205.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score0.67_49.074865_-125.766603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score0.67_49.074865_-125.786603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score0.67_49.094865_-125.766603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score0.67_49.094865_-125.866603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score0.67_49.094865_-125.886603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score0.67_49.134865_-125.906603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score0.67_49.154865_-125.846603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score0.67_49.154865_-125.906603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score0.67_49.174865_-126.026603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score0.67_49.194865_-126.026603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score0.67_49.194865_-126.046603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score0.67_49.214865_-126.066603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score0.67_49.234865_-126.026603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score1.00_49.074865_-125.746603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score1.00_49.094865_-125.786603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score1.00_49.094865_-125.806603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score1.00_49.094865_-125.826603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score1.00_49.094865_-125.846603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score1.00_49.114865_-125.826603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score1.00_49.114865_-125.846603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score1.00_49.114865_-125.866603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score1.00_49.114865_-125.886603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score1.00_49.114865_-125.906603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score1.00_49.134865_-125.886603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score1.00_49.154865_-125.866603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score1.00_49.154865_-125.886603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score1.00_49.194865_-125.706603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score1.00_49.194865_-125.726603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score1.00_49.214865_-125.726603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score1.00_49.254865_-125.966603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score1.00_49.254865_-125.986603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score1.00_49.274865_-125.946603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "tofino_2024-03-16_score1.00_49.274865_-125.966603_20240316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Land or non-milky water."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score0.67_48.94991_-125.467155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score0.67_48.94991_-125.547155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score0.67_48.94991_-125.587155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score0.67_48.96991_-125.587155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score0.67_48.96991_-125.607155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score0.67_48.98991_-125.507155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score0.67_48.98991_-125.607155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score0.67_48.98991_-125.647155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score0.67_49.00991_-125.587155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_48.92991_-125.527155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_48.92991_-125.547155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_48.94991_-125.487155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_48.94991_-125.507155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_48.94991_-125.527155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_48.94991_-125.567155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_48.96991_-125.427155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_48.96991_-125.447155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_48.96991_-125.467155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_48.96991_-125.487155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_48.96991_-125.507155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_48.96991_-125.527155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_48.96991_-125.567155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_48.98991_-125.447155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_48.98991_-125.467155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_48.98991_-125.487155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_48.98991_-125.527155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_48.98991_-125.547155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_48.98991_-125.567155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_48.98991_-125.587155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_49.00991_-125.467155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_49.00991_-125.487155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_49.00991_-125.507155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_49.00991_-125.527155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_49.00991_-125.547155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_49.00991_-125.567155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    },
+    {
+      "filename": "ucluelet_2024-05-22_score1.00_49.00991_-125.607155_20240522.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Characteristic turquoise plume present."
+    }
+  ]
+}

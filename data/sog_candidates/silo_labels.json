@@ -1,0 +1,2032 @@
+{
+  "classifications": [
+    {
+      "filename": "PRD_2018-03-10_score0.00_49.495_-123.989722_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "PRD_2018-03-15_score0.00_49.495_-123.989722_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "PRD_2018-04-21_score0.00_49.495_-123.989722_20180421.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "PRD_2018-04-26_score0.00_49.495_-123.989722_20180426.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "PRD_2019-03-18_score0.00_50.075808_-125.293176_20190318.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "PRD_2019-03-20_score0.00_50.075808_-125.293176_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "PRD_2019-03-30_score0.00_49.495_-123.989722_20190330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "PRD_2019-04-24_score0.00_49.495_-123.989722_20190424.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "PRD_2020-03-17_score0.00_50.075808_-125.293176_20200317.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "PRD_2021-04-13_score0.00_49.495_-123.989722_20210413.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "PRD_2021-04-15_score0.00_49.495_-123.989722_20210415.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "PRD_2021-04-16_score0.00_50.075808_-125.293176_20210416.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-05_score0.00_49.198333_-123.924444_20160305.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-05_score0.00_49.2_-123.96667_20160305.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-05_score0.00_49.202778_-123.940833_20160305.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-05_score0.00_49.21326_-123.940398_20160305.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-05_score0.00_49.229444_-123.956944_20160305.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-05_score0.00_49.236389_-123.964444_20160305.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-05_score0.00_49.2449_-124.023_20160305.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-05_score0.00_49.248611_-124.033611_20160305.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-05_score0.00_49.250556_-124.074444_20160305.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-05_score0.00_49.257222_-124.083056_20160305.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-05_score0.00_49.276111_-124.103056_20160305.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-05_score0.00_49.318056_-124.311389_20160305.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-05_score0.00_49.349453_-124.357158_20160305.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-05_score0.33_49.354564_-124.368264_20160305.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-22_score0.00_48.963889_-123.678333_20160322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-22_score0.00_49.023056_-123.776389_20160322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-22_score0.00_49.038056_-123.746389_20160322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-22_score0.00_49.0731_-123.779_20160322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-22_score0.00_49.198333_-123.924444_20160322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-22_score0.00_49.2_-123.96667_20160322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-22_score0.00_49.202778_-123.940833_20160322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-22_score0.00_49.21326_-123.940398_20160322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-22_score0.00_49.229444_-123.956944_20160322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-22_score0.00_49.236389_-123.964444_20160322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-22_score0.00_49.2449_-124.023_20160322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-22_score0.00_49.248611_-124.033611_20160322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-22_score0.00_49.250556_-124.074444_20160322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-22_score0.00_49.257222_-124.083056_20160322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-22_score0.00_49.276111_-124.103056_20160322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-22_score0.00_49.318056_-124.311389_20160322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-22_score0.00_49.349453_-124.357158_20160322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-22_score0.00_49.471667_-123.763333_20160322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2016-03-22_score0.33_49.354564_-124.368264_20160322.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.00_49.2449_-124.023_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.00_49.248611_-124.033611_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.00_49.250556_-124.074444_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.00_49.257222_-124.083056_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.00_49.325278_-124.291389_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.00_49.328333_-124.316667_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.00_49.349453_-124.357158_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.00_49.354564_-124.368264_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.00_49.355704_-124.45691_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.00_49.365_-124.494722_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.00_49.474722_-124.685_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.00_49.481944_-124.731667_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.00_49.55_-124.691389_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.00_49.577093_-123.279191_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.00_49.579747_-124.796628_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.00_49.626667_-124.850556_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.33_49.228056_-123.949722_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.33_49.229444_-123.956944_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.33_49.236389_-123.964444_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.33_49.481944_-124.731667_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.33_49.541667_-124.641944_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2017-03-30_score0.33_49.579747_-124.796628_20170330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-01-24_score0.00_49.269444_-123.126944_20180124.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.00_49.269444_-123.126944_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.00_49.305833_-124.216667_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.00_49.309722_-124.196389_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.00_49.312809_-124.241857_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.00_49.314722_-124.214444_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.00_49.316375_-124.262383_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.00_49.325278_-124.291389_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.00_49.328333_-124.316667_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.00_49.349453_-124.357158_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.00_49.354564_-124.368264_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.00_49.355704_-124.45691_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.00_49.365_-124.494722_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.00_49.398916_-124.609144_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.00_49.406821_-124.628657_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.00_49.474722_-124.685_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.00_49.481944_-124.731667_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.00_49.494167_-124.71_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.00_49.507222_-124.730833_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.00_49.603056_-124.057778_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.33_49.433333_-124.66667_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.33_49.465556_-124.736111_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-10_score0.33_49.55_-124.691389_20180310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.269444_-123.126944_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.305833_-124.216667_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.309722_-124.196389_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.312809_-124.241857_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.316375_-124.262383_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.325278_-124.291389_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.328333_-124.316667_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.349453_-124.357158_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.354564_-124.368264_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.355704_-124.45691_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.365_-124.494722_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.398916_-124.609144_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.406821_-124.628657_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.433333_-124.66667_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.474722_-124.685_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.507222_-124.730833_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.516389_-124.627222_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.543692_-124.75788_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.55_-124.691389_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.579747_-124.796628_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.00_49.603056_-124.057778_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-03-15_score0.33_49.314722_-124.214444_20180315.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2018-04-21_score0.00_49.236389_-123.964444_20180421.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2018-12-05_score0.00_50.1075_-125.054722_20181205.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-01-21_score0.00_49.698056_-123.155833_20190121.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-01-29_score0.00_49.698056_-123.155833_20190129.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-02-25_score0.00_49.269444_-123.126944_20190225.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-02-25_score0.33_49.612222_-124.039167_20190225.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-10_score0.00_49.269444_-123.126944_20190310.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-17_score1.00_49.612222_-124.039167_20190317.png",
+      "spawn": true,
+      "confidence": "medium",
+      "notes": "Milky turquoise signature observed."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.328333_-124.316667_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.349453_-124.357158_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.406821_-124.628657_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.465556_-124.736111_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.481944_-124.731667_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.494167_-124.71_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.507222_-124.730833_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.511759_-124.710887_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.519444_-124.8125_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.541667_-124.641944_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.543692_-124.75788_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.55_-124.691389_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.579747_-124.796628_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.626667_-124.850556_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.646609_-124.932286_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.65_-124.9_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.660946_-124.92591_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.671944_-124.894444_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.701389_-124.86_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.712778_-124.876389_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.736909_-124.910474_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.00_49.868056_-124.039722_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.33_49.398916_-124.609144_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.33_49.433333_-124.66667_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.33_49.472222_-124.684722_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.33_49.474722_-124.685_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.33_49.507222_-124.730833_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.33_49.511759_-124.710887_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.33_49.55_-124.691389_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.33_49.579747_-124.796628_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-20_score0.67_49.481944_-124.731667_20190320.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-27_score0.00_49.2449_-124.023_20190327.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-27_score0.00_49.248611_-124.033611_20190327.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-27_score0.00_49.250556_-124.074444_20190327.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-27_score0.00_49.257222_-124.083056_20190327.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-27_score0.00_49.398916_-124.609144_20190327.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-27_score0.00_49.406821_-124.628657_20190327.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-27_score0.00_49.433333_-124.66667_20190327.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-27_score0.00_49.472222_-124.684722_20190327.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-27_score0.00_49.474722_-124.685_20190327.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-30_score0.00_49.2449_-124.023_20190330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-30_score0.00_49.248611_-124.033611_20190330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-30_score0.00_49.250556_-124.074444_20190330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-03-30_score0.00_49.257222_-124.083056_20190330.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-04-01_score0.00_49.868056_-124.039722_20190401.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-04-09_score0.00_49.492259_-123.405167_20190409.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-04-24_score0.00_49.492259_-123.405167_20190424.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-04-26_score0.00_49.376944_-122.878056_20190426.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-04-29_score0.00_49.661628_-123.852036_20190429.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-05-01_score0.00_49.376944_-122.878056_20190501.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2019-05-06_score0.00_49.661628_-123.852036_20190506.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-01-26_score0.00_49.629096_-124.04094_20200126.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-02-03_score0.00_49.629096_-124.04094_20200203.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-02-03_score0.00_49.7292_-124.165_20200203.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-02-08_score0.00_49.7292_-124.165_20200208.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-02-08_score0.00_49.796004_-125.008278_20200208.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-02-18_score0.00_49.269444_-123.126944_20200218.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-02-18_score0.00_49.629096_-124.04094_20200218.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-02-18_score0.00_49.796004_-125.008278_20200218.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-02-18_score0.00_49.9075_-124.628889_20200218.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-02-20_score0.00_49.269444_-123.126944_20200220.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-02-20_score0.33_49.629096_-124.04094_20200220.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-09_score0.33_49.9075_-124.628889_20200309.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-11_score0.00_49.269444_-123.126944_20200311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-14_score0.00_49.519444_-124.8125_20200314.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-14_score0.00_49.543692_-124.75788_20200314.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-14_score0.00_49.579747_-124.796628_20200314.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-14_score0.00_49.626667_-124.850556_20200314.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-14_score0.00_49.646609_-124.932286_20200314.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-14_score0.00_49.660946_-124.92591_20200314.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-14_score0.00_49.671944_-124.894444_20200314.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-14_score0.00_49.712778_-124.876389_20200314.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-14_score0.00_49.736909_-124.910474_20200314.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-14_score0.00_49.765556_-124.964167_20200314.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-14_score0.00_49.8725_-125.115833_20200314.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-14_score0.00_49.910833_-125.169722_20200314.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-14_score0.00_50.036944_-124.995833_20200314.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-14_score0.33_49.507222_-124.730833_20200314.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-14_score0.33_49.579747_-124.796628_20200314.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-14_score0.33_49.701389_-124.86_20200314.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-14_score0.33_49.712778_-124.876389_20200314.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-14_score0.33_49.765556_-124.964167_20200314.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-14_score0.33_49.796004_-125.008278_20200314.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-14_score0.33_49.983056_-124.919167_20200314.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-16_score0.00_49.2449_-124.023_20200316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-16_score0.00_49.248611_-124.033611_20200316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-16_score0.00_49.269444_-123.126944_20200316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-16_score0.00_49.288889_-124.134167_20200316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-16_score0.00_49.305833_-124.216667_20200316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-16_score0.00_49.309722_-124.196389_20200316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-16_score0.00_49.312778_-124.185833_20200316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-16_score0.00_49.355704_-124.45691_20200316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-16_score0.00_49.365_-124.494722_20200316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-16_score0.00_49.398916_-124.609144_20200316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-16_score0.00_49.406821_-124.628657_20200316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-16_score0.00_49.433333_-124.66667_20200316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-16_score0.00_49.474722_-124.685_20200316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-16_score0.00_49.494167_-124.71_20200316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-16_score0.00_49.528056_-124.606667_20200316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-16_score0.00_49.541667_-124.641944_20200316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-16_score0.00_49.772268_-124.356497_20200316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-16_score0.00_49.780118_-124.453825_20200316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-16_score0.00_49.804167_-124.526389_20200316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-16_score0.33_49.314722_-124.214444_20200316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.2449_-124.023_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.248611_-124.033611_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.288889_-124.134167_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.305833_-124.216667_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.312809_-124.241857_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.314722_-124.214444_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.316375_-124.262383_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.325278_-124.291389_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.328333_-124.316667_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.349453_-124.357158_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.354564_-124.368264_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.355704_-124.45691_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.365_-124.494722_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.398916_-124.609144_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.406821_-124.628657_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.433333_-124.66667_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.474722_-124.685_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.494167_-124.71_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.528056_-124.606667_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.646111_-123.688611_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.772268_-124.356497_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.780118_-124.453825_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.00_49.804167_-124.526389_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.33_49.309722_-124.196389_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-03-21_score0.33_49.312778_-124.185833_20200321.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-04-10_score0.00_49.114888_-123.804952_20200410.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-04-10_score0.00_49.131111_-123.791111_20200410.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-04-10_score0.00_49.2449_-124.023_20200410.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-04-10_score0.00_49.248611_-124.033611_20200410.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-04-10_score0.00_49.250556_-124.074444_20200410.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-04-10_score0.00_49.646111_-123.688611_20200410.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-04-10_score0.33_49.236389_-123.964444_20200410.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-04-15_score0.00_49.114888_-123.804952_20200415.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-04-15_score0.00_49.236389_-123.964444_20200415.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-04-15_score0.00_49.2449_-124.023_20200415.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-04-15_score0.00_49.248611_-124.033611_20200415.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-04-15_score0.00_49.250556_-124.074444_20200415.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-04-15_score0.00_49.646111_-123.688611_20200415.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-04-15_score0.33_49.131111_-123.791111_20200415.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-05-08_score0.00_49.646111_-123.688611_20200508.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-05-10_score0.33_49.376944_-122.878056_20200510.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2020-05-15_score0.00_49.376944_-122.878056_20200515.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-02-14_score0.00_49.698056_-123.155833_20210214.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-02-17_score0.00_49.698056_-123.155833_20210217.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-02-17_score0.00_49.796004_-125.008278_20210217.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-02-17_score0.00_49.853333_-125.1_20210217.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-02-17_score0.00_49.941667_-125.184722_20210217.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-02-17_score0.00_50.062843_-124.9307_20210217.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-02-17_score0.33_49.853333_-125.1_20210217.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-09_score0.00_49.698056_-123.155833_20210309.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.00_49.21326_-123.940398_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.00_49.228056_-123.949722_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.00_49.229444_-123.956944_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.00_49.236389_-123.964444_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.00_49.2449_-124.023_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.00_49.248611_-124.033611_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.00_49.250556_-124.074444_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.00_49.257222_-124.083056_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.00_49.266944_-124.151111_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.00_49.27072_-124.105159_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.00_49.276111_-124.103056_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.00_49.286944_-124.135556_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.00_49.328333_-124.316667_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.00_49.349453_-124.357158_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.00_49.354564_-124.368264_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.00_49.376944_-122.878056_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.00_49.505556_-123.771111_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.00_49.5175_-124.577222_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.00_49.528056_-124.606667_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.00_49.646111_-123.688611_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-11_score0.67_48.559979_-123.4712_20210311.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-16_score0.00_49.328333_-124.316667_20210316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-16_score0.00_49.349453_-124.357158_20210316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-16_score0.00_49.354564_-124.368264_20210316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-16_score0.00_49.355704_-124.45691_20210316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-16_score0.00_49.365_-124.494722_20210316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-16_score0.00_49.398916_-124.609144_20210316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-16_score0.00_49.406821_-124.628657_20210316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-16_score0.00_49.494167_-124.71_20210316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-16_score0.00_49.5175_-124.577222_20210316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-16_score0.00_49.528056_-124.606667_20210316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-16_score0.00_49.541667_-124.641944_20210316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-16_score0.00_49.55_-124.691389_20210316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-16_score0.00_49.646111_-123.688611_20210316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-16_score0.00_49.698056_-123.155833_20210316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-16_score0.00_49.766944_-124.317222_20210316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-16_score0.00_49.772268_-124.356497_20210316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-16_score0.00_49.774923_-124.106918_20210316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-16_score0.33_49.55_-124.691389_20210316.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-26_score0.00_49.228056_-123.949722_20210326.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-26_score0.00_49.229444_-123.956944_20210326.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-26_score0.00_49.236389_-123.964444_20210326.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-26_score0.00_49.2449_-124.023_20210326.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-26_score0.00_49.266944_-124.151111_20210326.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-26_score0.00_49.27072_-124.105159_20210326.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-26_score0.00_49.276111_-124.103056_20210326.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-26_score0.00_49.286944_-124.135556_20210326.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-26_score0.00_49.355704_-124.45691_20210326.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-26_score0.00_49.398916_-124.609144_20210326.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-26_score0.00_49.406821_-124.628657_20210326.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-26_score0.00_49.494167_-124.71_20210326.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-26_score0.33_49.365_-124.494722_20210326.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-29_score0.00_49.21326_-123.940398_20210329.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-29_score0.00_49.491111_-124.666111_20210329.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-29_score0.00_49.660946_-124.92591_20210329.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-29_score0.00_49.774923_-124.106918_20210329.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-29_score0.00_50.410833_-124.603889_20210329.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-29_score0.33_49.501111_-124.682778_20210329.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-31_score0.00_49.433333_-124.66667_20210331.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-31_score0.00_49.491111_-124.666111_20210331.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-31_score0.00_49.501111_-124.682778_20210331.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-03-31_score0.33_48.559979_-123.4712_20210331.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-04-05_score0.00_49.433333_-124.66667_20210405.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    },
+    {
+      "filename": "SoG_2021-04-18_score0.33_50.18419_-124.852238_20210418.png",
+      "spawn": false,
+      "confidence": "high",
+      "notes": "Cloudy or dark water."
+    }
+  ]
+}

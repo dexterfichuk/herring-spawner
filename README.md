@@ -2,13 +2,33 @@
 
 Research prototype for detecting Pacific herring spawn in BC/PNW satellite imagery.
 
-## Setup
+## Labeled Dataset (243 images, 136 spawn / 107 no-spawn)
+
+`labeled_locations.csv` contains every location with a human-verified label (spawn/no-spawn).
+No image files are stored in git — the CSV has all metadata needed to reproduce them.
+
+### Reproduce the images
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-python -m pip install -e ".[dev]"
+pip install pystac-client planetary-computer rasterio Pillow
+python scripts/fetch_from_csv.py labeled_locations.csv --output-dir ./spawn_images
 ```
+
+This downloads the exact same 512×512 true-color Sentinel-2 crops from Microsoft Planetary Computer.
+
+### Label new images
+
+```bash
+# Single-image review (what was used for the 243 labels):
+python -m pip install gradio
+python scripts/label_app.py
+
+# Or re-rank unlabeled candidates by visual similarity to your labels:
+python scripts/rank_georsclip.py
+python scripts/label_app.py
+```
+
+## Setup
 
 ## Google Earth Engine
 
